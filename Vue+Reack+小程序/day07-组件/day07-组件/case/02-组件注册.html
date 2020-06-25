@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>组件注册</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <first></first>
+        <second></second>
+        <first></first>
+        <third></third>
+    </div>
+    <div id="app2">
+        <third></third>
+    </div>
+    <script>
+        //全局注册
+        Vue.component("third", {
+            template: "<h3>这是third</h3>"
+        })
+        var vm = new Vue({
+            el: "#app",
+            data: {},
+            methods: {},
+            //局部注册
+            components: {
+                first: {
+                    template: "<h3>这是first</h3>"
+                },
+                second: {
+                    template: "<h3>这是second</h3>"
+                }
+            }
+        })
+        var vm2 = new Vue({
+            el: "#app2"
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!--pages/test/test.wxml-->
+   <!-- <my-button></my-button> -->
+
+   <!-- <button bindtap="del" data-id="1001">删除</button> -->
+
+   <view>
+      <image src="{{ photo }}" style="width:50px;height:50px;border-radius:50%"></image>
+      <button type="warn" bindtap="changePhoto">更换头像</button>
+   </view>
+
+<view>
+
+   <view  wx:for="{{ arr }}">
+      id:{{ item.id }}-- name:<text style="color:red;margin-left:15px" bindtap="togoodslist" data-id="{{ item.id }}" data-name="{{ item.name }}">{{ item.name }}</text>
+   </view>
+
+
+</view>

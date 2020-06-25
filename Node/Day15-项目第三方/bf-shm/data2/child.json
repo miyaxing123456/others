@@ -1,0 +1,212 @@
+{
+    "banner":[
+        {
+            "img":"images/child/1.webp.jpg",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":5,
+            "title": "变形警车",
+            "number":42,
+            "content":"哪里有朋友需要帮助，哪里就有救援队的身影。变形警车珀利和他的小伙伴们展现出了无与伦比的集体精神和智慧，并传递了团结合作、关心他人、理解他人的信息。"
+        },
+        {
+            "img":"images/child/2.jpg",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":5,
+            "title": "无敌小鹿之安全成长",
+            "number":144,
+            "content":"每集一个关于儿童安全的故事，让孩子们了解身边潜在的危险，学会保护自己。宝宝更安全，父母更安心。"
+        },
+        {
+            "img":"images/child/3.jpg",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":5,
+            "title": "狐狸夫人和狗獾先生",
+            "number":52,
+            "content":"狐狸夫人和狗獾先生带着他们各自的孩子组成了一个家庭。两个完全不同的家庭生活在一起并不容易，如同一场生活大冒险，孩子们必须一点一点地学习跨越偏见。最终，狗獾和狐狸组成了一个令人不可思议的独特家庭，他们一家人同聚一堂的生活总是像节日一般欢乐！"
+        },
+        {
+            "img":"images/child/4.jpg",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":5,
+            "title": "熊出没",
+            "number":42,
+            "content":"讲述了在夏季休林季，光头强变身成为一名导游，并与熊大熊二一起，帮助小女孩赵琳去往森林深处找寻儿时玩伴东北虎的故事。在寻虎的探险路上，他们走过美丽神秘的森林、奇妙的地下世界、缤纷的雪山世界……他们不仅面临自然生存的考验，还要与盗猎者反派斗智斗勇、拯救动物、帮助有困难的当地人，一场欢乐的奇妙探险由此开启……"
+        },
+        {
+            "img":"images/child/5.jpg",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":5,
+            "title": "小猪佩奇",
+            "number":99,
+            "content":"佩奇是一只可爱的粉红色小猪，她有一个名叫乔治的弟弟，乔治不喜欢吃蔬菜，最喜欢的东西是巧克力蛋糕和恐龙。猪爸爸有着一个胖胖的大肚子， 猪妈妈喜欢做蛋糕，在老师和朋友们的陪伴下，小猪佩奇的每一天都是如此的快乐和幸福！"
+        }
+    ],
+    "hot":[
+        {
+            "img":"images/child/6.webp.jpg",
+            "vip": 2,
+            "definition": "更新至99集",
+            "title": "小猪佩奇全集",
+            "detail": "小猪佩奇欢乐日常",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":5,
+            "number":99,
+            "content":"佩奇（海莉·博德 Harley Bird 配音）是一只可爱的粉红色小猪，她有一个名叫乔治（Oliver May 配音）的弟弟，乔治不喜欢吃蔬菜，最喜欢的东西是巧克力蛋糕和恐龙。 猪妈妈（莫温娜·班克斯 Morwenna Banks 饰）喜欢做蛋糕，佩奇和乔治在幼儿在老师和朋友们的陪伴下，小猪佩奇的每一天都是如此的快乐和幸福！"
+        },
+        {
+            "img":"images/child/7.webp.jpg",
+            "vip": 1,
+            "definition": "更新至66集",
+            "title": "超级宝贝JOJO",
+            "detail": "帮宝宝学习与认识世界",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":5,
+            "number":66,
+            "content":"适龄启蒙，亲子共学。宝宝的成长从很多个第一次开始，第一次学说话、第一次学走路。《超级宝贝JOJO》分龄儿歌，专为13岁宝宝设计，以小宝宝JOJO的成长生活中常见场景趣事吸引宝宝模仿学习，激发宝宝的语言表达与探索欲。帮助宝宝适龄学习与认识世界，支援父母轻松育儿，鼓励家长一起欣赏，陪伴孩子快乐成长。"
+        },
+        {
+            "img":"images/child/8.webp.jpg",
+            "vip": 2,
+            "definition": "更新至12集",
+            "title": "奇奇和悦悦的玩具",
+            "detail":  "奇奇和悦悦的玩具",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":5,
+            "number":12,
+            "content":"《奇奇和悦悦的玩具》主要制作各类亲子游戏、玩具评测试玩、玩具定格动画等视频，是一档专门介绍时下流行好玩玩具的系列视频。"
+        },
+        {
+            "img":"images/child/9.webp.jpg",
+            "vip": 1,
+            "definition":  "26集全",
+            "title": "汪汪队立大功 第4季",
+            "detail": "本领高强的狗狗巡逻队",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":5,
+            "number":26,
+            "content":"精通科技的10岁男孩Ryder在拯救了6条小狗之后，将他们训练成了一组本领高强的狗狗巡逻队。每个小狗都性格鲜明，也各有特长。斑点狗Marshall擅长火中急救；斗牛犬Rubble精通工程机械；牧羊犬Chase是个超级特工；混血儿Rocky是个维修能手；拉布拉多犬Zuma最熟悉水中救援；而可卡颇犬Skye掌握着各种航空技术。拥有这么多解决问题的能力，在加上Ryder提供的炫酷装备支持，不管遇到多么困难和危险的救援任务，他们还总是忘不了相互玩闹，制作轻松的气氛，而每次幽默乐观的狗狗能总能顺利完成任务。"
+        },
+        {
+            "img":"images/child/10.webp.jpg",
+            "vip": 1,
+            "definition": "更新至90集",
+            "title": "宝宝巴士儿歌",
+            "detail": "唱儿歌 看动画",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":5,
+            "number":90,
+            "content":"宝宝巴士儿歌通过轻松活泼的音乐极大地吸引宝宝的注意力，在潜移默化地实现宝宝各方面能力逐步提升的同时，使其心灵空间亦能得到同步发展，让宝宝变得更加优秀。！"
+        },
+        {
+            "img":"images/child/11.webp",
+            "vip": 3,
+            "definition":  "76集全",
+            "title": "小伶玩具：多人游戏",
+            "detail": "搞笑又刺激的多人游戏",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":5,
+            "number":76,
+            "content":"小伶玩具：多人游戏》系列内容本着为孩子们创造最美好的童年时光为主旨，保持制作精良、内容健康、积极向上的风格，力求带给小朋友们更多好玩有趣的视频！向小朋友们介绍各种各样的游戏挑战，如：脑洞大开的小伶推理系列、爆笑的舞蹈歌曲比赛系列、紧张激烈的对决系列、脑筋急转弯小知识竞赛系列、心电感应抽抽乐系列、三色挑战系列、传统节日特辑游戏等等。《小伶玩具：多人游戏》系列不断发展创新优质短视频，用积极正面的视频资源培养孩子们的想象力、动手能力、学习积极性，并给孩子们提供了一个轻松快乐的成长环境！"
+        },
+        {
+            "img":"images/child/12.webp.jpg",
+            "vip": 1,
+            "definition": "26集全",
+            "title": "小猪佩奇 第六季",
+            "detail": "佩奇一家的精彩生活",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":5,
+            "number":53,
+            "content":"小猪佩奇系列动画中的主角佩奇是一只腼腆可爱而又有些专横的小猪，与她的弟弟乔治、猪妈妈和猪爸爸生活在一起。佩奇最喜欢做的事情是玩游戏、化妆游戏、郊游，以及在小泥坑里快乐的跳上跳下！！"
+        },
+        {
+            "img":"images/child/13.webp.jpg",
+            "vip": 1,
+            "definition": " 52集全",
+            "title": "熊出没之探险日记",
+            "detail": "强哥变身导游",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":5,
+            "number":52,
+            "content":"讲述了在夏季休林季，光头强变身成为一名导游，并与熊大熊二一起，帮助小女孩赵琳去往森林深处找寻儿时玩伴东北虎的故事。在寻虎的探险路上，他们走过美丽神秘的森林、奇妙的地下世界、缤纷的雪山世界……他们不仅面临自然生存的考验，还要与盗猎者反派斗智斗勇、拯救动物、帮助有困难的当地人，一场欢乐的奇妙探险由此开启……！"
+        },
+        {
+            "img":"images/child/14.webp.jpg",
+            "vip": 3,
+            "definition": "更新至40集",
+            "title": "小猪佩奇 第七季",
+            "detail": "小猪佩奇一家的生活",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":5,
+            "number":40,
+            "content":"小猪佩奇系列动画中的主角佩奇是一只腼腆可爱而又有些专横的小猪，与她的弟弟乔治、猪妈妈和猪爸爸生活在一起。佩奇最喜欢做的事情是玩游戏、化妆游戏、郊游，以及在小泥坑里快乐的跳上跳下！"
+
+        },
+        {
+            "img":"images/child/15.webp.jpg",
+            "vip": 1,
+            "definition": "52集全",
+            "title": "迷你特工队X",
+            "detail": "守护地球的迷你特工队",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":5,
+            "number":52,
+            "content":"在浩瀚的宇宙中，经过长期岁月辗转，被秘密选召出的四个小动物，作为“迷你特工队”保护地球的和平，他们是最强战士：弗特、塞米、露西、麦克斯！数百年后宇宙海盗丹丹团三人组——卡拉、丹特、丹乔，在某个小行星发现了被封印的外星人杰苏，并解开封印让其重见天日。杰苏的力量源于生命体所散发出的负面情感（恐惧、伤心），被称作不幸能量。这伙邪恶势力筹划在地球不断制造危机，并从地球上的生命体获得不幸能量。迷你特工队为保护地球，与邪恶势力展开了激烈的战斗！"
+        },
+        {
+            "img":"images/child/16.webp",
+            "vip": 1,
+            "definition": "更新至12集",
+            "title": "宝宝巴士启蒙音乐剧",
+            "detail": "城市中一支神秘的队伍",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":5,
+            "number":12,
+            "content":"全新3D动画《宝宝巴士启蒙音乐剧》暑期上演啦！这一次奇奇妙妙通过音乐魔法，将生活情景和认知故事变成了朗朗上口的音乐短剧。帮助孩子们学习语言、认识事物、开启幼儿对世界认知新形式！每集一个妙趣横生的故事，引导小朋友对生活情景产生连接，获得“体验式”学习。让我们接受奇奇妙妙的邀请，一起唱歌、互动、触摸奇妙世界吧！"
+        },
+        {
+            "img":"images/child/17.webp.jpg",
+            "vip": 1,
+            "definition": "更新至160集",
+            "title": "贝乐虎儿歌",
+            "detail": "原创精品亲子儿歌",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":5,
+            "number":160,
+            "content":"《贝乐虎》原创动画通过贝乐虎兄弟的精美动画演绎传达健康、阳光、轻快积极的亲子育儿理念，让低龄儿童看到健康高质量的娱乐内容，寓教于乐。！"
+        },
+        {
+            "img":"images/child/18.webp.jpg",
+            "vip": 1,
+            "definition": "20集全",
+            "title": "超级飞侠 第七季",
+            "detail": "超级装备全新精彩启程",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":5,
+            "number":20,
+            "content":"超级飞侠，勇闯天下！全新第七季来了！这一次，超级飞侠迎来了全新升级——新登场的超级基地、超级装备大升级，2位超级飞侠新成员巴奇和雪儿，而控制室也迎来了一位新成员小风。在每一集中，超级飞侠们都会飞往世界各地不同的地方，为小朋友们递送他们所需要的包裹，因此观众们将跟随超级飞侠穿梭于世界各地。"
+        },
+        {
+            "img":"images/child/19.webp.jpg",
+            "vip": 1,
+            "definition": "更新至13集",
+            "title": "汪汪队立大功 第5季",
+            "detail": "解决难题 突破重围",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":5,
+            "number":13,
+            "content":"精通科技的10岁男孩Ryder在拯救了6条小狗之后，将他们训练成了一组本领高强的狗狗巡逻队。每个小狗都性格鲜明，也各有特长。不管遇到多么困难和危险的救援任务，他们还总是忘不了相互玩闹，制作轻松的气氛，而每次幽默乐观的狗狗能总能顺利完成任务。"
+        },
+        {
+            "img":"images/child/20.webp.jpg",
+            "vip": 1,
+            "definition": "52集全",
+            "title": "熊出没之探险日记2",
+            "detail": "原始森林大冒险",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":5,
+            "number":52,
+            "content":"为了对抗天才威，保护动物和森林，导游光头强和熊大、熊二、赵琳再度团结，组成探险小队，上演一幕幕奇妙逗趣、惊险刺激、感人至深的全新探险故事。"
+        }
+    ]
+}

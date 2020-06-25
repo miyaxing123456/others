@@ -1,0 +1,277 @@
+## 复习
+
+浏览器私有前缀
+```
+    -moz-
+    -o-
+    -webkit-
+    -ms-
+```
+
+## 一、多列布局
+
+1、column-count: 规定列数
+2、column-width: 规定列宽
+3、column-gap : 规定每列之间的间距
+4、column-rule: 规定每列之间的分割线，语法类似边框
+
+
+## 二、弹性布局
+css3提供的新的布局方式：可以规定子元素的排列方式、对齐方式、多余空间的分配
+## 容器属性：
+1、display:flex;  
+
+把元素设置为弹性容器,自身保留块级元素的属性
+
+2、display:inline-flex;
+
+把元素设置为弹性容器,自身是行内元素的属性
+
+3、flex-direction： 定义主轴方向，决定项目的排列方式
+
+    - row : 从左到右
+    - row-reverse : 从右到左
+    - column : 从上到下
+    - column-reverse : 从下到上
+
+4、justify-content: 规定项目在主轴上的对齐方式
+
+    - flex-start : 主轴开始
+    - flex-end:主轴结束
+    - center : 主轴中间
+    - space-around: 项目两边留出相同的空白，两个项目之间会有两倍间距
+    - space-between: 项目之间留出相同的空白，容器的开始和结束没有空白
+    - space-evenly: 项目之前、之后和项目之间，全都留出相同的空白
+
+5、flex-wrap : 设置是否换行
+
+    - nowrap : 不换行，如果项目总宽度超出容器宽度，就会把项目压缩
+    - wrap: 换行
+    - wrap-reverse : 换行 ，行的排列方式倒序
+
+6、align-items: 设置项目在交叉轴上的对齐方式
+
+    - flex-start : 交叉轴开始
+    - flex-end : 交叉轴结束
+    - center  : 交叉轴中间对齐
+    - stretch : 拉伸 ，默认，项目没有固定高
+    - baseline: 第一行文字的基线对齐
+
+7、align-content: 设置多行的交叉轴的对齐方式
+    
+    - stretch : 拉伸 ，默认 ，项目没有固定高生效，拉伸项目占满交叉轴
+    - flex-start :交叉轴开始对齐
+    - flex-end :交叉轴结束对齐
+    - center : 中间对齐
+    - space-around : 一行上下留出相同空白，两行之间空白是双倍
+    - space-between:  两行之间留出相同空白，交叉轴开始和结束都没有空白
+    - space-evenly: 交叉轴开始和结束，两行之间空白都相同
+
+## 项目属性
+
+1、align-self : 设置项目本身在交叉轴上的对齐方式
+
+    - flex-start : 交叉轴开始
+    - flex-end : 交叉轴结束
+    - center  : 交叉轴中间对齐
+    - stretch : 拉伸 ，默认，项目没有固定高
+    - baseline: 第一行文字的基线对齐
+2、flex-grow : 设置容器有多余空间时，项目的增长倍数
+
+    - 默认值都是0 ， 都不增长
+    - 都设置为1 ，平均增长
+    - 一列设置为0 不增长，第二列设置为1 ，第三列设置为2  增长的两列增长倍数是1:2
+3、flex-shrink: 设置容器空间不足,项目的缩小比列
+
+    - 默认值都是1，等比压缩
+    - 设置为0 ,不压缩
+    - 数字越大压缩倍数越大
+4、order ： 设置项目的排序
+
+    - 默认值是0
+    - 数字越小越靠前
+
+## 三、less
+- less是css的一种预编译语言，让css具有编程特性
+- less不能直接被浏览器解析
+- less提供会提供一个解析器，把less文件编译成.css文件使用
+
+1、编译工具 vscode --扩展  -- easy Less
+
+##  less基本语法
+
+1、注释
+
+/* css注释 */ : 编译过后会保留在css文件中
+// less的注释 : 编译过后会不保留在css文件中
+
+2、导入样式
+    
+1)、导入css
+    
+    ```    
+        @import  "style.css";
+    ```
+    编译过后：
+    ```
+        @import  "style.css";
+    ```
+    
+2）、导入less
+
+    @import  "style.less"; // 可以省略后缀名
+    编译过后：
+    ```
+        *{
+            margin:0;
+            padding:0;
+        }
+    ```
+3、变量
+```
+    @变量名: 值;
+
+    .box{
+        background:@变量名;
+    }
+
+```
+如果变量用在字符串当中使用需要加上@{变量}
+
+```
+    @d:left;
+
+    border-@{d}:2px solid black;
+```
+
+4、混入
+
+```
+不带参数的混入：
+    .box-shadow{
+        -webkit-box-shadow:0px 0px 10px red;
+        -moz-box-shadow:0px 0px 10px red;
+        -o-box-shadow:0px 0px 10px red;
+        -ms-box-shadow:0px 0px 10px red;
+        box-shadow:0px 0px 10px red;
+    }
+    .box{
+        .box-shadow;
+    }
+```
+
+带参数的混入：
+```
+    .box-shadow(@x,@y,@blur,@color){
+        -webkit-box-shadow:@arguments;
+        -moz-box-shadow:@arguments;
+        -o-box-shadow:@arguments;
+        -ms-box-shadow:@arguments;
+        box-shadow:@arguments;
+    }
+
+    .box1{
+        .box-shadow(10px,10px,20px,#333);
+    }
+```
+带参数和默认值的混入：
+```
+    .box-shadow(@x:0px,@y:0px,@blur:10px,@color:#333){
+        -webkit-box-shadow:@arguments;
+        -moz-box-shadow:@arguments;
+        -o-box-shadow:@arguments;
+        -ms-box-shadow:@arguments;
+        box-shadow:@arguments;
+    }
+
+    .box2{
+        .box-shadow;
+    }
+```
+
+ 5、嵌套
+
+```
+    .header{
+        width: 1200px;
+        ul{
+            list-style: none;
+            li{
+              float: left;
+              a{
+                color: red;
+                &:hover{
+
+                }
+              }
+          }
+      }
+    }
+```
+
+编译后：
+
+```
+.header {
+  width: 1200px;
+}
+.header ul {
+  list-style: none;
+}
+.header ul li {
+  float: left;
+}
+.header ul li a {
+  color: red;
+}
+.header ul li a:hover{
+    color:yellow;
+}
+```
+6、继承
+
+```
+  .btn{
+      width: 100px;
+      height: 100px;
+  }
+  .btn1{
+      &:extend(.btn);
+      background-color: red;
+  }
+```
+编译后：
+```
+    .btn,
+    .btn1 {
+    width: 100px;
+    height: 100px;
+    }
+    .btn1 {
+    background-color: red;
+    }
+```
+
+7、运算
+
+```
+  //至少有一个带单位的值
+  .box8{
+      width: 200px/5;
+      height: 200 + 5px;
+  }
+```
+
+编译过后
+
+```
+    .box8 {
+        width: 40px;
+        height: 205px;
+    }
+```
+
+
+
+
+

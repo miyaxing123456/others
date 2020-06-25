@@ -1,0 +1,27 @@
+<view>
+
+
+    <form bindsubmit="reg">
+        用户名：
+          <input placeholder="请输入用户名" name="username"></input>
+        密码：
+          <input placeholder="请输入密码" name="password"></input>
+        头像：
+          <button bindtap="photo" size="mini" type="primary">选择头像</button>
+          <image wx:if="{{ pic }}" src="{{ pic }}" style="width:50px;height:50px;border-radius:50%"></image>
+          <button form-type="submit">注册</button>
+    </form>
+    
+    <view>
+        <view wx:for="{{ users }}">
+          用户名:{{ item.username }}--密码：{{ item.password }}--age:{{ item.age }}
+          <view></view>
+          <button size="mini" type="primary" bindtap="update" data-id="{{ item._id }}">修改</button>
+          <button size="mini" type="warn" bindtap="del" data-id="{{ item._id }}">删除</button>
+        </view>  
+    </view>
+
+    <button type="primary" bindtap="find">查询</button>
+    <button bindtap="updateWhere" type="warn">修改where</button>
+    <button bindtap="delWhere" type="primary">删除where</button>
+</view>

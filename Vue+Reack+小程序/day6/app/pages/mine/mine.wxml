@@ -1,0 +1,36 @@
+<view>
+    <!-- 顶部用户信息 -->
+  <view  class="top">
+    <!-- 未登录显示的效果 -->
+    <view wx:if="{{ !onOff }}">
+      <image src="/icon/my.png"></image>
+      <button type="warn" size="mini" bindtap="toLogin">登录</button>
+    </view>
+
+    <!-- 登录时显示的效果 -->
+    <view wx:if="{{ onOff }}">
+        <image src="{{ userInfo.avatarUrl }}"></image>
+        <text>{{ userInfo.nickName }}</text>
+    </view>
+  
+  </view>
+   <!-- 故事内容 -->
+  <view class="page__bd" wx:if="{{  onOff }}">
+    <view class="weui-cells"  wx:if="{{ lists.length }}">
+      <block wx:for="{{ lists }}">
+          <mp-slideview buttons="{{slideButtons}}" bindbuttontap="todetail" data-id="{{ item.id }}" data-title="{{ item.title }}">
+              <mp-cell value="{{ item.title }}" footer="左划查看"></mp-cell>
+          </mp-slideview>
+      </block>
+    </view>
+    <view wx:else style="text-align:center;margin-top:200px">
+      空空如也~~~
+    </view>
+  </view>
+
+  <!-- 没登录之后 -->
+  <view wx:if="{{ !onOff }}" style="text-align:center;margin-top:200px">
+       还未登录！！！
+  </view>
+
+</view>

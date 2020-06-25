@@ -1,0 +1,384 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/iconfont.woff2') format('woff2'), url('../font/iconfont.woff') format('woff'), url('../font/iconfont.ttf') format('truetype'), url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wrap {
+  width: 100%;
+}
+.wrap .header {
+  margin-top: 25px;
+  height: 65px;
+}
+.wrap .header .header-logo {
+  width: 181px;
+  height: 91px;
+}
+.wrap .header .header-logo img {
+  width: 181px;
+  height: 91px;
+  margin-top: -20px;
+}
+.wrap .banner {
+  background-color: #46a4e9;
+  width: 100%;
+  height: 540px;
+  position: relative;
+}
+.wrap .banner .banner-inner {
+  height: 540px;
+  background-image: url(../images/img/mbanner.jpg);
+  background-size: 1100px 540px;
+}
+.wrap .banner .banner-inner .banner-left {
+  position: absolute;
+  left: 138px;
+  top: 69px;
+  width: 587px;
+  height: 450px;
+  background-image: url(../images/img/duang.jpg);
+}
+.wrap .banner .banner-inner .banner-right {
+  width: 335px;
+  height: 450px;
+  background-color: #fff;
+  position: absolute;
+  right: 164px;
+  top: 50px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login {
+  display: block;
+  padding: 23px 20px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .banner-right-logo {
+  width: 80px;
+  height: 19px;
+  background-image: url(../images/img/new-sso.png);
+  background-position: -100px -2px;
+  margin-bottom: 40px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login input {
+  width: 254px;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 30px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .box {
+  position: absolute;
+  background-image: url(../images/img/new-sso.png);
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .box1 {
+  width: 16px;
+  height: 16px;
+  background-position: -97px -37px;
+  left: 29px;
+  top: 100px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .box2 {
+  width: 15px;
+  height: 17px;
+  background-position: -37px -36px;
+  left: 29px;
+  top: 141px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .box3 {
+  width: 14px;
+  height: 14px;
+  background-position: -20px -66px;
+  left: 22px;
+  top: 178px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .box4 {
+  width: 15px;
+  height: 15px;
+  background-position: -165px -74px;
+  top: 250px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .choose {
+  margin-top: 10px;
+  text-align: right;
+  color: #1a9eff;
+  padding-right: 10px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .choose span {
+  margin-left: 20px;
+  color: #999;
+  float: left;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .choose a {
+  color: #1a9eff;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .btn-login {
+  margin-top: 10px;
+  width: 285px;
+  height: 38px;
+  background-color: #1a9eff;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 38px;
+  cursor: pointer;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .problem {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-login .problem a {
+  float: right;
+  color: #1a9eff;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign {
+  padding: 23px 20px;
+  position: relative;
+  display: none;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .banner-right-logo {
+  width: 80px;
+  height: 19px;
+  background-image: url(../images/img/new-sso.png);
+  background-position: 0px -2px;
+  margin-bottom: 40px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign input {
+  height: 30px;
+  padding-left: 30px;
+  margin-top: 10px;
+  width: 110px;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .inp1 {
+  width: 255px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .inp2 {
+  width: 225px;
+  padding-right: 30px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .verification {
+  width: 90px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin-top: -3px;
+  vertical-align: middle;
+  margin-left: 8px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .reset {
+  width: 30px;
+  height: 30px;
+  float: right;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-right: 8px;
+  background-image: url(../images/img/new-sso.png);
+  background-position: -120px -30px;
+  cursor: pointer;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .free {
+  width: 130px;
+  height: 30px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  float: right;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .box {
+  position: absolute;
+  background-image: url(../images/img/new-sso.png);
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .box1 {
+  width: 13px;
+  height: 18px;
+  background-position: -9px -36px;
+  top: 100px;
+  left: 30px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .box2 {
+  width: 15px;
+  height: 17px;
+  background-position: -37px -36px;
+  left: 30px;
+  top: 140px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .box3 {
+  width: 15px;
+  height: 17px;
+  background-position: -67px -36px;
+  left: 30px;
+  top: 183px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .box4 {
+  width: 15px;
+  height: 17px;
+  background-position: -67px -36px;
+  left: 30px;
+  top: 225px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .agree {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .agree a {
+  color: #1a9eff;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .agree .login-btn {
+  float: right;
+  color: #1a9eff;
+  margin-right: 10px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .box5 {
+  width: 15px;
+  height: 15px;
+  background-position: -20px -66px;
+  top: 261px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .btn-sign {
+  margin-top: 10px;
+  width: 285px;
+  height: 40px;
+  background-color: #46a4e9;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .problem {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .box6 {
+  width: 15px;
+  height: 15px;
+  background-position: -165px -74px;
+  top: 337px;
+  left: 20px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-sign .box7 {
+  width: 24px;
+  height: 24px;
+  background-position: -40px -70px;
+  right: 32px;
+  top: 138px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-footer {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 20px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-footer .line {
+  width: 240px;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-footer span {
+  padding: 10px;
+  width: 100px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: -20px;
+  background-color: #fff;
+  text-align: center;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-footer a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-image: url(../images/img/new-sso.png);
+}
+.wrap .banner .banner-inner .banner-right .banner-right-footer .qq {
+  background-position: 0 -350px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-footer .micro {
+  background-position: -30px -350px;
+}
+.wrap .banner .banner-inner .banner-right .banner-right-footer .wecat {
+  background-position: -60px -350px;
+}
+.wrap .banner .error1 {
+  position: absolute;
+  right: 280px;
+  top: 145px;
+  padding: 5px 10px;
+  background-color: #ff0000;
+  opacity: 0.7;
+  font-size: 12px;
+  display: none;
+}
+.wrap .banner .error2 {
+  position: absolute;
+  right: 320px;
+  top: 240px;
+  padding: 20px 30px;
+  background-color: #ff0000;
+  opacity: 0.7;
+  font-size: 12px;
+  color: #fff;
+  display: none;
+}
+.wrap .banner .error3 {
+  position: absolute;
+  right: 330px;
+  top: 200px;
+  padding: 20px 30px;
+  background-color: #ff0000;
+  opacity: 0.7;
+  font-size: 12px;
+  color: #fff;
+  display: none;
+}
+.wrap .banner .tips {
+  position: absolute;
+  right: 330px;
+  top: 200px;
+  padding: 20px 30px;
+  background-color: green;
+  opacity: 0.7;
+  font-size: 12px;
+  color: #fff;
+  display: none;
+}
+.wrap .banner .error4 {
+  position: absolute;
+  right: 310px;
+  top: 200px;
+  padding: 20px 30px;
+  background-color: #ff0000;
+  opacity: 0.7;
+  font-size: 12px;
+  color: #fff;
+  display: none;
+}
+.wrap .footer {
+  height: 100px;
+}

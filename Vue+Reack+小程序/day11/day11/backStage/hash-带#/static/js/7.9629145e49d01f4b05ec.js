@@ -1,0 +1,2 @@
+webpackJsonp([7],{"2png":function(e,t){},"9ekR":function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={mounted:function(){var e=this.$route.query.movieId;console.log(e)}},o={render:function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("h3",[this._v("电影详情页面")]),this._v(" "),t("go-back")],1)},staticRenderFns:[]};var i=n("C7Lr")(r,o,!1,function(e){n("2png")},"data-v-48808d36",null);t.default=i.exports}});
+//# sourceMappingURL=7.9629145e49d01f4b05ec.js.map

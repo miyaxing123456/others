@@ -1,0 +1,9 @@
+<!--miniprogram/pages/update/update.wxml-->
+ <form bindsubmit="doupdate">
+        用户名：
+          <input placeholder="请输入用户名" name="username" value="{{ users.username }}"></input>
+        密码：
+          <input placeholder="请输入密码" name="password" value="{{ users.password }}"></input>
+
+          <button form-type="submit">修改</button>
+    </form>

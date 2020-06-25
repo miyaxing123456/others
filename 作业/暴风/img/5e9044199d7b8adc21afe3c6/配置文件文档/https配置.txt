@@ -1,0 +1,5 @@
+<Connector port="443" protocol="HTTP/1.1" SSLEnabled="true"
+maxThreads="150" scheme="https" secure="true"
+keystoreFile="/usr/*/conf/www.domain.com.jks" 
+keystorePass="******"
+clientAuth="false"/>

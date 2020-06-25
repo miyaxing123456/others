@@ -1,0 +1,12 @@
+
+
+<button bindtap="getData"> 获取数据 </button>
+
+<button type="warn" bindtap="setstroage">本地存储</button>
+<button type="warn" bindtap="getstroage">存储获取</button>
+<button type="warn" bindtap="removestroage">删除存储</button>
+
+
+<button bindtap="getuserinfo">获取用户信息</button>
+<button open-type="getUserInfo" bindgetuserinfo="login">授权</button>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="item in news" :key="item.id">
+                <h3>{{item.title}}</h3>
+                <p>{{item.con}}</p>
+                <!-- 2020年05月11日 14：00：00 星期一 -->
+                <span>发布时间：{{item.time|filterTime}}</span>
+            </li>
+        </ul>
+    </div>
+    <script>
+        Vue.filter("filterTime", (time) => {
+            //time 1589185332696
+            var date = new Date(time);
+            var year = date.getFullYear();
+            var month = (date.getMonth() + 1 + "").padStart(2, "0");
+            var day = (date.getDate() + "").padStart(2, "0");
+            var hours = (date.getHours() + "").padStart(2, "0")
+            var minutes = (date.getMinutes() + "").padStart(2, "0")
+            var seconds = (date.getSeconds() + "").padStart(2, "0");
+
+            var num = date.getDay(); //日-0 一-1 二-2 三-3 四-4 五-5 六-6
+            var arr = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六", ];
+            return `${year}-${month}-${day} ${hours}:${minutes}:${seconds} ${arr[num]}`
+        })
+        var vm = new Vue({
+            el: "#app", //挂载点,
+            data: { //属性
+                news: [{
+                        id: "11",
+                        title: "新闻1",
+                        con: "内容1",
+                        time: 1589185332696
+                    },
+                    {
+                        id: "22",
+                        title: "新闻2",
+                        con: "内容2",
+                        time: 1587185332696
+                    },
+                    {
+                        id: "33",
+                        title: "新闻3",
+                        con: "内容3",
+                        time: 1582185332696
+                    },
+                ]
+            },
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/cart/cart",
+    "pages/test/test",
+    "pages/my/my",
+    "pages/list/list",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/test/test",
+        "text": "test"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "cart"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "my"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "my-button":"/components/mybutton/mybutton"
+  }
+}

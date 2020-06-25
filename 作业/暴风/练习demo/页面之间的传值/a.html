@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        ul{
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        ul li{
+            list-style: none;
+            float: left;
+            margin-right: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        ul li a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li videoSrc="https://vdept.bdstatic.com/796e51534664663834576b3655625250/474e4b7749734141/d44461781539ca74e6ae2207de046081a7d772a5b91a1d50e5198a0cd2f58527d6d54da181257510863bfba668ddcafe795ff9c8c3014e3700b8ce5ea9001be8.mp4?auth_key=1585200488-0-0-656373501a3b4e808bb36abb83a559aa"><a href="b.html"></a></li>
+        <li videoSrc="https://vdept.bdstatic.com/355335674172566d5a784e594d7a7935/6566666b4c71366d/99cf2bdb2a8754b7e7e0a3c3751e08912eee43f1a1a57a20a69e3f69c2513e39b0af30bf00ea03ba587ba148b4f57e95f49c84bf9ee8d48f283e16f3d9de594e.mp4?auth_key=1585200590-0-0-7a81ff31c5b38a4bd80840e463ae9014"><a href="b.html"></a></li>
+    </ul>
+    <script>
+        var lis = document.getElementsByTagName("li");
+        for(var i = 0;i<lis.length;i++){
+            lis[i].onclick = function(){
+                document.cookie = "viodesrc="+this.getAttribute("videoSrc");
+            }
+        }
+    </script>
+</body>
+</html>

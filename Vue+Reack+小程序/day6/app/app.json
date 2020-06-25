@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/detail/detail",
+    "pages/login/login",
+    "pages/type/type",
+    "pages/list/list",
+    "pages/logs/logs",
+    "pages/weui/weui"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "小说阅读",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/type/type",
+      "text": "故事分类",
+      "iconPath": "/icon/index.png",
+      "selectedIconPath": "/icon/indexFull.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "/icon/my.png",
+      "selectedIconPath": "/icon/myFull.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

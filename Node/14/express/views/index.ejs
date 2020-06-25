@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div id="svg1" >      
+      <object id="svg1"  data="captcha/getsvg" type="image/svg+xml"></object>
+    </div>
+    <input type="text">
+    <script>
+      var obj=document.getElementById("svg1");
+      obj.onclick=function(){
+        this.innerHTML=`
+        <object id="svg1" data="captcha/getsvg" type="image/svg+xml"></object>
+`
+      }      
+    </script>
+  </body>
+</html>

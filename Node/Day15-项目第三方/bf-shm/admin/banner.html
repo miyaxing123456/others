@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.0.0.js"></script>
+</head>
+<body>
+    <div>
+        <div>标题：<input type="text" class="inmsg" id="b_title"></div>
+        <div>大图：<input type="text" class="inmsg" id="b_big_img"></div>
+        <div>小图：<input type="text" class="inmsg" id="b_small_img"></div>
+        <div>视频地址：<input type="text" class="inmsg" id="b_video"></div>
+        <div>kind：<input type="text" class="inmsg" id="b_kind"></div>
+        <div>number<input type="text" class="inmsg" id="b_numer"></div>       
+        <div>actor:<input type="text" class="inmsg" id="b_actor"></div>
+        <div>描述:<input type="text" class="inmsg" id="b_content"></div>
+        <div><input id="bts" type="button" value="提交"></div>
+    </div>
+    <div><span id="message"></span></div>
+    <script>   
+        // 通过ajax 提交banner数据
+        $("#bts").click(function(){
+            var obj={
+                b_title:$("#b_title").val(),
+                b_big_img:$("#b_big_img").val(),
+                b_small_img:$("#b_small_img").val(),
+                b_video:$("#b_video").val(),
+                b_kind:$("#b_kind").val(),
+                b_numer:$("#b_numer").val(),
+                b_actor:$("#b_actor").val(),
+                b_content:$("#b_content").val()
+            }
+            $.ajax({
+                url:"http://localhost:3000/banner/index/add",
+                type:"post",
+                data:obj,
+                dataType:"json",
+                success:(data)=>{
+                    console.log(data);
+                    $("#message").html("成功");
+                    $(".inmsg").val("");
+                },
+                error:err=>{
+                    console.log(err)
+                }
+            })
+        })
+    </script>
+</body>
+</html>

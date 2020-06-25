@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key</title>
+    <script src="./vue.js"></script>
+    <style>
+        .item {
+            width: 80%;
+            border: 1px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <!-- key 作为给vue对比的标识，要保证唯一性，使用string或者number类型 -->
+            <li class="item" v-for="(item,index) in students" :key="item.id">
+                <h3>姓名：{{item.name}}--{{item.id}}</h3>
+                <button @click="changeName(index)">妲己</button>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: "#app", //挂载点
+            data: { //属性-数据
+                students: [{
+                        id: "1",
+                        name: "张杰",
+                        idx: "110"
+                    },
+                    {
+                        id: "2",
+                        name: "谢娜",
+                        idx: "111"
+                    },
+                    {
+                        id: "3",
+                        name: "鹿晗",
+                        idx: "112"
+                    },
+                    {
+                        id: "4",
+                        name: "肖战",
+                        idx: "113"
+                    },
+                    {
+                        id: "5",
+                        name: "张杰",
+                        idx: "114"
+                    },
+                ]
+            },
+            methods: { //方法-函数
+                changeName(index) {
+                    this.students[index].name = "妲己"
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="GET" action="">
+        <input type="text" name="userName" placeholder="请输入用户名"/>
+        <input type="text" name="userPass" />
+        <input type="checkbox" name="hobby" value="篮球" />
+        <input type="checkbox" name="hobby" value="足球" />
+        <input type="checkbox" name="hobby" value="羽毛球" />
+
+        <input type="reset" value="重置" />
+        <input type="submit" value="提交" />
+    </form>
+    <script>
+        //获取form
+        var form = document.getElementsByTagName("form")[0];
+
+        //表单元素的获取(根据name值 )
+        var userName = form.userName;
+        console.log(userName);
+        var hobbys = form.hobby;
+        console.log(hobbys); //类数组集合
+
+        //表单元素的事件  input的事件
+        //onfocus  获取焦点
+        //onblur 失去焦点
+        //onchange  失去焦点后获取输入框的值
+        //oninput   在输入框的过程中获取到输入框的值
+        //onselect  选中事件
+
+        // userName.onfocus = function () {
+        //     this.style.color = "red";
+        // }
+
+        // userName.onblur = function () {
+        //     this.style.color = "green";
+        // }
+
+        // userName.onchange = function () {
+        //     console.log(this.value);
+        // }
+
+        // userName.oninput = function () {
+        //     console.log(this.value);
+        // }
+
+        // userName.onselect = function () {
+        //     this.style.fontSize = "36px";
+        // }
+
+
+        //form的事件  
+        //onsubmit:提交    返回值是true就是提交 false就不提交
+        //onreset:重置    返回值是true就是重置 false就不重置
+        form.onsubmit = function(){
+            if(userName.value.length>0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+
+        form.onreset = function(){
+            if(confirm("是否重置")){
+                return true;
+            }else{
+                return false;
+            }
+
+        }
+
+        
+
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/component3/component3",
+    "pages/component2/component2",
+    "pages/component1/component1",
+    "pages/cq/cq",
+    "pages/event/event",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

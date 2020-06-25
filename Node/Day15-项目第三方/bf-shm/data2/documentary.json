@@ -1,0 +1,212 @@
+{
+    "banner":[
+        {
+            "img":"images/documentary/1.jpg",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":6,
+            "title": "自然探索季",
+            "number":4,
+            "content":"深入揭示自然奥秘，全力探索人文互动。但凡日月经天，江河行地，山呼海啸，松姿鹤影，人与自然，生命奥秘，均有精彩描写，生动反映。文字深入浅出，文章情趣横生，图片瑰丽精美，始终围绕真正是期刊界的探索频道，科普类的故事大观。"
+        },
+        {
+            "img":"images/documentary/2.jpg",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":6,
+            "title": "帝陵",
+            "number":8,
+            "content":"纪录片《帝陵》是通过手工制作实物角色模型和场景模型的制作方法、结合中国传统壁画的表现风格、开发利用“数字多空间要素定点跟踪融合匹配技术”拍摄的编年体动画记录片，形式新颖，别开生面，为影视记录片模式创新揭开新的一页。 《帝陵》以每集40分钟的动画记录形式，通过对帝王及其陵墓的详细介绍，展现华夏民族从形成到鼎盛的千年历史。通过皇帝本人的自述，还原皇帝及其生平中鲜为人知的传奇故事，透过皇帝的自我反思，王朝的兴衰成败，起到启迪今人，《资治通鉴》的作用。"
+        },
+        {
+            "img":"images/documentary/3.jpg",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":6,
+            "title": "潜行中国",
+            "number":6,
+            "content":"摄影家PAUPAU和技术潜水团队组成探索小组，历时三年，跨越中国24个省市，深入河流、山川、湖泊、水库、洞穴和海洋，去探索和记录水下自然地貌、生物、人文古迹，发掘鲜为人知的水下故事，开启一段独特的水下探险之旅！"
+        },
+        {
+            "img":"images/documentary/4.jpg",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":6,
+            "title": "中国抗疫志",
+            "number":4,
+            "content":"迄今为止，新冠肺炎疫情已蔓延至全球除南极洲以外的所有大洲。面对这场史无前例的大流行，从伦敦到纽约，从东京到新加坡，从北京到巴黎以及世界各地的男男女女，展开了广泛而深刻的思考与讨论：人类能够战胜这场世纪瘟疫吗？人类应当从中汲取何种经验和教训？ 本节目广泛对话亲身参与和敏锐观察中国抗击新冠肺炎疫情的人们。他们有努力保护人类免受病毒伤害的医生、志愿者和科学家，有居家隔离长达数月的武汉市民，有不知疲倦为全球运输医疗品的企业家，也有享誉世界的政治学者、经济学者和艺术家。他们虽经历不同，却都试图从中国抗击疫情的故事中探寻上述问题的答案。"
+        },
+        {
+            "img":"images/documentary/5.jpg",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":6,
+            "title": "爵士舞女神",
+            "number":1,
+            "content":"当了妈妈之后跳舞升华了"
+        }
+    ],
+    "hot":[
+        {
+            "img":"images/documentary/6.jpg",
+            "vip": 2,
+            "definition": "9集全",
+            "title": "中国医生",
+            "detail": "展现中国医生的故事",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":6,
+            "number":9,
+            "content":"《中国医生》是国内首部以医护群体为主角的大型医学人文纪录片。纪录片将镜头对准全国各地六家大型三甲医院（华西医院、南京鼓楼医院、西交大一附院、浙江省人民医院、中科大附一院、河南省人民医院），选取最具代表性的科室及医护人员，聚焦普通人与医院最常发生交集的场景，通过跟踪拍摄一个个有温情、有责任、有矛盾、也有希望的医患故事，多视角呈现了医生这一职业的不同面向，解读医疗系统在国民生命进程中扮演的重要角色，真实地展示中国医生们救死扶伤道路上的悲欢离合。"
+        },
+        {
+            "img":"images/documentary/7.jpg",
+            "vip": 1,
+            "definition": "13集全",
+            "title": "最后的棒棒",
+            "detail": "第一代农民工命运缩影",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":6,
+            "number":13,
+            "content":"改革开放之初，山城重庆特殊的地理环境孕育了一个特殊的行业：山城棒棒军。爬坡上坎，负重前行的三十多年，数十万棒棒大军不仅挑走了汗水浸泡的年华，也挑走了属于自己的年代。癸巳岁末，几个佝偻背影即将道别正在消逝的行业，一名退役中校扛起一根棒棒开始了自己的追寻：辉煌与尴尬，艰韧和无奈，他们的人生无须评说，他们的故事值得铭记。"
+        },
+        {
+            "img":"images/documentary/8.jpg",
+            "vip": 2,
+            "definition": "3集全",
+            "title": "恐龙星球",
+            "detail":  "对史前恐龙的全部审视",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":6,
+            "number":3,
+            "content":"恐龙星球是一部由BBC出品，约翰·赫特配音的纪实片，共分6集。该片采用了大量的电脑特效，为您真实展现了史前五十多种特色物种和它们的居住环境。从棘龙（ Spinosaurus）到终极掠食者（Predator X），再到玛君龙（ Majunasaurus），难以想象的巨大、凶猛、奇特的生物曾经在这个星球上留下过他们的印记。系列片的第一集将带您走进北非，带您看一看九百五十万年前得失落的世界"
+        },
+        {
+            "img":"images/documentary/9.jpg",
+            "vip": 1,
+            "definition":  "70集全",
+            "title": "罪案现场实录",
+            "detail": "直击中国大案要案现场",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":6,
+            "number":70,
+            "content":"直击中国大案要案现场，展现中国法治进程"
+        },
+        {
+            "img":"images/documentary/10.jpg",
+            "vip": 1,
+            "definition": "13集全",
+            "title": "生门.纪实剧网络版",
+            "detail": "看透产房里的人情冷暖",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":6,
+            "number":13,
+            "content":""
+        },
+        {
+            "img":"images/documentary/11.jpg",
+            "vip": 3,
+            "definition":  "11集全",
+            "title": "地球脉动",
+            "detail": "IMDB满分评价的神片",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":6,
+            "number":4,
+            "content":""
+        },
+        {
+            "img":"images/documentary/12.jpg",
+            "vip": 1,
+            "definition": "6集全",
+            "title": "老广的味道 第5季",
+            "detail": "发掘老广日常美食之美",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":6,
+            "number":4,
+            "content":""
+        },
+        {
+            "img":"images/documentary/13.jpg",
+            "vip": 1,
+            "definition": " 10集全",
+            "title": "人间世",
+            "detail": "医院一日看尽人生百态",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":6,
+            "number":10,
+            "content":"生门系列剧，故事集中在武汉大学中南医院妇产科，它用生猛的镜头语言，直面生命诞生的现场，透过无数孕妇生产，展现生死交替的震撼和迎接生命降临的喜悦。妇产科是一个窗口，无论农村还是城市，生命的诞生，总会牵动个人、家庭、社会的复杂纠结；生活本就不易，生产背后是普罗大众的人情冷暖。庞大的故事体系，透过起伏跌宕的剧情，呈现悲悯的视角和情感的温度，《生门》就是当代中国社会环境最真实、最生动、最揪心、最温情的缩影。"
+        },
+        {
+            "img":"images/documentary/14.jpg",
+            "vip": 3,
+            "definition": "6集全",
+            "title": "从秦始皇到汉武帝",
+            "detail": "中华民族统一融合史",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":6,
+            "number":6,
+            "content":"很多人都认为秦帝国建立，中国从此顺利走向了统一，民族融合的向心力自然形成。其实不然，统一的中国是秦始皇的首创，但是在经过近一百二十年之后，才在汉武帝的手中完成。在如何让天下百姓接受中央统一的过程中，经历了无数的波折，如果在这过程中稍有偏差，中国乃至中华民族将会是另外一个样子。本片以统一国家的主题为主线,从秦始皇嬴政、汉高祖刘邦、汉文帝刘恒、汉景帝刘启、汉武帝刘彻等人物的视角，讲述了统一国家形成的曲折历程,阐述了中华传统文化心理形成的历史过程和历史因素，对今天的观众了解中国历史，了解传统文化，增强国家统一意识都有重要的意义。"
+        },
+        {
+            "img":"images/documentary/15.jpg",
+            "vip": 1,
+            "definition": "6集全",
+            "title": "天下一锅",
+            "detail": "最新认识火锅六次",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":6,
+            "number":6,
+            "content":"从彩云之南的奇珍菇异菌到巴蜀布衣的无辣不欢，从大漠疆北的极致刀法到岭南东道的细腻食材，无不见火锅的身影。在重庆街头，甚至五家店里就有一家是火锅店！火锅早已远远高于江浙菜川菜、粤菜、西餐等其他热门菜系占比，成为中国第一大美食。火锅的目地，是为了让各奔东西的人能有理由聚到一起，在久别重逢的夜里，无论回家还是下馆子，只要一口锅，一盆火，一群好友，一家人，蒸腾的热气，翻滚的汤底，千言万语，都在锅里。天下之大，百味其中，火锅旁围坐的，又何止食客呢？"
+        },
+        {
+            "img":"images/documentary/16.jpg",
+            "vip": 1,
+            "definition": "2集全",
+            "title": "狙击手的战争",
+            "detail": "传奇狙击手奋战乌克兰",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":6,
+            "number":2,
+            "content":"一名塞尔维亚狙击手奋战乌克兰战争，只为守护内心的和平。看似一场战役，但对于他来说却是三场，一是为顿涅茨克的人民，二是与敌军神枪手马里乌波的对决，三是在平凡与责任之间的痛苦抉择......本片获选Big Sky纪录片电影节、圣巴巴拉国际电影节、亚利桑那国际电影节。"
+        },
+        {
+            "img":"images/documentary/17.jpg",
+            "vip": 1,
+            "definition": "20集全",
+            "title": "河西走廊",
+            "detail": "呈现中国西部千年史诗",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":6,
+            "number":20,
+            "content":" 河西走廊在漫长的历史时期，曾是中原沟通西域的唯一通道。这条通道上，民族众多，考古发现、历史遗迹更是星罗棋布，这里自古以来就是中华文明构成要素中重要的一部分。今天的河西走廊，连接东西部，通向中亚，处于新丝绸之路经济带的枢纽位置，关乎国家经济、国防命脉，对今天的中国，同样具有重要的战略意义……"
+        },
+        {
+            "img":"images/documentary/18.jpg",
+            "vip": 1,
+            "definition": "3集全",
+            "title": "贝爷绝世大冒险",
+            "detail": "四亿年前的东西也敢吃",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":6,
+            "number":3,
+            "content":"这部动人心魄的新系列片将自然历史节目中的智力和深度与生存节目中让人血脉贲张的情节结合在一起，见证了贝尔·格里尔斯在英国最极端环境下的表现。这位无畏的探险家对冒险生活的热爱让他对野生动物充满激情，并为我们带来全新的室外观点。从斯诺登峰的峭壁攀岩，到约克郡变幻莫测的三洞探险和本·尼维斯山峰的冰岩攀登，贝尔接受了自然界赋予他的最令人生畏的挑战。当每次执行任务之前，他都会了解当地的人文历史，然后通过引人入胜的事实为每一处地方的植物、动物和地质状况带来活力。这部系列片扣人心弦，信息量巨大，娱乐性十足，是一部具有启发性和刺激性的野外探险影片。"
+        },
+        {
+            "img":"images/documentary/19.jpg",
+            "vip": 1,
+            "definition": "10集全",
+            "title": "人间世 第2季",
+            "detail": "追问“生死” 感人至深",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+             "kind":6,
+            "number":10,
+            "content":"通过这样一个个具体而又细微的故事，我们希望用现实主义的笔触，展示中国人面对疾病时的态度，展示中国医生在面临重重困难时，内心做出的选择。更重要的是，展示在疾病之外，那些人性之光和社会进步的力量，展示那些还不够完美，需要社会凝聚共识，再一起努力改变的地方。 生活可能没有想象的那么好，但也不会像想象的那么糟。人的脆弱和坚强，有时候都超乎了自己的想象。有时候，一句话就可以泪流满面，但很多时刻，咬着牙，也走了很长的路。希望《人间世》的第二季，能够让观众体会到生命的这种可贵和美好。"
+
+        },
+        {
+            "img":"images/documentary/20.jpg",
+            "vip": 1,
+            "definition": "14集全",
+            "title": "我的街舞时代",
+            "detail": "成长是一个人的史诗",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":6,
+            "number":14,
+            "content":"《我的街舞时代》纪录片讲述了不同时代和文化环境下的街舞青年们追逐梦想的故事。街舞就像一个光栅，一个棱镜，是我们用来观察和总结不同时代下青年成长故事的“解码器”。纪录片将清晰呈现由街舞为主线串联起的思想与文化变迁的故事线，此外，影片中所出现的国潮文化，将同时带领我们突破街舞圈层，探究中国新时代青年文化的发展。"
+        }
+    ]
+}

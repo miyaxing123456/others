@@ -1,0 +1,12 @@
+<view>
+    <view class="type">
+      <view wx:for="{{ types }}" class="typelist" 
+        bindtap="tolist"
+        data-title="{{ item.classify }}"
+        data-id = "{{ item.classifyId }}"
+      >
+          <text>{{ item.classify }}</text>
+      </view>  
+    </view>
+
+</view>

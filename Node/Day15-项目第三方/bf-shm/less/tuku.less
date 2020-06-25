@@ -1,0 +1,123 @@
+.main-layer {
+    width: 100%;
+    margin-bottom: 30px;
+
+    .vip-content {
+        background: #fff;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: -1px;
+
+        .vip-film-filter {
+            width: 1000px;
+            height: 28px;
+            padding: 20px 0 30px;
+
+            li {
+                display: inline;
+
+                a {
+                    display: block;
+                    float: left;
+                    width: auto;
+                    height: 28px;
+                    line-height: 28px;
+                    margin-right: 10px;
+                    padding: 0 21px;
+                    text-align: center;
+                    color: #000;
+                    font-size: 12px;
+                    text-decoration: none;
+                }
+            }
+
+            li.current {
+                a {
+                    background: #0b68c8;
+                    color: #fff !important;
+                    cursor: default !important;
+                }
+
+            }
+        }
+
+        .vip-film-classify {
+            height: 40px;
+            border: 1px solid #dedede;
+            background: #f8f8f8;
+            margin-bottom: 30px;
+            overflow: visible;
+
+            li.current {
+                position: relative;
+                border-bottom: 1px solid #fff;
+
+                a {
+                    position: relative;
+                    background: #fff;
+                    border-left: 1px solid #dedede;
+                    border-right: 1px solid #dedede;
+                    border-top: 4px solid #0b68c8;
+                    margin-top: 0;
+                    height: 37px;
+                    line-height: 37px;
+                    color: #000;
+                    cursor: default !important;
+                }
+            }
+
+            li {
+                display: inline;
+
+                a {
+                    display: block;
+                    float: left;
+                    width: auto;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                    font-family: "微软雅黑";
+                    text-align: center;
+                    color: #0b68c8;
+                    padding: 0 36px;
+                    text-decoration: none;
+                    margin-left: -1px;
+                }
+            }
+        }
+
+        // 影片
+        .vip-films{
+            .film-pictures{
+                li{
+                    margin-right: 0;
+                    margin-left: 12.5px;
+                    background-color: #dedede;
+                    img{
+                        display: none;
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                    }
+                }
+            }
+        }
+        .vip-filmss{
+            .film-pictures{
+                li{
+                    margin-right: 0;
+                    margin-left: 12.5px;
+                    padding-left: -10px;
+                    background-color: #dedede;
+                    img{
+                        width: 205px;
+                        height: 287px;
+                        display: none;
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                    }
+                }
+            }
+            display: none;
+        }
+
+    }
+}

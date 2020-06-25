@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view>
+    <!-- 模块操作 -->
+    <!-- 使用自定义组件 -->
+    <!-- 
+       属性      类形      默认值        参考
+       size     string    default       default/mini
+       color    string    red           任意颜色
+     -->
+    <!-- <my-button></my-button>
+    <my-button size="mini" color="yellow" title="按钮" bindtap="click"></my-button> -->
+    <my-button size="mini"></my-button>
+</view>

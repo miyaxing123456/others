@@ -1,0 +1,2 @@
+webpackJsonp([6],{1993:function(t,e){},"V+V2":function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r={render:function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"text-center text-default h1"},[this._v("\n    欢迎登录\n")])},staticRenderFns:[]};var s=n("C7Lr")({props:[],components:{},data:function(){return{}},mounted:function(){}},r,!1,function(t){n("1993")},"data-v-540f5de2",null);e.default=s.exports}});
+//# sourceMappingURL=6.0124b0ac9e4325cfc622.js.map

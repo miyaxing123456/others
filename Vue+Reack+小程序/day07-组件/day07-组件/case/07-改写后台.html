@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>改写后台管理界面</title>
+    <script src="./vue.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .page {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            height: 100px;
+            background: pink;
+        }
+
+        .main {
+            flex: 1;
+            background: #cccccc;
+            display: flex;
+        }
+
+        .left {
+            width: 150px;
+            background: orange;
+        }
+
+        .right {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+
+    </div>
+    <!-- page组件模板 -->
+    <template id="page">
+        <div class="page">
+
+            <v-header></v-header>
+            <v-main></v-main>
+        </div>
+    </template>
+
+    <!-- header 组件模板 -->
+    <template id="header">
+        <div class="header">
+            <h1>header</h1>
+            <v-button></v-button>
+        </div>
+    </template>
+
+    <!-- main 组件的模板 -->
+    <template id="main">
+        <div class="main">
+            <v-left></v-left>
+            <v-right></v-right>
+        </div>
+    </template>
+
+    <!-- left组件 -->
+    <template id="left">
+        <div class="left">
+            <h1>left</h1>
+            <v-button></v-button>
+        </div>
+    </template>
+
+    <!-- right组件 -->
+    <template id="right">
+        <div class="right">
+            <h1>right</h1>
+            <v-button></v-button>
+        </div>
+    </template>
+
+    <!-- button组件 -->
+    <template id="button">
+        <div>
+            <h3>这是button组件</h3>
+        </div>
+    </template>
+    <script>
+        //全局注册：所有的vue实例都可以调用
+        var vButton={
+            template:"#button"
+        }
+        Vue.component("vButton", vButton)
+
+
+
+        var vLeft = {
+            template: "#left"
+        }
+        var vRight = {
+            template: "#right"
+        }
+        var vHeader = {
+            template: "#header",
+            
+        }
+        var vMain = {
+            template: "#main",
+            data() {
+                return {
+
+                }
+            },
+            components: {
+                vLeft,
+                vRight
+            }
+        }
+
+        var App = {
+            template: `#page`,
+            components: {
+                vHeader,
+                vMain,
+               
+            }
+        }
+        new Vue({
+            el: "#app",
+            template:"<App></App>",
+            data: {},
+            methods: {},
+            components: {
+                //局部注册：哪个vue实例注册的组件，对应的模板可以调用该组件
+                App
+            }
+        })
+    </script>
+</body>
+
+</html>

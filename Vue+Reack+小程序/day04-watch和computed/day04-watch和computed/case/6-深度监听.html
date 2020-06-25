@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 如果监听的数据是简单类型，或者是数组（数组的元素是简单类型），就直接监听即可 -->
+        <!-- 如果监听的数据是json，或者是数组（数组的元素是json），那么就必须是使用深度监听 -->
+        <!-- 深度监听会造成页面卡顿，建议尽量不要使用 -->
+        <input type="text" v-model="name">
+        <input type="text" v-model="age">
+        <hr>
+        <input type="text" v-model="json.name">
+        <hr>
+        <input type="text" v-model="arr[0]">
+        <hr>
+        <input type="text" v-model="arr2[0].name">
+    </div>
+    <script>
+        var vm = new Vue({
+            el: "#app", //挂载点
+            data: { //属性-数据
+                name: "妲己",
+                age: 20,
+                json: {
+                    name: "王昭君"
+                },
+                arr: ['aa', 'bb'],
+                arr2: [{
+                        name: "胡歌"
+                    },
+                    {
+                        name: "彭于晏"
+                    }
+                ]
+            },
+            watch: {
+                name() {
+                    console.log("name 变了");
+                },
+                age: {
+                    handler() {
+                        console.log("age 变了");
+                    }
+                },
+                json: {
+                    handler(newV, oldV) {
+                        console.log("json 变了");
+                    },
+                    deep: true, //深度监听
+                },
+                arr() {
+                    console.log("arr 变了");
+
+                },
+                arr2: {
+                    handler() {
+                        console.log("arr2 变了");
+                    },
+                    deep: true
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

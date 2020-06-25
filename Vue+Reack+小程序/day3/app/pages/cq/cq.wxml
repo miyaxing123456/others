@@ -1,0 +1,30 @@
+<view>
+    <!-- 顶部结果显示 -->
+    <view class="top">
+      您已经获胜了<text>{{ number }}</text>次
+    </view>
+
+    <!-- 显示出拳结果 -->
+    <view class="center">
+      <image src="{{ pcImage }}"></image>
+      <text>{{ result }}</text>   
+      <image src="{{ myImage }}"></image>
+    </view>
+
+  <!-- 操作部分 -->
+  <view class="bottom">
+    <view class="bottom_top">
+        出拳吧,骚年！
+    </view>
+  
+    <view class="bottom_center">
+      <image wx:for="{{ allImage }}" src="{{ item }}" data-myindex="{{ index }}" bindtap="myChuquan"></image> 
+      <!-- <image src="/imgs/jiandao.png"></image>
+      <image src="/imgs/jiandao.png"></image> -->
+    </view>
+
+    <button bindtap="align">再来一次</button>
+    <button>C</button>
+  </view>
+
+</view>

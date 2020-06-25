@@ -1,0 +1,2 @@
+webpackJsonp([9],{GxBJ:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var o={mounted:function(){var e=this.$route.params.foodId;console.log(e)}},r={render:function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("h3",[this._v("外卖详情页面")]),this._v(" "),t("go-back")],1)},staticRenderFns:[]};var s=n("C7Lr")(o,r,!1,function(e){n("vlN4")},"data-v-0144596f",null);t.default=s.exports},vlN4:function(e,t){}});
+//# sourceMappingURL=9.d68b1ef4e4e499ee33c1.js.map

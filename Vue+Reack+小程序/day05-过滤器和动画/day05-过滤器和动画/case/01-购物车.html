@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="./vue.js"></script>
+    <style>
+        th,
+        td {
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="container">
+        <h3 class="text-center text-primary">购物车</h3>
+
+        <table class="table table-striped table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" v-model="allchecked" @change="changeAllCheckd"> 全选</th>
+                    <th>商品名称</th>
+                    <th>商品价格</th>
+                    <th>商品数量</th>
+                    <th>商品总价</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(item,index) in goods" :key="item.id">
+                    <td><input type="checkbox" v-model="item.checked">{{item.checked}}</td>
+                    <td>
+                        <div>{{item.name}}</div>
+                        <img :src="item.img" alt="">
+                    </td>
+                    <!-- toFixed(2) 小数点后保留2位 -->
+                    <td>￥{{item.price.toFixed(2)}}</td>
+                    <td>
+                        <button type="button" class="btn btn-default" @click="sub(index)">-</button>
+                        {{item.num}}
+                        <button type="button" class="btn btn-primary" @click="add(index)">+</button>
+                    </td>
+                    <td>￥{{(item.price*item.num).toFixed(2)}}</td>
+                    <td>
+                        <button type="button" class="btn btn-danger" @click="del(index)">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>总价</td>
+                    <td colspan="5">￥{{allPrice.toFixed(2)}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script>
+        var vm = new Vue({
+            el: "#app", //挂载点,
+            data: { //属性
+                allchecked: false, //全选
+                goods: [{
+                        id: "1",
+                        name: "外套",
+                        img: "https://img.alicdn.com/tfscom/i2/1970877023/O1CN01AoWnnW21ka9MPc27D_!!1970877023.jpg_360x360xzq90.jpg_.webp",
+                        price: 149.99,
+                        num: 1,
+                        checked: false
+                    },
+                    {
+                        id: "2",
+                        name: "水杯",
+                        img: "https://img.alicdn.com/imgextra/i4/25770471534/TB2KaSGnHsTMeJjy1zbXXchlVXa_!!25770471534-0-beehive-scenes.jpg_360x360xzq90.jpg_.webp",
+                        price: 120.90,
+                        num: 1,
+                        checked: false
+                    },
+                    {
+                        id: "3",
+                        name: "单人沙发",
+                        img: "https://img.alicdn.com/tfscom/i4/TB11lnFQFXXXXXrXpXXXXXXXXXX_!!0-item_pic.jpg_360x360xzq90.jpg_.webp",
+                        price: 400.00,
+                        num: 1,
+                        checked: false
+                    },
+                ]
+            },
+            methods: { //方法
+                //点击了 +
+                add(index) {
+                    this.goods[index].num++;
+                    this.goods[index].num = Math.min(5, this.goods[index].num)
+                    //最多只能买5个
+                    /*
+                    3 5 -3 
+                    6 5 -5 
+                    n 5 -Math.min(n,5)
+                    */
+                },
+                //点击了 - 
+                sub(index) {
+                    this.goods[index].num--;
+                    //如果小于1，就是1
+                    /*
+                    if (this.goods[index].num <= 1) {
+                        this.goods[index].num = 1;
+                    }*/
+
+                    //三元
+                    //this.goods[index].num = this.goods[index].num <= 1 ? 1 : this.goods[index].num;
+
+                    /*
+                    2 1 --2 
+                    3 1 --3 
+                    0 1 --1
+                    n 1 --Math.max(n,1)
+                    */
+                    this.goods[index].num = Math.max(this.goods[index].num, 1)
+                },
+                //删除
+                del(index) {
+                    this.goods.splice(index, 1)
+                },
+                //全选状态变了
+                changeAllCheckd() {
+                    //allchecked是真，数组每一项的checked都是真；如果allchekced是假，数组的每一项的checked都是假。
+                    //数组每一项的checked和allchecked的值保持一致。
+                    this.goods.forEach(item => {
+                        item.checked = this.allchecked
+                    })
+                }
+            },
+            watch: { //监听
+
+                goods: {
+                    handler() {
+                        //数组的每一项的checked为true,allchecked就是true;如果有1项的checked是false，allchecked就是false
+                        this.allchecked = this.goods.every(item => item.checked)
+                    },
+                    deep: true
+                }
+            },
+            computed: { //计算属性
+                allPrice() {
+                    //求和 forEach map
+                    /*
+                    var sum = 0;
+                    this.goods.forEach(item=>{
+                        if(item.checked){
+                            sum+=item.price*item.num
+                        }
+                    })
+                    return sum;
+                    */
+
+                    /*
+                    var sum = 0;
+                    var arr = this.goods.filter(item => item.checked);
+                    arr.forEach(item => {
+                        sum += item.price * item.num;
+                    })
+                    return sum;
+                    */
+
+                    //val -上一次的返回值
+                    /*return this.goods.reduce((val, item, index, arr) => {
+                        if (item.checked) {
+                            return val += item.price * item.num
+                        } else {
+                            return val;
+                        }
+                    }, 0)*/
+
+                    return this.goods.reduce((val, item) => item.checked ? val += item.price * item.num : val,
+                        0)
+                }
+            }
+        })
+    </script>
+</body>
+<!-- 
+1.模拟数据，遍历数据
+2.点击 + ,num自增,点击了 -,num自减，做了临界值判断，使用了Math.min() Math.max()
+3.价格展示的时候，小数点后保留2位 toFixed(2)
+4.点击了”删除"
+5.
+    上面“全选”选中，数组每一项和allchecked保持一致；
+    goods的每一项的checked为true,allchecked就是true;如果有1项的checked是false，allchecked就是false
+6.总价求和:forEach filter reduce
+ -->
+
+</html>

@@ -1,0 +1,60 @@
+/* pages/cq/cq.wxss */
+page{
+  background-color: #fae738;
+}
+.top{
+  text-align: center;
+  padding: 20px 0px;
+}
+.top  text{
+  color: red;
+}
+
+.center image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px  50px;
+}
+
+.center  text{
+  color: red;
+}
+
+
+.bottom{
+   width: 660rpx;
+   height: 700rpx;
+   background-color: #fff;
+   margin-left: 45rpx;
+   margin-top: 40px;
+}
+
+.bottom_top{
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 13px;
+}
+
+.bottom  image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+button{
+  background-color: #fae738;
+  width: 80%;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.bottom_center{
+  display: flex;
+  justify-content: space-around;
+  padding:20px;
+}

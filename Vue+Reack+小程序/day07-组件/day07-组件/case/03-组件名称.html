@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>组件名称</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <hello></hello>
+        <website-nav></website-nav>
+        <First></First>
+        <hello></hello>
+        <website-nav></website-nav>
+        <v-a></v-a>
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{},
+            methods:{},
+            components:{
+                // 1.不要用已经存在的标签名命名。比如：div span p h1 .....
+                // 2.不要以已经存在的标签的大写命名。比如：DIV SPAN... 
+
+                "hello":{
+                    template:"<div>这是组件</div>"
+                },
+                // 3.如果组件名称中间包含了大写，那么调用的时候，改成 -小写
+                // 4.建议命名组件中间包含一个大写,方便调用
+                websiteNav:{
+                    template:"<h1>这是网站导航</h1>"
+                },
+                First:{
+                    template:"<div>first first first</div>"
+                },
+                vA:{
+                    tempalte:"<div>a组件</div>"
+                }
+            }
+        })
+    </script>
+</body>
+</html>

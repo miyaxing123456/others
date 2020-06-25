@@ -1,0 +1,40 @@
+/* pages/component2/component2.wxss */
+
+.mydiv{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  text-align: center;
+  line-height: 200px;
+}
+
+.div1{
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+}
+
+.red{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+}
+
+.blue{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%; text-align: center;
+  line-height: 100px;
+}
+
+.green{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%; text-align: center;
+  line-height: 100px;
+}

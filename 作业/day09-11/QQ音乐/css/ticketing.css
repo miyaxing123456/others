@@ -1,0 +1,677 @@
+body,
+.head{
+	width: 100%;
+	background-color: #fff;
+
+}
+ .header{
+	width: 1200px;
+	height: 90px;
+	margin: 0 auto;
+	border-bottom: 1px solid #f2f2f2;
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+ .header .logo{
+	width: 167px;
+	height: 90px;
+	line-height: 90px;
+}
+ .header .logo a{
+	display: inline-block;
+	width: 167px;
+	height: 90px;
+}
+ .header .logo a img{
+	width: 167px;
+	height: 45px;
+	vertical-align: middle;
+}
+ .header .nav{
+	height: 90px;
+}
+ .header .nav ul li{
+	width: 94px;
+	height: 90px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 90px;
+	float: left;
+}
+ .header .nav ul li a{
+	color: #000;
+}
+ .header .nav ul li:hover a{
+	color: #31c27c;
+}
+ .header .search{
+	width: 220px;
+	height: 90px;
+	line-height: 90px;
+	position: relative;
+}
+ .header .search div input{
+	width: 174px;
+	height: 36px;
+	border:1px solid #c9c9c9;
+	padding:0 33px 0 11px;
+}
+ .header .search div button{
+	width: 34px;
+	height: 34px;
+	border:0;
+	outline: none;
+	background-color: #fff;
+	position: absolute;
+	top: 27px;
+	right: 2px;
+}
+ .header .search div button:hover{
+	color: #31c27c;
+}
+ .header .login{
+	width:260px ;
+	height: 90px;
+	line-height: 90px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+}
+ .header .login a{
+	font-size: 16px;
+}
+ .header .login a:hover{
+	color: #31c27c
+}
+ .header .login button{
+	width: 111px;
+	height: 38px;
+	border:0;
+	outline: none;
+	background-color: #33c47c;
+}
+ .header .login button:hover{
+	background-color: #2caf6f;
+}
+ .header .login button:last-child{
+	width: 85px;
+	height: 38px;
+	outline: none;
+	color: #000;
+	border: 1px solid #c9c9c9;
+	background-color: #fff;
+}
+ .header .login button:last-child:hover{
+	background-color: #ededed;
+}
+.subnav{
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+ .subnav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+ .subnav ul li{
+	height: 50px;
+	padding:0 25px;
+	line-height: 50px;
+}
+ .subnav ul li a{
+	font-size: 15px;
+	color: #000;
+}
+ .subnav ul li a:hover{
+	color: #31c37b;
+}
+
+
+.section_inner{
+	max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.section_inner .slide{
+	padding-top: 5.8333%;
+    margin-bottom: 17px;
+    overflow: hidden;
+}
+.slide ul{
+	width: 100%;
+    height: 305px;
+    font-size: 0;
+    position: relative;
+}
+.slide ul .list_item{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 751px;
+	height: 300px;
+	opacity: 0;
+	z-index: 1;
+	transition: all .3s ease-out;
+}
+.slide ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+}
+.slide ul li a img{
+	width: 100%;
+	height: 100%;
+}
+.slide ul .slide_item01{
+	transform: translate(-224px,0) scale(0.81);
+}
+.slide ul .slide_item02{
+	transform: translate(0px,0) scale(0.81);
+	transform-origin: 0 50%;
+	opacity: .8;
+}
+.slide ul .slide_item03{
+	transform: translate(224px,0) scale(1);
+	z-index:3;
+	opacity:1;
+}
+.slide ul .slide_item04{
+	transform: translate(449px,0) scale(0.81);
+	transform-origin: 100% 50%;
+	opacity: .8;
+}
+.section_inner .bots{
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+}
+.section_inner .bots a{
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	padding: 0 0 26px;
+	margin: 0 1px;
+}
+.section_inner .bots a i{
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: rgba(0,0,0,.1);
+	border-radius: 12px;
+	margin: 0 auto;
+}
+.section_inner .bots a i.active{
+	background-color: rgba(0,0,0,.3);
+}
+
+
+.fliter{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.fliter .search{
+	width: 100%;
+	margin: 27px 0 50px;
+}
+.fliter .search .search_btn{
+	float: left;
+
+}
+.fliter .search .search_btn a{
+	display: block;
+	margin-right: 10px;
+	width: 144px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 16px;
+	color: #777;
+	text-align: center;
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+
+}
+.fliter .search .search_btn  i{
+	display: block;
+	position: relative;
+	margin-left: 8px;
+	top: -2px;
+	display: inline-block;
+	width: 10px;
+	height: 6px;
+	background-image: url(../images/icon_sprite.png);
+	background-position: -120px -260px;
+}
+.fliter .search .search_input{
+	float: left;
+	position: relative;
+}
+.fliter .search .search_input input{
+	width: 428px;
+	font-size: 16px;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 48px 0 11px;
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+}
+.fliter .search .search_input button{
+	width: 48px;
+	height: 49px;
+	background-color: #01bc83;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0 none;
+	border-radius: 3px;
+	overflow: visible;
+}
+.fliter .search .search_input button i{
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 13px;
+	margin-top: -11px;
+	height: 22px;
+	width: 22px;
+	background-position: 0 0;
+	background-image: url(../images/sprite_ticket.png);
+}
+.fliter .search .mine{
+	float: right;
+	margin-top: 13px;
+	font-size: 16px;
+	color: #000;
+}
+.fliter .search .mine i{
+	display: inline-block;
+	width: 7px;
+	height: 12px;
+	background-position: -120px -40px;
+	margin-left: 6px;
+	background-image: url(../images/icon_sprite.png);
+}
+.fliter .search .mine:hover{
+	color: #31c27c;
+}
+.fliter .search .mine:hover i{
+	background-position: -120px -60px;
+}
+.fliter .tab{
+	max-width: 1200px;
+	margin:0 auto 50px;
+}
+.fliter .tab ul{
+	width: 100%;
+	font-size: 0;
+}
+.fliter .tab ul li{
+	display: inline-block;
+	width: 14.2857%;
+	text-align: center;
+}
+.fliter .tab ul li a{
+	display: inline-block;
+	font-size: 16px;
+}
+.fliter .tab ul li a i{
+	display: inline-block;
+	vertical-align: -6px;
+	margin-left: 7px;
+	width: 31px;
+	height: 31px;
+	background-image: url(../images/icon_ticket.png);
+}
+.all{
+	background-position: -280px -40px;
+}
+.concert{
+	background-position: -40px 0px;
+}
+.lh{
+	background-position: -360px 0px;
+}
+.phil{
+	background-position: -80px 0px;
+}
+.dance{
+	background-position: -160px 0px;
+}
+.drama{
+	background-position: -200px 0px;
+}
+.other{
+	background-position: -320px 0px;
+}
+.fliter .tab ul li a:hover{
+	color: #31c27c;
+}
+.fliter .tab ul li a:hover .concert{
+	background-position: -40px -40px;
+}
+.fliter .tab ul li a:hover .lh{
+	background-position: -360px -40px;
+}
+.fliter .tab ul li a:hover .phil{
+	background-position: -80px -40px;
+}
+.fliter .tab ul li a:hover .dance{
+	background-position: -160px -40px;
+}
+.fliter .tab ul li a:hover .drama{
+	background-position: -200px -40px;
+}
+.fliter .tab ul li a:hover .other{
+	background-position: -320px -40px;
+}
+
+
+.content_bg{
+	width: 100%;
+	background-image: linear-gradient(#f3f3f3, #fff); 
+}
+.content_bg .content{
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.content_bg .content h2{
+	padding-top: 4.16667%;
+    padding-bottom: 2%;
+    font-size: 32px;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 14px;
+}
+.content_bg .content .grid{
+	margin-bottom: 82px;
+	overflow: hidden;
+}
+.grid div{
+	float: left;
+	margin-right: 28px;
+	/*width: 415px;*/
+	overflow: hidden;
+	margin-bottom: 28px;
+}
+.grid div a:first-child{
+	float: left;
+	/*margin: 0 16px 0 19px;*/
+	width: 148px;
+	height: 194px;
+	overflow: hidden;
+}
+.grid div a:first-child img{
+	width: 100%;
+	height: 100%;
+	transform: scale(1);
+	transition: transform .75s;
+}
+.grid div a:first-child:hover img{
+	transform: scale(1.07);
+    transition: transform .75s cubic-bezier(0,1,.75,1);
+}
+.grid div a:last-child{
+	display: block;
+	width: 224px;
+	height: 194px;
+	padding-left: 16px;
+	margin-right: 11px;
+	position: relative;
+	float: left;
+}
+.grid div a:last-child h3{
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #333;
+	font-weight: 400;
+	line-height: 1.8;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.grid div a:last-child p{
+	font-size: 14px;
+	color: #777;
+}
+.grid div a:last-child p:last-child{
+	position: absolute;
+	bottom: -4px;
+	left: 16px;
+	font-size: 16px;
+	color: #01bc83;
+	line-height: 1.2;
+}
+.grid div a:last-child p:last-child em{
+	margin-right: 2px;
+	font-size: 24px;
+	font-style: normal;
+}
+.grid div a:last-child p:last-child span{
+	margin-left: 6px;
+	padding: 3px 6px;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 2px;
+	background-color: #01bc83;
+	vertical-align: 5px;
+}
+.grid div a:last-child p:last-child span i{
+	display: inline-block;
+	margin-right: 2px;
+	vertical-align: -2px;
+	width: 17px;
+	height: 13px;
+	background-position: -50px -50px;
+	background-image: url(../images/sprite_ticket.png);
+}
+.content_bg .content .grid .special{
+	width: 316px;
+	height: 416px;
+	overflow: hidden;
+	position: relative;
+}
+.content_bg .content .grid .special a:first-child{
+	display: block;
+	width: 316px;
+	height: 416px;
+}
+.content_bg .content .grid .special a:first-child img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.content_bg .content .grid .special a:last-child{
+	display: block;
+	width: 284px;
+	height: 98px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	padding: 12px 16px 10px;
+	background-color: rgba(0,0,0,.8);
+}
+.content_bg .content .grid .special a:last-child h3{
+	margin-bottom: 2px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content_bg .content .grid .special a:last-child p{
+	font-size: 16px;
+	color: #fff;
+}
+.content_bg .content .grid .special a:last-child p:last-child{
+	bottom: 5px;
+	left: 13px;
+}
+
+
+.footer{
+	width: 100%;
+	min-width: 1200px;
+	color: #999;
+    background-color: #333;
+    clear: both;
+}
+.footer .section{
+	width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer .section .info{
+	overflow: hidden;
+    border-bottom: 1px solid #353535;
+    position: relative;
+    padding-bottom: 45px;
+}
+.footer .section .info .download{
+	position: absolute;
+    top: 0;
+    left: 10px;
+}
+.footer a{
+	color: #999;
+}
+.footer a:hover{
+	color: #31c27c;
+}
+.footer h3{
+	font-size: 15px;
+    font-weight: 400;
+    padding: 80px 0 46px;
+}
+.footer ul{
+	margin-left: -29px;
+}
+.footer ul li{
+	float: left;
+    text-align: center;
+    position: relative;
+}
+.download ul li a i,
+.info ul li a i{
+	display: block;
+    margin: 0 29px 12px;
+    height: 48px;
+    background-image: url(../images/footer.png);
+}
+.pc{
+	width: 37px;
+    background-position: -2px 0;
+}
+.footer a:hover .pc{
+	background-position: -2px -49px;
+}
+.mac{
+	width: 46px;
+    background-position: -92px 0;
+}
+.footer a:hover .mac{
+	background-position: -92px -49px;
+}
+.android{
+	width: 37px;
+    background-position: -190px 0;
+}
+.footer a:hover .android{
+	background-position: -190px -49px;
+}
+.iphone{
+	width: 34px;
+    background-position: -279px 0;
+}
+.footer a:hover .iphone{
+	background-position: -279px -49px;
+}
+.product{
+	position: absolute;
+    top: 0;
+    left: 476px;
+    width: 304px;
+}
+.product ul{
+	position: relative;
+    z-index: 1;
+    margin-left: -25px;
+}
+.product ul li{
+	float: left;
+	margin-bottom: 18px;
+    text-indent: 28px;
+    margin-right: 5px;
+}
+.kg{
+	width: 41px;
+    background-position: -370px 0;
+}
+.footer a:hover .kg{
+	background-position: -370px -49px;
+}
+.ss{
+	width: 37px;
+    background-position: -463px 0;
+}
+.footer a:hover .ss{
+	background-position: -463px -49px;
+}
+.qp{
+	margin-right: 23px !important;
+    width: 40px;
+    background-position: -563px 0;
+}
+.footer a:hover .qp{
+	background-position: -563px -49px;
+}
+.info .group{
+	position: absolute;
+    top: 230px;
+    left: 476px;
+    width: 304px;
+}
+.info .group ul{
+	margin-left: -25px;
+}
+.info .group ul li{
+	float: left;
+    margin: 0 5px 12px 0;
+    text-indent: 25px;
+}
+.link{
+	float: right;
+    width: 300px;
+    padding-bottom: 57px;
+}
+.info .link ul li{
+	float: left;
+    min-width: 100px;
+    margin-bottom: 12px;
+    text-align: left;
+    text-indent: 28px;
+}
+.info .platform{
+	margin: 230px 0 0 10px;
+}
+.info .platform ul{
+	margin-left: -25px;
+}
+.info .platform ul li{
+	float: left;
+    min-width: 100px;
+    margin: 0 5px 12px 0;
+    text-indent: 25px;
+}
+.section .copyright{
+	text-align: center;
+    line-height: 28px;
+    padding: 24px 0;
+}

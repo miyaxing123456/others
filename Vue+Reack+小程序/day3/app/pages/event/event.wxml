@@ -1,0 +1,31 @@
+<view>
+  <!-- 
+      v-on:click = "fun()"
+   -->
+  <button  bindtap="fun">绑定事件-bind--传统形式</button>
+  <button  bindtap="fun1">绑定事件-bind-箭头函数</button>
+  <button  bindtap="fun2">绑定事件-bind--简写形式</button>
+  <!-- 这是错误的写法 -->
+  <!-- <button  bindtap="fun2()">绑定事件-bind--简写形式--（）</button> -->
+  <!-- <button  catchtap="fun1">绑定事件-catch</button> -->
+
+  <!-- 
+      id
+
+      data-*
+      <a abc=""  bcd="">aa</a>
+   -->
+  <button type="warn"  id="1001" data-id="999" bindtap="fun3" data-name="{{ name }}" data-age="99">传参</button>
+
+  <!-- 事件冒泡 -->
+
+  <view   class="parent"  data-number="99" bindtap="parent">
+    parent
+
+      <!-- <view  class="child" data-num = "100" catchtap="child">  阻止事件冒泡-->
+      <view  class="child" data-num = "100" bindtap="child">
+        child
+      </view>
+  </view>
+
+</view> 

@@ -1,0 +1,25 @@
+.main {
+  margin: 0 auto;
+}
+.main ul li {
+  margin: 50px 50px 50px 100px;
+}
+.main ul li .left {
+  float: left;
+  margin-right: 32px;
+}
+.main ul li .left img {
+  width: 205px;
+  height: 260px;
+}
+.main ul li .right {
+  float: left;
+}
+.main ul li .right p {
+  font-size: 16px;
+  line-height: 40px;
+}
+.main ul li .right .title {
+  font-size: 20px;
+  color: blue;
+}

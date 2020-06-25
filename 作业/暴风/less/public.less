@@ -1,0 +1,342 @@
+body {
+    background: #f3f3f3;
+}
+
+.auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    width: 1100px;
+}
+
+// 头部
+.head-layer {
+    width: 100%;
+    height: 64px;
+    background: url(../img/vip-bgs.png) 0 0 repeat-x;
+    border-bottom: 1px solid #c7c4c5;
+    box-shadow: 0 1px 3px #d8d7d7;
+
+    .vip-header {
+        height: 64px;
+        overflow: hidden;
+
+        h1 {
+            float: left;
+            width: 191px;
+            height: 29px;
+            margin: 17px 18px 6px;
+
+            a {
+                display: block;
+                width: 191px;
+                height: 29px;
+                background: url(../img/vip-logo.png) 0 -144px no-repeat;
+            }
+
+        }
+
+        ul {
+            float: right;
+            margin: 17px 7px;
+
+            li {
+                line-height: 30px;
+                display: inline-block;
+
+                a {
+                    display: block;
+                    height: 30px;
+                    margin: 0 15px;
+                    color: #686868;
+
+                    &:hover {
+                        color: #0b68c8;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+// 导航
+.vip-nav {
+    height: 38px;
+    padding-top: 2px;
+    overflow: hidden;
+    background: url(../img/vip-bgs.png) 0 -74px repeat-x;
+
+    .vip-nav-bar {
+        float: left;
+        padding-left: 44px;
+
+        li.current {
+            background: #0b68c8
+        }
+
+        li {
+            float: left;
+            width: 115px;
+            height: 38px;
+            line-height: 38px;
+            color: #fff;
+            font-size: 14px;
+            font-family: "微软雅黑";
+            text-align: center;
+
+            a {
+                display: block;
+                width: 115px;
+                height: 38px;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+// VIP特权  强力推荐 热映大片
+.caption {
+    width: 100%;
+    height: 39px;
+
+    .title {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 24px;
+        font-family: "微软雅黑";
+        color: #000;
+        margin-bottom: 15px;
+        text-indent: -9999px;
+        background-repeat: no-repeat;
+        background-image: url(../img/vip-logo.png);
+    }
+
+    .more-files {
+        display: block;
+        float: right;
+        font-size: 12px;
+        font-family: "宋体";
+        color: #000;
+        text-decoration: none;
+        line-height: 20px;
+        margin-top: 7px;
+        margin-right: 5px;
+    }
+}
+
+
+// 热映列表
+.film-pictures {
+    li {
+        width: 205px;
+        height: 337px;
+        overflow: hidden;
+        margin: 0 15px 30px 0;
+        float: left;
+
+        a {
+            display: block;
+            position: relative;
+            width: 205px;
+            height: 287px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .film-type {
+                position: absolute;
+                top: 7px;
+                left: 10px;
+                height: 18px;
+                background: url(../img/vip-tips.png) no-repeat;
+            }
+
+            .for-vip-only {
+                width: 75px;
+                background-position: 0 -20px;
+            }
+
+            .for-vip-free {
+                width: 72px;
+                background-position: -110px 0;
+            }
+
+            .for-vip-zhekou {
+                width: 100px;
+                background-position: 0 0;
+            }
+
+            .film-quality-txt {
+                position: absolute;
+                right: 7px;
+                bottom: 7px;
+                width: 28px;
+                height: 18px;
+                background: black;
+                font-family: "宋体";
+                color: #fff;
+                text-align: center;
+            }
+        }
+
+
+        .film-text {
+            width: 205px;
+            height: 50px;
+            position: relative;
+
+            h3 {
+                font-size: 14px;
+                color: #000;
+                width: 168px;
+                height: 20px;
+                margin-top: 4px;
+                line-height: 20px;
+
+                a {
+                    display: block;
+                    width: auto;
+                    height: 20px;
+                    color: #000;
+
+                    &:hover {
+                        color: #0b68c8;
+                    }
+                }
+            }
+
+            h4 {
+                color: #999;
+                width: 168px;
+                height: 18px;
+                line-height: 18px;
+                font-weight: 400;
+            }
+
+            .film-score {
+                position: absolute;
+                bottom: 20px;
+                right: 0;
+                color: #f60;
+                width: 50px;
+                height: 30px;
+                line-height: 30px;
+                text-align: right;
+                font-family: Georgia;
+                font-size: 16px;
+
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+}
+
+//底部
+.foot-layer{
+    .highlight-line {
+        height: 0;
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+        border-top: 1px solid #dedede;
+        border-bottom: 1px solid #fff;
+    }
+
+    .vip-btm-links {
+        margin: 55px auto 40px;
+        .btm-links {
+            width: 1150px;
+            padding-left: 48px;
+            margin-right: -100px;
+            height: 100px;
+            font-family: "微软雅黑";
+            li {
+                float: left;
+                width: 144px;
+                height: 100px;
+                margin-right: 80px;
+                border-right: 1px solid #dedede;
+                padding-left: 61px;
+                position: relative;
+                em {
+                    display: block;
+                    width: 51px;
+                    height: 51px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: url(../img/vip-powers.png) 0 -111px;
+                }
+                em.new {
+                    background-position: 0 -111px;
+                }
+
+                em.vip {
+                    background-position: -51px -111px;
+                }
+
+                em.pay {
+                    background-position: -102px -111px;
+                }
+                
+                em.QA {
+                    background-position: -153px -111px;
+                }
+                
+                h5 {
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 16px;
+                    color: #333;
+                    margin-bottom: 10px;
+                    font-weight: 700;
+                }
+
+                a {
+                    white-space: nowrap;
+                    display: block;
+                    height: 18px;
+                    line-height: 18px;
+                    color: #000;
+
+                    &:hover{
+                        color: #0b68c8;
+                    }
+                }
+                
+                
+            }
+
+            li.last-child {
+                border: none;
+            }
+            
+        }
+        
+    }
+
+    .vip-rights {
+        height: 96px;
+        margin: 55px auto 70px;
+        line-height: 24px;
+        text-align: center;
+        color: #999;
+        a {
+            color: #999;
+        }
+    }
+}

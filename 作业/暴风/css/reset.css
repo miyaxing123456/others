@@ -1,0 +1,54 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dd{margin: 0;font-size: 12px;font-weight: normal;}
+
+*{
+    /* 取消文字选中 */
+    -webkit-user-select: none;
+    margin:0;
+    padding:0;
+}
+
+ul,li,ol,input{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+img{
+    vertical-align: middle;
+    border: none;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+em,i,strong,b{
+    font-style: normal;
+}
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    outline: none;
+}
+button{
+    border: 0;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+
+        <h1>123</h1>
+        <h3>23424</h3>
+    </div>
+    <template id="app2">
+        <div class="hahahah">
+            <h1>这是App组件</h1>
+        </div>
+    </template>
+    <script>
+        var App = {
+            template: "#app2",
+            data(){
+                return {}
+            },
+            methods:{},
+            watch:{},
+            mounted(){}
+        }
+        new Vue({
+            el: "#app",
+            template: "<App></App>",
+            data: {},
+            methods: {},
+            components: {
+                App
+            }
+        })
+    </script>
+</body>
+
+</html>

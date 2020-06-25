@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>num:{{num|filterNum(3,10)}}</h1>
+        <h1>num2:{{num2|filterNum(2)}}</h1>
+        <h1>num3:{{num3|filterNum(1)}}</h1>
+
+    </div>
+    <script>
+        //过滤器函数 第一个参数是过滤对象，从第二个参数开始，才是传入的参数
+        Vue.filter("filterNum",(obj,n,m)=>{
+            return obj.toFixed(n)
+        })
+        var vm=new Vue({
+            el:"#app",//挂载点,
+            data:{//属性
+                num:10,
+                num2:20,
+                num3:30
+            },
+            methods:{//方法
+
+            },
+            watch:{//监听
+
+            },
+            computed:{//计算属性
+
+            },
+            
+        })
+
+    </script>
+</body>
+</html>

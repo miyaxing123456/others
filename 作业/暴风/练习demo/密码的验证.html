@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="username" placeholder="请输入用户名"/><span>无</span>
+    <script>
+        var username = document.getElementsByName("username")[0];
+        var span = document.getElementsByTagName("span")[0];
+        username.onblur = function(){
+            if(/^\d{6}$/.test(username.value)){ 
+                span.innerHTML = "弱";
+            }else if(/^[0-9a-zA-Z_]{10}$/.test(username.value)){
+                span.innerHTML = "中";
+            }else{
+                span.innerHTML = "密码不符合规则";
+            }
+        }
+    </script>
+</body>
+</html>

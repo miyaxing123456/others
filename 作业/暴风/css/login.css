@@ -1,0 +1,109 @@
+* {
+  -webkit-user-select: none;
+}
+.wrapper {
+  width: 972px;
+  margin: 0 auto;
+}
+.header {
+  padding: 25px 0;
+}
+.content {
+  width: 100%;
+  background-image: -webkit-linear-gradient(right, #5ab7fa, #40a5ed);
+  min-width: 972px;
+}
+.content .wrapper {
+  position: relative;
+}
+.content img {
+  float: left;
+}
+.content form {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -206px;
+  color: #666;
+  width: 332px;
+  box-sizing: border-box;
+  padding: 24px;
+  background-color: #fff;
+}
+.content form h3 {
+  padding: 0 0 30px 0;
+}
+.content form div {
+  margin: 15px 0;
+}
+.content form .input {
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  padding: 0px 5px;
+  height: 35px;
+}
+.content form .input input {
+  line-height: 31px;
+  margin-top: 1.5px;
+  vertical-align: middle;
+}
+.content form span {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+}
+.content form .remember .left {
+  float: left;
+}
+.content form .remember .left img {
+  margin-right: 5px;
+}
+.content form .remember .right {
+  color: #1a9eff;
+  margin-right: 0;
+  float: right;
+}
+.content form .remember .right a {
+  color: #1a9eff;
+}
+.content form .btn {
+  display: inline-block;
+  height: 40px;
+  background-color: #1a9eff;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+}
+.content form p {
+  margin: 10px 0;
+}
+.content form .ways {
+  margin-top: 70px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+.content form .ways i {
+  display: inline-block;
+  background-color: white;
+  padding: 0 5px;
+  position: relative;
+  top: 6px;
+}
+.content form .qq {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+.content form .qq a {
+  display: inline-block;
+  padding: 0 5px;
+}
+.footer {
+  padding: 30px 0 35px 0;
+  color: #666;
+}
+.footer p {
+  line-height: 20px;
+  text-align: center;
+}

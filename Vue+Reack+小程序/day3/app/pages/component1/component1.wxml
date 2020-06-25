@@ -1,0 +1,69 @@
+
+<!-- x方向的案例 -->
+<scroll-view class="menu" scroll-x="{{ true }}">
+  <block wx:for="{{ menu }}">
+    <view class="menu_item">
+        {{ item }}
+    </view>
+  </block>
+</scroll-view>
+
+<!-- 
+    view
+ -->
+ <!-- <view  class="parent" hover-class="activebox1">
+  parent
+  <view   
+      class="box"
+      hover-class="activebox"
+      hover-start-time="1000"
+      hover-stay-time="5000"
+      hover-stop-propagation="{{ true }}"
+  >
+    child
+  </view>
+ </view> -->
+
+<!-- 
+  swiper
+  swiper-item
+
+    indicator-dots="{{ true }}"
+  indicator-color="#000"
+  indicator-active-color="#fff"
+ -->
+
+<swiper  class="swiper"
+  circular="{{ true }}"
+  autoplay="{{ true }}"
+  interval="1000"
+  vertical="{{ false }}"
+  display-multiple-items="1"
+  bindchange="swiperchange"
+>
+   <swiper-item  wx:for="{{ imgs }}">
+      <image src="{{ item }}" ></image>
+   </swiper-item> 
+</swiper>
+
+<view class="customdots">
+
+  <view wx:for="{{ [1,2,3] }}"   class="customdots_view {{ activeindex == index ? 'activedots' :'' }}">
+
+  </view>
+
+</view>
+<!-- 竖向滚动 y -->
+<!-- <scroll-view class="scrollview" scroll-y="{{ true }}">
+    <view class="red">red</view>
+    <view class="green">green</view>
+    <view class="blue">blue</view>
+</scroll-view> -->
+
+<!-- 横向滚动 X -->
+    
+<scroll-view class="scrollview" scroll-x="{{ true }}">
+    <view class="red">red</view>
+    <view class="green">green</view>
+    <view class="blue">blue</view>
+</scroll-view>

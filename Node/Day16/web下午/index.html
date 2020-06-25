@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.0.0.js"></script>
+</head>
+
+<body>
+    <div>
+        <div>手机号:<input id="txttel" type="text"> </div>
+        <div>验证码:<input id="txtparam" type="text"> <input id="btget" type="button" value="获取验证码"> </div>
+        <div>姓名: <input type="text" id="txtname"> </div>
+        <div><input type="button" id="btsubmit" value="提交"> </div>
+        <div><label for="" id="msg"></label></div>
+    </div>
+    <script>
+        $("#btget").click(function () {
+            var tel = $("#txttel").val();
+            $.ajax({
+                url: `http://localhost:3000/api/getver?tel=${tel}`,
+                type: "get",
+                dataType: "json",
+                success: (data) => {
+                    $("#msg").html(data.message);
+                },
+                error: () => {
+
+                }
+            })
+        })
+
+        $("#btsubmit").click(()=>{
+            $.ajax({
+                url:`http://localhost:3000/api/saveinfo`,
+                type:"post",
+                dataType:"json",
+                data:{
+                    tel:$("#txttel").val(),
+                    param:$("#txtparam").val(),
+                    pname:$("#txtname").val()
+                },
+                success:(data)=>{
+                    $("#msg").html(data.message);
+                },
+                error:(err)=>{
+                    $("#msg").html(err.message);
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>

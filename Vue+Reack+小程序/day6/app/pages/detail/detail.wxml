@@ -1,0 +1,6 @@
+<!--pages/detail/detail.wxml-->
+<view>
+
+  {{ content }}
+
+</view>

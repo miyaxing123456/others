@@ -1,0 +1,36 @@
+<!--pages/component2/component2.wxml-->
+<!-- 
+  selectable  可不可以被长按复制剪切( 在模拟器上演示用鼠标左键长按)
+  space  连续显示空格
+  decode  是否解码
+   decode可以解析的有 &nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp;
+ -->
+<text 
+  selectable="{{ true }}"
+>text组件</text>
+<view></view>
+<text space="nbsp">你好           世界！</text>
+
+<view></view>
+<text decode="{{ true }}">我爱 &gt; 打游戏</text>
+
+<view></view>
+<!-- div\h2\a -->
+<h2>我是h2标签</h2>
+<view></view>
+<text>我是H2标签</text>
+
+<!-- 
+  rich-text  富文本   （v-html）
+
+ -->
+ <!-- <h2>我是h2标签</h2>  html string 形式-->
+ <rich-text nodes="<h2>我是h2标签</h2>"></rich-text>
+
+ <!-- array 数组形式 -->
+ <rich-text nodes="{{ nodesArray }}"></rich-text>
+ <rich-text nodes="{{ nodesBrray }}"></rich-text>
+
+
+
+

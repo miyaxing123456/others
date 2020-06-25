@@ -1,0 +1,192 @@
+body{
+	width: 100%;
+	background-color: #fff;
+}
+.side{
+	position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 480px;
+    background-image: url(../images/side01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.side a{
+	position: fixed;
+    top: 0;
+    left: 0;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 36px 43px;
+    z-index: 2;
+    height: 43px;
+    line-height: 43px;
+    padding-left: 46px;
+    margin-left: 30px;
+    margin-top: 18px;
+    font-size: 36px;
+    display: block;
+    color: #000;
+}
+.header{
+	min-width: 560px;
+    text-align: right;
+}
+.header a{
+	display: inline-block;
+    margin: 20px 40px 0 0;
+    font-size: 16px;
+    color: rgba(0,0,0,.6);
+    padding: 10px 0 0;
+    line-height: 24px;
+}
+.header a:hover{
+	color: rgba(0,0,0,.9);
+}
+.header a:first-child{
+	border-radius: 6px;
+    background: linear-gradient(126deg,#fc4754,#ff794c) #f54444;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 0 10px 0 24px;
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+}
+.header a:first-child img{
+	position: absolute;
+    left: -3px;
+    bottom: 0;
+    z-index: 1;
+}
+.header a:nth-child(2) img{
+	vertical-align: middle;
+}
+.header a:nth-child(2) .up{
+	display: none;
+}
+
+
+.section{
+	margin: 54px 0 0 480px;
+}
+.section form{
+	margin: 0 auto;
+    width: 480px;
+}
+form p:first-child{
+	font-size: 44px;
+    margin-bottom: 20px;
+}
+form .lianghao_{
+	font-size: 28px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    color: #333;
+}
+form .lianghao{
+	float: right;
+	font-size: 24px;
+	color: #359eff;
+}
+form .name,
+.password,.nation,
+.phone{
+	margin-top: 24px;
+	border: 1px #aaa solid;
+    border-radius: 4px;
+    background: 0 0;
+    text-align: left;
+    font-size: 20px;
+    width: 438px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+form .option{
+	margin-top: 24px;
+    height: 52px;
+    position: relative;
+}
+form .option .nation{
+	float: left;
+	margin-top: 0px;
+	width: 112px;
+}
+form .option .phone{
+	float: right;
+	margin-top: 0px;
+	width: 265px;
+}
+form ul{
+	border: 1px #b2b2b2 solid;
+    background-color: #fff;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,.15);
+    font-size: 20px;
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 2;
+    top: 51px;
+    width: 480px;
+    height: 200px;
+    display: none;
+}
+form .option .selector{
+	position: absolute;
+    right: 325px;
+    top: 0;
+    height: 52px;
+    line-height: 52px;
+    padding-right: 12px;
+}
+form .option .selector img{
+	vertical-align: middle;
+}
+form p.text{
+	font-size: 14px;
+    color: #999;
+    white-space: nowrap;
+}
+form .submit{
+	border: 1px #3083ff solid;
+    border-radius: 4px;
+    background-color: #3487ff;
+    box-shadow: 0 5px 8px 0 rgba(24,95,255,.1);
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    background-image: linear-gradient(0deg,#398bff,#3083ff);
+    width: 478px;
+    height: 60px;
+    margin: 40px 0 8px;
+    font-size: 24px;
+}
+form .argeement{
+	margin-top: 16px;
+    line-height: 18px;
+    font-size: 14px;
+}
+form .argeement p:first-child{
+	line-height: 30px;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0px;
+}
+form .argeement p:first-child img{
+	vertical-align: middle;
+}
+form .argeement .rule{
+	text-indent: 25px;
+}
+form .argeement p a{
+	color: #359eff;
+}
+.footer{
+	font-size: 14px;
+    color: #bbb;
+    text-align: center;
+    margin: 130px 0 0 480px;
+    font-weight: lighter;
+}

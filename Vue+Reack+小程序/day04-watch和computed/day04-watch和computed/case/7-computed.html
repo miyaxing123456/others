@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{name}}</h1>
+        <h1>{{age}}</h1>
+        <input type="text" v-model="name">
+        <h1>{{reverseName}}</h1>
+
+        <ul>
+            <!-- arr数组有7条数据，但是页面只展示前4条数据 -->
+            <li v-for="item in arr4" :key="item.id">{{item.name}}</li>
+        </ul>
+        <ol>
+            <li v-for="item in man" :key="item.id">{{item.name}}</li>
+        </ol>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: "#app", //挂载点
+            data: { //属性-数据
+                name: "妲己",
+                arr: [{
+                        id: "1",
+                        name: "张杰",
+                        sex: "男"
+                    },
+                    {
+                        id: "2",
+                        name: "谢娜",
+                        sex: "女"
+                    },
+                    {
+                        id: "3",
+                        name: "胡歌",
+                        sex: "男"
+                    },
+                    {
+                        id: "4",
+                        name: "王凯",
+                        sex: "男"
+                    },
+                    {
+                        id: "5",
+                        name: "李现",
+                        sex: "男"
+                    },
+                    {
+                        id: "6",
+                        name: "邓伦",
+                        sex: "男"
+                    },
+                    {
+                        id: "7",
+                        name: "任嘉伦",
+                        sex: "男"
+                    },
+                ]
+            },
+            methods: { //方法-函数
+                fn() {
+                    var name = this.name
+                }
+            },
+            watch: { //监听属性的改变
+
+            },
+            computed: { //计算属性
+                //1.已经声明过的属性就不能再次声明
+                //2.data里面的属性是定义初始值，computed里面的属性是经过data|computed 属性计算得到属性
+                //3.如果计算属性依赖的属性发生了改变，计算属性会重置计算。
+                age() {
+                    return 10;
+                },
+                reverseName() {
+                    var arr = this.name.split("");
+                    return arr.reverse().join("")
+                },
+                arr4() {
+                    //arr前4条数据取出来,拼成一个新数组
+                    //forEach map filter some every find findIndex
+                    // return this.arr.filter((item, index) => {
+                    //     return index < 4
+                    // })
+                    return this.arr.filter((item,index)=>index<4)
+                },
+                man(){
+                    // return this.arr.filter(item=>{
+                    //     return item.sex=="男"
+                    // })
+                    return this.arr.filter(item=>item.sex=="男")
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

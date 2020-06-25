@@ -1,0 +1,591 @@
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.head {
+  height: 55px;
+  background-color: #242428;
+}
+.head .logo {
+  width: 120px;
+  height: 25px;
+  margin-top: 14px;
+  margin-right: 35px;
+}
+.head .logo a {
+  display: block;
+}
+.head .logo a img {
+  width: 100%;
+  height: 100%;
+}
+.head .text {
+  font-size: 12px;
+  color: #989898;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+.head .search {
+  width: 564px;
+  height: 30px;
+  margin-top: 14px;
+  position: relative;
+}
+.head .search input {
+  width: 440px;
+  padding: 0 20px;
+  line-height: 30px;
+  background-color: #383a42;
+  font-size: 12px;
+  color: #989898;
+  border-radius: 5px 0 0 5px;
+}
+.head .search .btn {
+  width: 84px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #009cff;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+.head .search ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #cfd2d5;
+}
+.head .search ul li {
+  height: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.head .search ul li:hover {
+  background-color: #e8e8e8;
+}
+.head .textright {
+  color: #989898;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 11px;
+  margin-left: 35px;
+}
+.main {
+  background-color: #383a42;
+}
+.main .player-head p:first-child {
+  font-size: 16px;
+  color: #fff;
+  margin: 0 0 10px 0;
+  padding-top: 10px;
+}
+.main .player-head p:last-child {
+  font-size: 12px;
+  color: #809882;
+  margin: 10px 0;
+}
+.main .player {
+  width: 1060px;
+  height: 635px;
+  background-color: #959595;
+}
+.main .player vedio {
+  width: 100%;
+  height: 100%;
+}
+.main .player-side {
+  width: 140px;
+  height: 635px;
+  background-color: #242428;
+  position: relative;
+  overflow: hidden;
+}
+.main .player-side .tabchange {
+  width: 140px;
+  height: 51px;
+  font-size: 0px;
+  z-index: 5;
+  position: relative;
+  background-color: #000;
+}
+.main .player-side .tabchange a {
+  font-size: 16px;
+  display: inline-block;
+  width: 70px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid #3a3a3a;
+}
+.main .player-side .tabchange a.active {
+  color: #1a9eff;
+  border-bottom: 1px solid #1a9eff;
+}
+.main .player-side .scroll {
+  position: relative;
+}
+.main .player-side .scroll .scroll-content {
+  width: 130px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .player-side .scroll .scroll-content ul {
+  display: none;
+  padding: 0 10px;
+}
+.main .player-side .scroll .scroll-content ul li {
+  position: relative;
+  width: 110px;
+  height: 50px;
+  line-height: 50px;
+  color: #989898;
+  border-bottom: 1px solid #3a3a3a;
+}
+.main .player-side .scroll .scroll-content ul li i {
+  vertical-align: middle;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #989898;
+}
+.main .player-side .scroll .scroll-content ul.active {
+  display: block;
+}
+.main .player-side .scroll .scroll-box {
+  width: 10px;
+  height: 584px;
+  background-color: #2b2c31;
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+.main .player-side .scroll .scroll-box span {
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  background-color: #3d4047;
+}
+.main .player-foot {
+  height: 45px;
+  background-color: #242424;
+}
+.main .player-foot p {
+  margin: 15px 10px;
+  color: #989898;
+}
+.main .player-foot p i {
+  margin: 5px;
+  color: #989898;
+}
+.main .player-foot div {
+  width: 140px;
+  line-height: 45px;
+  background-color: #398ee6;
+  color: #fff;
+  text-align: center;
+}
+.fix {
+  position: relative;
+}
+.content .ad-left {
+  width: 1000px;
+  height: 175px;
+}
+.content .ad-left div {
+  width: 700px;
+  height: 85px;
+  margin: 30px auto 0;
+}
+.content .ad-left div img {
+  width: 100%;
+  height: 100%;
+}
+.content .ad-right {
+  width: 200px;
+  height: 175px;
+}
+.content .ad-right div {
+  width: 200px;
+  height: 85px;
+  margin-top: 30px;
+}
+.content .ad-right div img {
+  width: 100%;
+  height: 100%;
+}
+.guess {
+  width: 1000px;
+}
+.guess h2 {
+  border-left: 3px solid #398ee6;
+  padding-left: 15px;
+  width: 100px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  color: #000;
+  margin-bottom: 15px;
+}
+.guess ul li {
+  width: 185px;
+  height: 337px;
+  overflow: hidden;
+  margin: 0 15px 30px 0;
+  float: left;
+}
+.guess ul li a {
+  display: block;
+  position: relative;
+  width: 185px;
+  height: 287px;
+}
+.guess ul li a img {
+  width: 100%;
+  height: 100%;
+}
+.guess ul li .film-text {
+  width: 185px;
+  height: 50px;
+  position: relative;
+}
+.guess ul li .film-text h3 {
+  font-size: 14px;
+  color: #000;
+  width: 168px;
+  height: 20px;
+  margin-top: 4px;
+  line-height: 20px;
+}
+.guess ul li .film-text h4 {
+  color: #999;
+  width: 168px;
+  height: 18px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.guess ul li .film-text .film-score {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  color: #f60;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  font-size: 16px;
+}
+.recommend {
+  width: 800px;
+}
+.recommend .title {
+  width: 800px;
+  height: 41px;
+}
+.recommend .title h2 {
+  border-left: 3px solid #398ee6;
+  padding-left: 15px;
+  width: 100px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  color: #000;
+  margin-bottom: 15px;
+}
+.recommend .title a {
+  margin-left: 20px;
+  display: block;
+  font-size: 12px;
+  font-family: "宋体";
+  color: #000;
+  text-decoration: none;
+  line-height: 20px;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+.recommend ul li {
+  float: left;
+  width: 185px;
+  height: 138px;
+  margin: 0 15px 20px 0;
+  position: relative;
+}
+.recommend ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.recommend ul li a img {
+  width: 100%;
+  height: 100%;
+}
+.recommend ul li p {
+  width: 180px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  color: #fff;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.board .title {
+  width: 200px;
+  height: 41px;
+}
+.board .title h2 {
+  border-left: 3px solid #398ee6;
+  padding-left: 15px;
+  width: 90px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  color: #000;
+  margin-bottom: 15px;
+}
+.board .title a {
+  margin-left: 20px;
+  display: block;
+  font-size: 12px;
+  font-family: "宋体";
+  color: #000;
+  text-decoration: none;
+  line-height: 20px;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+.board ul {
+  width: 200px;
+}
+.board ul li {
+  position: relative;
+}
+.board ul li a {
+  width: 200px;
+  height: 135px;
+  display: none;
+}
+.board ul li a img {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.board ul li p {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+}
+.board ul li p span:first-child {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  background-color: #989898;
+  color: #fff;
+  border-radius: 50%;
+}
+.board ul li p span:nth-child(2) {
+  font-size: 12px;
+  color: #000;
+}
+.board ul li p span:last-child {
+  font-size: 12px;
+  color: #f60;
+}
+.board ul li.active a {
+  display: block;
+}
+.board ul li.active a img {
+  display: block;
+}
+.board ul li.active p {
+  width: 195px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-left: 5px;
+}
+.board ul li.active p span:first-child {
+  background-color: #1a9eff;
+}
+.board ul li.active p span:nth-child(2) {
+  color: #fff;
+}
+.board ul li.active p span:last-child {
+  display: none;
+}
+.comment {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.comment .title {
+  width: 200px;
+  height: 41px;
+  position: relative;
+}
+.comment .title h2 {
+  border-left: 3px solid #398ee6;
+  padding-left: 2px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  color: #000;
+  margin-bottom: 15px;
+}
+.comment .title p:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.comment .title p:last-child span {
+  color: #1a9eff;
+}
+.comment textarea {
+  width: 178px;
+  height: 104px;
+  padding: 10px;
+  resize: none;
+}
+.comment .btn {
+  width: 83px;
+  height: 30px;
+  background-color: #1a9eff;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  margin: 5px 0;
+  margin-left: 116px;
+  border-radius: 5px;
+}
+.comment .prompt {
+  font-size: 12px;
+  text-align: right;
+}
+.comment .prompt a {
+  color: #1a9eff;
+  text-decoration: underline;
+}
+.comment .change {
+  width: 200px;
+  height: 40px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 20px;
+}
+.comment .change a {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+}
+.comment .change a.active {
+  color: #1a9eff;
+  border-bottom: 1px solid #1a9eff;
+}
+.comment ul {
+  width: 200px;
+}
+.comment ul li {
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+}
+.comment ul li div a {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.comment ul li div a img {
+  width: 100%;
+  height: 100%;
+}
+.comment ul li div .name {
+  font-size: 12px;
+  color: #000;
+}
+.comment ul li div .name span {
+  color: #696969;
+}
+.comment ul li .text {
+  width: 200px;
+  height: 25px;
+  margin: 20px 0 0px 0;
+  font-size: 12px;
+  color: #000;
+}
+.comment ul li .zan {
+  width: 200px;
+  margin-bottom: 5px;
+  text-align: right;
+  color: #696969;
+}
+.comment .foot-current {
+  margin-left: 5px;
+  color: #000;
+}
+.comment .foot-current input {
+  width: 14px;
+  height: 20px;
+}
+.comment .foot-btn {
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+  border: 1px solid #c0c0c0;
+}
+.comment .up {
+  margin-left: 24px;
+}
+.comment .nomore {
+  color: #c0c0c0;
+}
+.ad-middle {
+  width: 950px;
+  height: 83px;
+  margin: 50px auto;
+}
+.ad-middle img {
+  width: 100%;
+  height: 100%;
+}
+.footer .content {
+  padding-top: 20px;
+  border-top: 3px solid #1a9eff;
+}
+.footer .content p {
+  color: #989898;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer .content p a {
+  color: #989898;
+}

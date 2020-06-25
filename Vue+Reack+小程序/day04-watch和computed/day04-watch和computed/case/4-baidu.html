@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <script src="./vue.js"></script>
+    <style>
+        .select {
+            background: #333333;
+            color: #fff;
+        }
+        *{
+            margin: 0px;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        流程：
+        1.定义了结构
+        2.定义属性 kw arr
+        3.监听kw 发起请求 回调函数处理数据
+        4.遍历arr
+        5.页面只要前4条数据，所以我们使用了条件渲染，注意：v-for和v-if不要同时使用在一个节点上。
+        6.定义了一个变量num,记录被选中的li的下标，使用动态类名实现个别选中
+        7.按了下键，num自增；按了上键，num自减
+        8.按了回车键，跳转页面。
+     -->
+    <div id="app">
+        <input type="text" v-model="kw" @keydown.down="down" @keydown.up.prevent="up" @keydown.enter="enter">
+        <ul>
+            <li v-for="(item,index) in arr"  :key="item" :class="{'select':index===num}">
+                <div v-if="4>index">
+                    {{item}}
+                </div>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    <script>
+        //url:  http://suggestion.baidu.com/su?cb=callback&wd=123
+        var vm = new Vue({
+            el: "#app", //挂载点
+            data: { //属性-数据
+                kw: "", //输入框的值
+                arr: [], //请求回来的数据
+                num: -1, //选中的li的下标
+            },
+            methods: { //方法-函数
+                //下键
+                down() {
+                    this.num++;
+                    if (this.num >= 4) {
+                        this.num = -1;
+                    }
+                },
+                //上键
+                up() {
+                    this.num--;
+                    if (this.num <= -1) {
+                        this.num = 4;
+                    }
+                },
+                //回车
+                enter(){
+                    if(this.num>=0&&this.num<4){
+                        window.open("https://www.baidu.com/s?wd="+this.arr[this.num],"_self")
+                    }else{
+                        window.open("https://www.baidu.com/s?wd="+this.kw,"_self")
+                    }
+                    
+                }
+            },
+            watch: {
+                kw() { //监听kw的变化，发生改变，就发起请求
+                    if (this.kw === "") {
+                        this.arr = [];
+                        return;
+                    }
+
+                    //1创建script
+                    var os = document.createElement("script")
+
+                    //2.src赋值
+                    os.src = "http://suggestion.baidu.com/su?cb=callback&wd=" + this.kw;
+
+                    //3.插入
+                    document.body.appendChild(os)
+                }
+            }
+        })
+
+        //4.回调函数处理
+        function callback(data) {
+            // console.log(data);
+            vm.arr = data.s;
+
+        }
+    </script>
+</body>
+
+</html>

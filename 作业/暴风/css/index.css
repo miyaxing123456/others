@@ -1,0 +1,202 @@
+.main-layer {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.main-layer .vip-content {
+  position: relative;
+  height: 440px;
+  margin-bottom: 30px;
+}
+.main-layer .vip-content .banner-wrap {
+  width: 1100px;
+  height: 440px;
+  margin-bottom: 30px;
+  background: #ddd;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main-layer .vip-content .banner-wrap div {
+  width: 1100px;
+  height: 440px;
+  float: left;
+  /*position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 0;*/
+}
+.main-layer .vip-content .banner-wrap div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main-layer .vip-content .banner-wrap div a img {
+  width: 100%;
+  height: 100%;
+  display: none;
+  border: none;
+}
+.main-layer .vip-content .btn {
+  z-index: 11;
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -21.5px;
+  width: 43px;
+  height: 43px;
+  background-image: url(../img/vip-tips.png);
+  opacity: .7;
+}
+.main-layer .vip-content .btn:hover {
+  opacity: 1;
+}
+.main-layer .vip-content .btnLeft {
+  background-position: 0 -50px;
+}
+.main-layer .vip-content .btnRight {
+  background-position: -43px -50px;
+  right: 0;
+}
+.main-layer .vip-content .focus-list {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url(../img/vip-tips.png) 0 -100px;
+  text-align: center;
+  z-index: 10;
+}
+.main-layer .vip-content .focus-list ul {
+  display: inline-block;
+  width: auto;
+  height: 50px;
+  padding: 10px 0 10px 8px;
+}
+.main-layer .vip-content .focus-list ul li.current a {
+  opacity: 1;
+}
+.main-layer .vip-content .focus-list ul li.current a i {
+  display: inline-block;
+  width: 64px;
+  height: 46px;
+  border: 2px solid #e6e6e6;
+}
+.main-layer .vip-content .focus-list ul li {
+  display: inline-block;
+  width: 68px;
+  height: 50px;
+  margin-right: 8px;
+  position: relative;
+  background: #000;
+}
+.main-layer .vip-content .focus-list ul li a {
+  display: inline-block;
+  width: 68px;
+  height: 50px;
+  opacity: .5;
+}
+.main-layer .vip-content .focus-list ul li a img {
+  width: 68px;
+  height: 50px;
+  display: none;
+  border: none;
+}
+.main-layer .vip-content .focus-list ul li a i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.main-layer .vip-caption-roller .title {
+  background-position: 0 0;
+}
+.main-layer .vip-roller {
+  width: 1100px;
+  height: 111px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.main-layer .vip-roller a {
+  display: block;
+  width: 15px;
+  height: 26px;
+  position: absolute;
+  top: 42px;
+  background: url(../img/vip-bgs.png) 0 -124px no-repeat;
+  overflow: hidden;
+  outline: 0;
+}
+.main-layer .vip-roller a.roll-left {
+  left: 0;
+}
+.main-layer .vip-roller a.roll-right {
+  right: 0;
+  background-position: -15px -124px;
+}
+.main-layer .vip-roller .roller-box {
+  width: 1060px;
+  height: 111px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 0 0 20px;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap {
+  width: 10000px;
+  height: 111px;
+  position: absolute;
+  left: 0;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap li {
+  display: block;
+  width: 200px;
+  height: 111px;
+  float: left;
+  margin-right: 15px;
+  background-image: url(../img/vip-powers.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap li.no-ad {
+  background-position: 0 0;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap li.for-free {
+  background-position: -200px 0;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap li.discount {
+  background-position: -400px 0;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap li.rapid {
+  background-position: -600px 0;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap .vip-roller .roller-box li.activity {
+  background-position: -800px 0;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap li.identify {
+  background-position: -1000px 0;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap li.customization {
+  background-position: -1200px 0;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap li.high-quality {
+  background-position: -1400px 0;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap li.more-token {
+  background-position: -1600px 0;
+}
+.main-layer .vip-roller .roller-box .roller-box-wrap li.custom-service {
+  background-position: -1800px 0;
+}
+.main-layer .vip-banner {
+  height: 80px;
+  margin-bottom: 30px;
+}
+.main-layer .recommend .title {
+  background-position: 0 -24px;
+}
+.main-layer .hot .title {
+  background-position: 0 -48px;
+}

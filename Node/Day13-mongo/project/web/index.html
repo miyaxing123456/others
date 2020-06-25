@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.0.0.js"></script>
+</head>
+
+<body>
+    <h1>这里是首页</h1>
+    <h2>产品列表</h2>
+    <table id="tb">
+        <tr>
+            <td>ID</td>
+            <td>名称</td>
+            <td>价格</td>
+            <td>库存</td>
+            <td>地址</td>
+        </tr>
+    </table>
+    <script>
+        $.ajax({
+            url: "http://localhost:3000/api/productlist",
+            type: "get",
+            dataType: "json"
+        })
+            .then(data => {
+                //DOM 在页面中把数据渲染。
+                //url API ；数据结构
+                if (data.code > 0) {
+                    console.log("错误");
+                } else {
+                    console.log(data.data);
+                    data.data.forEach(element => {
+                        var html = `<tr>
+                            <td>${element.pid}</td>
+                            <td>${element.pname}</td>
+                            <td>${element.pprice}</td>
+                            <td>${element.pcount}</td>
+                            <td>${element.paddress}</td>
+                            <td>
+                                <input type="button" onclick="remove(${element.pid})" class="btremove" value="删除">
+                            </td>
+                            </tr>`
+                        $("#tb").append(html);
+                    });
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            })
+
+
+        function remove(pid){
+            
+            $.ajax({
+                url:"http://localhost:3000/api/removeproduct/"+pid,
+                type:"get",
+                dataType:"json"
+            })
+            .then(data=>{
+                if(data.code>0){
+                    alert("失败")
+                }else{
+                    alert("成功")
+                }                
+            }).catch(err=>{
+                alert("失败")
+            })
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!--pages/component3/component3.wxml-->
+
+<!-- 本地图片 -->
+<image src="/imgs/2.jpg"></image>
+<!-- 网络图片 -->
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>
+<image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/113631/10/9000/134239/5ed47037E7789aa13/f67d643d1d3cdf1f.jpg!cr_1125x445_0_171!q70.jpg.dpg"
+  show-menu-by-longpress="{{ true }}"
+  bindload="imgload"
+  lazy-load="{{ true }}"
+></image>

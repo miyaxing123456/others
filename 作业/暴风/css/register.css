@@ -1,0 +1,56 @@
+.content .yanzhengma {
+  margin: 0;
+}
+.content .yanzhengma div {
+  margin: 0;
+}
+.content .yanzhengma .yanzheng {
+  width: 160px;
+  float: left;
+}
+.content .yanzhengma .yanzheng input {
+  width: 120px;
+}
+.content .yanzhengma .ma {
+  float: right;
+}
+.content .yanzhengma .ma i {
+  display: inline-block;
+  line-height: 33px;
+  height: 33px;
+  text-align: center;
+}
+.content .yanzhengma .ma .number {
+  width: 81px;
+  border: 1px solid #e0e0e0;
+}
+.content .yanzhengma .ma .number2 {
+  width: 115px;
+}
+.content .yanzhengma .ma .number1 {
+  font-size: 24px;
+  color: #2040a0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content .remember .left a {
+  color: #1a9eff;
+}
+.content form {
+  margin-top: -256px;
+}
+.content form .ways {
+  margin-top: 30px;
+}
+.content .password .qiangdu {
+  float: right;
+  display: inline-block;
+  width: 50px;
+  height: 33px;
+  text-align: center;
+  line-height: 33px;
+  background-color: #e0e0e0;
+  margin-right: -5px;
+}
+.content form div.input{
+  margin-bottom: 20px;
+}

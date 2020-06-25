@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsonp</title>
+</head>
+
+<body>
+    <input type="text">
+    <ul>
+        <!-- <li>123</li>
+        <li>12354</li> -->
+    </ul>
+    <script>
+        //前端 -ajax/jsonp---服务端
+        //jsonp 
+        //url:  http://suggestion.baidu.com/su?cb=callback&wd=123
+        var input = document.querySelector("input")
+        var ul = document.querySelector('ul');
+
+        input.oninput = function () {
+            if(input.value===""){
+                ul.innerHTML="";
+                return;
+            }
+
+            //发起请求 得到数据 遍历到ul
+
+            //1.创建script标签
+            var os = document.createElement("script")
+
+            //2.给script的src赋值
+            os.src = "http://suggestion.baidu.com/su?cb=aa&wd=" + input.value;
+
+            //3.插入到页面
+            document.body.appendChild(os)
+        }
+
+        //4.回调函数处理数据
+        function aa(data) {
+             // console.log(data);
+            var arr = data.s;
+           
+            ul.innerHTML=""
+            for(var i=0;i<arr.length;i++){
+                var li=document.createElement("li");
+                li.innerHTML=arr[i];
+                ul.appendChild(li)
+            }
+
+        }
+    </script>
+</body>
+
+</html>

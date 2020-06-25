@@ -1,0 +1,455 @@
+body,
+.head{
+	width: 100%;
+	background-color: #fff;
+
+}
+h2{
+	font-size: 30px;
+	width: 1200px;
+	margin: 50px 0 35px 0;
+	text-align: center;
+}
+ .header{
+	width: 1200px;
+	height: 90px;
+	margin: 0 auto;
+	border-bottom: 1px solid #f2f2f2;
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+ .header .logo{
+	width: 167px;
+	height: 90px;
+	line-height: 90px;
+}
+ .header .logo a{
+	display: inline-block;
+	width: 167px;
+	height: 90px;
+}
+ .header .logo a img{
+	width: 167px;
+	height: 45px;
+	vertical-align: middle;
+}
+ .header .nav{
+	height: 90px;
+}
+ .header .nav ul li{
+	width: 94px;
+	height: 90px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 90px;
+	float: left;
+}
+ .header .nav ul li a{
+	color: #000;
+}
+ .header .nav ul li:hover a{
+	color: #31c27c;
+}
+ .header .search{
+	width: 220px;
+	height: 90px;
+	line-height: 90px;
+	position: relative;
+}
+ .header .search div input{
+	width: 174px;
+	height: 36px;
+	border:1px solid #c9c9c9;
+	padding:0 33px 0 11px;
+}
+ .header .search div button{
+	width: 34px;
+	height: 34px;
+	border:0;
+	outline: none;
+	background-color: #fff;
+	position: absolute;
+	top: 27px;
+	right: 2px;
+}
+ .header .search div button:hover{
+	color: #31c27c;
+}
+ .header .login{
+	width:260px ;
+	height: 90px;
+	line-height: 90px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+}
+ .header .login a{
+	font-size: 16px;
+}
+ .header .login a:hover{
+	color: #31c27c
+}
+ .header .login button{
+	width: 111px;
+	height: 38px;
+	border:0;
+	outline: none;
+	background-color: #33c47c;
+}
+ .header .login button:hover{
+	background-color: #2caf6f;
+}
+ .header .login button:last-child{
+	width: 85px;
+	height: 38px;
+	outline: none;
+	color: #000;
+	border: 1px solid #c9c9c9;
+	background-color: #fff;
+}
+ .header .login button:last-child:hover{
+	background-color: #ededed;
+}
+.subnav{
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+ .subnav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+ .subnav ul li{
+	height: 50px;
+	padding:0 25px;
+	line-height: 50px;
+}
+ .subnav ul li a{
+	font-size: 15px;
+	color: #000;
+}
+ .subnav ul li a:hover{
+	color: #31c37b;
+}
+
+
+
+.banner{
+	position: relative;
+    width: 100%;
+    height: 376px;
+    color: #fff;
+    background: url(../images/bg_singer.jpg) 50% 0 repeat-x;
+    overflow: hidden;
+}
+.banner .section{
+	max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.banner .section h2{
+	margin: 103px auto 0;
+	width: 497px;
+    height: 66px;
+    font-size: 60px;
+}
+.banner .section p{
+	width: 260px;
+    height: 30px;
+    margin: 20px auto 0;
+    font-size: 26px;
+}
+.banner .section a{
+    display: block;
+    margin: 20px auto 0;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 48px;
+    width: 174px;
+    border: 1px solid;
+    border-color: rgba(255,255,255,.2);
+    transition-property: border-color;
+    transition-duration: .3s;
+    transition-timing-function:linear;
+}
+.banner .section a:hover{
+	border-color: rgba(255,255,255,1);
+}
+
+
+.main .tag{
+	width: 1200px;
+	background-color: #fbfbfd;
+    padding: 34px 0 17px 40px;
+    margin: 30px auto 20px;
+}
+.main .tag p a{
+	display: inline-block;
+	font-size: 14px;
+	padding: 0 8px;
+    margin: 0 12px 14px 0;
+    height: 26px;
+    line-height: 27px;
+}
+.main .tag p a:hover{
+	color: #31c27c;
+}
+.main .tag p a:first-child{
+	background-color: #31c27c;
+    color: #fff;
+    margin-right: 28px;
+}
+.main .tag p a:first-child:hover{
+	color: #fff;
+}
+
+.main .list{
+	width: 1200px;
+	margin: 0 auto;
+}
+.main .list .pic ul{
+	margin-bottom: 30px
+}
+.main .list .pic ul li{
+	float: left;
+    width: 20%;
+	text-align: center;
+    background-color: #fbfbfd;
+    min-height: 195px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.main .list .pic ul li a{
+	display: block;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    border-radius: 126px;
+    overflow: hidden;
+}
+.main .list .pic ul li a img{
+	width: 100%;
+	height: 100%;
+}
+.main .list .pic ul li h3 a{
+	width: auto;
+    height: auto;
+	font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 20px 30px 4px;
+}
+.main .list .pic ul li h3 a:hover,
+.main .list .singer li a:hover{
+	color: #31c27c;
+}
+
+.main .list .singer{
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.main .list .singer li{
+	float: left;
+    width: 20%;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+
+.main .list .all_nav{
+	margin-top: 14px;
+	margin-bottom: 40px;
+	clear: both;
+    text-align: center;
+    font-size: 0;
+    color: #000;
+}
+.all_nav strong,.all_nav a{
+	font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+    padding: 0 21px;
+    box-sizing: border-box;
+    min-width: 24px;
+    color: #a2a2a2;
+}
+.all_nav strong:first-child,
+.all_nav strong:hover,
+.all_nav a:hover
+{
+	background-color: #31c27c;
+	color: #fff;
+}
+
+.footer{
+	width: 100%;
+	min-width: 1200px;
+	color: #999;
+    background-color: #333;
+    clear: both;
+}
+.footer .section{
+	width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer .section .info{
+	overflow: hidden;
+    border-bottom: 1px solid #353535;
+    position: relative;
+    padding-bottom: 45px;
+}
+.footer .section .info .download{
+	position: absolute;
+    top: 0;
+    left: 10px;
+}
+.footer a{
+	color: #999;
+}
+.footer a:hover{
+	color: #31c27c;
+}
+.footer h3{
+	font-size: 15px;
+    font-weight: 400;
+    padding: 80px 0 46px;
+}
+.footer ul{
+	margin-left: -29px;
+}
+.footer ul li{
+	float: left;
+    text-align: center;
+    position: relative;
+}
+.download ul li a i,
+.info ul li a i{
+	display: block;
+    margin: 0 29px 12px;
+    height: 48px;
+    background-image: url(../images/footer.png);
+}
+.pc{
+	width: 37px;
+    background-position: -2px 0;
+}
+.footer a:hover .pc{
+	background-position: -2px -49px;
+}
+.mac{
+	width: 46px;
+    background-position: -92px 0;
+}
+.footer a:hover .mac{
+	background-position: -92px -49px;
+}
+.android{
+	width: 37px;
+    background-position: -190px 0;
+}
+.footer a:hover .android{
+	background-position: -190px -49px;
+}
+.iphone{
+	width: 34px;
+    background-position: -279px 0;
+}
+.footer a:hover .iphone{
+	background-position: -279px -49px;
+}
+.product{
+	position: absolute;
+    top: 0;
+    left: 476px;
+    width: 304px;
+}
+.product ul{
+	position: relative;
+    z-index: 1;
+    margin-left: -25px;
+}
+.product ul li{
+	float: left;
+	margin-bottom: 18px;
+    text-indent: 28px;
+    margin-right: 5px;
+}
+.kg{
+	width: 41px;
+    background-position: -370px 0;
+}
+.footer a:hover .kg{
+	background-position: -370px -49px;
+}
+.ss{
+	width: 37px;
+    background-position: -463px 0;
+}
+.footer a:hover .ss{
+	background-position: -463px -49px;
+}
+.qp{
+	margin-right: 23px !important;
+    width: 40px;
+    background-position: -563px 0;
+}
+.footer a:hover .qp{
+	background-position: -563px -49px;
+}
+.info .group{
+	position: absolute;
+    top: 230px;
+    left: 476px;
+    width: 304px;
+}
+.info .group ul{
+	margin-left: -25px;
+}
+.info .group ul li{
+	float: left;
+    margin: 0 5px 12px 0;
+    text-indent: 25px;
+}
+.link{
+	float: right;
+    width: 300px;
+    padding-bottom: 57px;
+}
+.info .link ul li{
+	float: left;
+    min-width: 100px;
+    margin-bottom: 12px;
+    text-align: left;
+    text-indent: 28px;
+}
+.info .platform{
+	margin: 230px 0 0 10px;
+}
+.info .platform ul{
+	margin-left: -25px;
+}
+.info .platform ul li{
+	float: left;
+    min-width: 100px;
+    margin: 0 5px 12px 0;
+    text-indent: 25px;
+}
+.section .copyright{
+	text-align: center;
+    line-height: 28px;
+    padding: 24px 0;
+}
+

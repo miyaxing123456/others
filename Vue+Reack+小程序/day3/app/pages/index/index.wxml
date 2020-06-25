@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view>
+    <view  class="{{ box }}">
+      class的形式
+    </view>
+
+    <view  style="width:{{ width }}rpx;height:{{ height }}rpx;background-color:blue">
+      style的形式
+    </view>
+    <button bindtap="change">改变</button>
+
+</view>

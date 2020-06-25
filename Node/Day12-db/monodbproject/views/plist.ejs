@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>这里是查询所有产品</h2>
+    <div><%= message%></div>
+    <div>
+        <% for(var item of data){ %>
+            <div>
+                产品名称:<%= item.pname %>---价格:<%= item.pprice%>
+            </div>
+        <%}%>
+    </div>
+</body>
+</html>

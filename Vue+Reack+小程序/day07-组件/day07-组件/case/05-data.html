@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <script src="./vue.js"></script>
+    <style>
+        .box {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1>age:{{age}}</h1>
+       
+        <v-first></v-first>
+        <v-first></v-first>
+        <v-first></v-first>
+        
+    </div>
+    <template id="one">
+        <div class="box">
+            <h1>this is first component</h1>
+            <p>name:{{name}}</p>
+            <input type="text" v-model="name">
+            <p>age:{{age}}</p>
+            <v-second></v-second>
+        </div>
+    </template>
+    <template id="second">
+        <div class="box">this is second</div>
+    </template>
+    <script>
+        new Vue({
+            el: "#app",
+            data:{
+                age:20
+            },
+            methods: {},
+            components: {
+                // 是可复用的vue实例
+                vFirst: {
+                    template: "#one",
+                    // data选项应该是一个返回对象的函数
+                    //如果定义data选项为对象，那么每一次实例的组件，会公用一个data,会出现第一个first修改了name，第二个和第三个first的name也发生修改。
+                    // 组件是为了重复使用，但是互相之间数据又要独立。
+                    //如果我们把data定义成一个函数，返回一个对象，每调用一次组件，就会有一个新的对象作为该组件的属性。
+                    // 组件调用一次，会实例化一个vue对象，执行一遍生命周期
+
+                    // 一个组件只能使用自己的data|computed的数据
+                    data(){
+                        return {
+                            name:"妲己"
+                        }
+                    },
+                    mounted(){
+                        console.log("first挂载完成");
+                        
+                    },
+                    methods:{
+                        aa(){
+                            console.log("aa");
+                            
+                        }
+                    },
+                    watch:{},
+                    computed:{},
+                    components:{
+                        vSecond:{
+                            template:"#second"
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

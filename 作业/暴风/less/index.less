@@ -1,0 +1,257 @@
+// 主要内容区域
+.main-layer {
+    width: 100%;
+    margin-bottom: 30px;
+
+    // 轮播图
+    .vip-content {
+        position: relative;
+        height: 440px;
+        margin-bottom: 30px;
+
+        .banner-wrap {
+            width: 1100px;
+            height: 440px;
+            margin-bottom: 30px;
+            background: #ddd;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            div {
+                width: 1100px;
+                height: 440px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                z-index: 0;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: none;
+                        border: none;
+                    }
+                }
+            }
+
+
+        }
+
+
+        .btn {
+            z-index: 11;
+            position: absolute;
+            display: block;
+            top: 50%;
+            margin-top: -21.5px;
+            width: 43px;
+            height: 43px;
+            background-image: url(../img/vip-tips.png);
+            opacity: .7;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .btnLeft {
+            background-position: 0 -50px;
+        }
+
+        .btnRight {
+            background-position: -43px -50px;
+            right: 0;
+        }
+
+        .focus-list {
+            width: 100%;
+            height: 70px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: url(../img/vip-tips.png) 0 -100px;
+            text-align: center;
+            z-index: 10;
+
+            ul {
+                display: inline-block;
+                width: auto;
+                height: 50px;
+                padding: 10px 0 10px 8px;
+
+                li.current {
+                    a {
+                        opacity: 1;
+
+                        i {
+                            display: inline-block;
+                            width: 64px;
+                            height: 46px;
+                            border: 2px solid #e6e6e6;
+                        }
+                    }
+                }
+
+                li {
+                    display: inline-block;
+                    width: 68px;
+                    height: 50px;
+                    margin-right: 8px;
+                    position: relative;
+                    background: #000;
+
+                    a {
+                        display: inline-block;
+                        width: 68px;
+                        height: 50px;
+                        opacity: .5;
+
+                        img {
+                            width: 68px;
+                            height: 50px;
+                            display: none;
+                            border: none;
+                        }
+
+                        i {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // VIP特权
+    .vip-caption-roller {
+        .title {
+            background-position: 0 0;
+        }
+    }
+
+    // VIP滚动
+    .vip-roller {
+        width: 1100px;
+        height: 111px;
+        margin-bottom: 30px;
+        position: relative;
+
+        a {
+            display: block;
+            width: 15px;
+            height: 26px;
+            position: absolute;
+            top: 42px;
+            background: url(../img/vip-bgs.png) 0 -124px no-repeat;
+            overflow: hidden;
+            outline: 0;
+        }
+
+        a.roll-left {
+            left: 0;
+        }
+
+        a.roll-right {
+            right: 0;
+            background-position: -15px -124px;
+        }
+
+        .roller-box {
+            width: 1060px;
+            height: 111px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 0 0 20px;
+
+            .roller-box-wrap {
+                width: 10000px;
+                height: 111px;
+                position: absolute;
+                left: 0;
+
+                li {
+                    display: block;
+                    width: 200px;
+                    height: 111px;
+                    float: left;
+                    margin-right: 15px;
+                    background-image: url(../img/vip-powers.png);
+                    background-repeat: no-repeat;
+                    overflow: hidden;
+                    text-indent: -9999px;
+                }
+
+                li.no-ad {
+                    background-position: 0 0;
+                }
+
+                li.for-free {
+                    background-position: -200px 0;
+                }
+
+                li.discount {
+                    background-position: -400px 0;
+                }
+
+                li.rapid {
+                    background-position: -600px 0;
+                }
+
+                .vip-roller .roller-box li.activity {
+                    background-position: -800px 0;
+                }
+
+                li.identify {
+                    background-position: -1000px 0;
+                }
+
+                li.customization {
+                    background-position: -1200px 0;
+                }
+
+                li.high-quality {
+                    background-position: -1400px 0;
+                }
+
+                li.more-token {
+                    background-position: -1600px 0;
+                }
+
+                li.custom-service {
+                    background-position: -1800px 0;
+                }
+            }
+        }
+    }
+
+    //广告
+    .vip-banner {
+        height: 80px;
+        margin-bottom: 30px;
+    }
+
+    // 强力推介
+    .recommend {
+        .title {
+            background-position: 0 -24px;
+        }
+    }
+
+    //热映大片
+    .hot {
+        .title {
+            background-position: 0 -48px;
+        }
+    }
+}

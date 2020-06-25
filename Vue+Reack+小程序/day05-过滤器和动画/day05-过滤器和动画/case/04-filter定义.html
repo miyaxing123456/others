@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{name|addNihao}}</h1>
+        <h1>age:{{age|addNihao}}</h1>
+        <div>单价：{{goods.price|filterPrice}}</div>
+        <div>数量：{{goods.num}}</div>
+        <div>总价：{{goods.price*goods.num|filterPrice}}</div>
+
+        <ul>
+            <li v-for="item in students" :key="item.id">{{item.name}}--{{item.tel |filterTel}}</li>
+        </ul>
+    </div>
+    <div id="app2">
+        <h1>app2</h1>
+        <h3>tel：{{tel|filterTel}}</h3>
+    </div>
+    <script>
+
+        //全局定义
+        Vue.filter("filterTel",(tel)=>{
+            return tel.slice(0,3)+"****"+tel.slice(7)
+        })
+
+        var vm = new Vue({
+            el: "#app", //挂载点,
+            data: { //属性
+                name: "妲己",
+                age: 50,
+                goods: {
+                    price: 10,
+                    num: 1
+                },
+                students: [{
+                        id: "1",
+                        name: "zs",
+                        tel: "15737293940"
+                    },
+                    {
+                        id: "2",
+                        name: "lisi",
+                        tel: "15737290000"
+                    },
+                    {
+                        id: "3",
+                        name: "ww",
+                        tel: "15737292222"
+                    },
+                ]
+            },
+            methods: { //方法
+
+            },
+            watch: { //监听
+
+            },
+            computed: { //计算属性
+
+            },
+            //局部定义
+            filters: { //过滤器
+                addNihao(val) {
+                    console.log(val); //过滤对象  
+                    return "你好，" + val;
+                },
+                filterPrice(price) {
+                    return price.toFixed(3)
+                },
+
+            }
+        })
+        var vm2 = new Vue({
+            el: "#app2",
+            data: {
+                tel: "18439203049"
+            }
+        })
+    </script>
+</body>
+
+</html>

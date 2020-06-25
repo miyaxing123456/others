@@ -1,0 +1,156 @@
+{
+    "banner":[
+        {
+            "img":"images/variety/1.webp.jpg",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":2,
+            "title": "青春有你2",
+            "actor":"蔡徐坤 / Lisa / 陈嘉桦 / 肖佳 ",
+            "content":"延续《青春有你》IP，原班团队打造，2020年Q1爱奇艺S级自制综艺。《青春有你》第二季模式全新升级，赛制更加激烈有趣，青春制作人代表和导师团阵营将带领109位女生开启全新的青春拼搏之旅，传播更多社会正能量！"
+        },
+        {
+            "img":"images/variety/2.webp.jpg",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":2,
+            "title": "欢乐喜剧人第六季",
+            "actor":"贾冰 / 潘斌龙 / 崔志佳/孟鹤堂 / 周九良 / 烧饼 / 曹鹤阳 / 金霏 / 陈曦 / 孙建弘 / 白凯南 / 李鸣宇 / 赵迎新 / 宋宁 / 高晓攀 / 郭阳 / 郭亮",
+            "content":"《欢乐喜剧人第六季》是由东方卫视与欢乐传媒出品的喜剧竞演综艺节目。由郭德纲担任喜剧观察员,该季采取五大递进赛段，与往季相比赛段更加密集残酷，通过大逃杀、战队PK、怪咖助阵团队升级、巅峰争霸赛等，让各派喜剧人层层对抗展开喜剧之王的激烈争夺"
+        },
+        {
+            "img":"images/variety/3.webp.jpg",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":2,
+            "title": "经典咏流传",
+            "actor":"王源 / 谭维维 / 齐豫 / 朱丹 / 廖昌永 / 赵照 ",
+            "content":"《经典咏流传》是央视综合频道推出的中国首档大型诗词文化音乐节目。节目原创“和诗以歌”的模式，用流行音乐演绎经典诗词、经典文学作品，传承和传播中华优秀传统文化，传递向上向善的主流价值"
+        },
+        {
+            "img":"images/variety/4.webp",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":2,
+            "title": "王牌对王牌 第五季",
+            "actor":"贾玲 / 华晨宇 / 关晓彤 / 沈腾 / 沈涛",
+            "content":"《王牌对王牌第五季》是浙江卫视推出的暖情互动挑战类棚内综艺节目，由浙江卫视节目中心制作，节目由沈涛担任主持人，贾玲、华晨宇、关晓彤、沈腾担任固定MC。《王牌对王牌》作为经典合家欢，第五季将用更贴合热点的节目主题、嘉宾阵容和内容设计，致敬匠心人物，传递岁月温情"
+        },
+        {
+            "img":"images/variety/5.webp.jpg",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":2,
+            "title": "歌手",
+            "actor":"刘欢 / 齐豫 / 杨坤 / 吴青峰 / 逃跑计划 / 张芯 ",
+            "content":"《歌手》是一档大型音乐竞技节目，节目前身为《我是歌手》，更名后的《歌手》虽然依旧主打专业实力歌手间的同台比拼，但在整体面貌上有所革新，仅赛制方面就变为期期有淘汰..."
+        }
+    ],
+    "hot":[
+         {
+            "img":"images/variety/6.jpg",
+            "vip": 2,
+            "definition": "04-05期",
+            "title": "王牌对王牌 第五季",
+            "detail": "王牌嘉宾爆笑PK",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":2,
+            "actor":"贾玲 / 华晨宇 / 关晓彤 / 沈腾 / 沈涛",
+            "content":"《王牌对王牌第五季》是浙江卫视推出的暖情互动挑战类棚内综艺节目，由浙江卫视节目中心制作，节目由沈涛担任主持人，贾玲、华晨宇、关晓彤、沈腾担任固定MC。《王牌对王牌》作为经典合家欢，第五季将用更贴合热点的节目主题、嘉宾阵容和内容设计，致敬匠心人物，传递岁月温情"
+        },
+        {
+            "img":"images/variety/7.jpg",
+            "vip": 1,
+            "definition": "04-07期",
+            "title": "欢乐喜剧人 第六季",
+            "detail": "喜剧竞技惊喜上演",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":2,
+            "actor":"贾冰 / 潘斌龙 / 崔志佳/孟鹤堂 / 周九良 / 烧饼 / 曹鹤阳 / 金霏 / 陈曦 / 孙建弘 / 白凯南 / 李鸣宇 / 赵迎新 / 宋宁 / 高晓攀 / 郭阳 / 郭亮",
+            "content":"《欢乐喜剧人第六季》是由东方卫视与欢乐传媒出品的喜剧竞演综艺节目。由郭德纲担任喜剧观察员,该季采取五大递进赛段，与往季相比赛段更加密集残酷，通过大逃杀、战队PK、怪咖助阵团队升级、巅峰争霸赛等，让各派喜剧人层层对抗展开喜剧之王的激烈争夺"
+        },
+        {
+            "img":"images/variety/8.jpg",
+            "vip": 2,
+            "definition": "03-31期",
+            "title": "花花万物",
+            "detail":  "康熙重聚聊八卦",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":2,
+            "actor":" 帝师 / 杨奇函 / 董子初 / 深夜徐老师 / 高兴 / 小猪猪 ",
+            "content":"《花花万物》是一档明星访谈类节目。认识一个现代人类最好的方法就是看TA的消费账单，蔡康永、徐熙娣再度携手，通过剖析艺人的购物账单，深度挖掘消费背后的故事..."
+        },
+        {
+            "img":"images/variety/9.jpg",
+            "vip": 1,
+            "definition":  "25期全",
+            "title": "极限挑战 第五季",
+            "detail": "热巴岳岳加盟挑战",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":2,
+            "actor":" 黄磊 / 罗志祥 / 张艺兴 / 迪丽热巴 / 岳云鹏 / 雷佳音 ",
+            "content":"《极限挑战 》第五季是东方卫视推出的互动励志体验节目，新加入的成员有迪丽热巴、岳云鹏和雷佳音。成员们从上海出发一路沿江体验，在长江这条黄金水道上迎接一个又一个“..."
+        },
+        {
+            "img":"images/variety/10.jpg",
+            "vip": 1,
+            "definition": "24期全",
+            "title": "挑战吧！太空 第一季",
+            "detail": "群星解锁太空奥秘",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":2,
+            "actor":" 王宝强 / 张雨绮 / 田亮 / 吴宣仪 / 朱正廷 / 陈锴杰  ",
+            "content":"《挑战吧太空》是第一档艺人作为志愿者参加系统航天训练、体验火星极端环境生存的综娱科普节目。王宝强、张雨绮、田亮、吴宣仪、朱正廷、陈锴杰等6位志愿者以及中国航天英..."
+        },
+        {
+            "img":"images/variety/11.jpg",
+            "vip": 3,
+            "definition":  "23期全",
+            "title": "这！就是灌篮 第一季",
+            "detail": "篮球高手热血集结",
+            "videoSrc":"http://vjs.zencdn.net/v/oceans.mp4",
+            "kind":2,
+            "actor":" 周杰伦 / 李易峰 / 林书豪 / 郭艾伦 / 陈意涵 / 张曼源 ",
+            "content":"《这！就是灌篮》是一档由优酷和浙江卫视联合播出的大型青春篮球竞技节目。在“3v3篮球”正式成为2020年奥运会比赛项目之际，《这！就是灌篮》节目以3v3篮球比赛..."
+        },
+        {
+            "img":"images/variety/12.jpg",
+            "vip": 1,
+            "definition": "23期全",
+            "title": "这！就是街舞 第二季",
+            "detail": "街舞大秀燃炸全场",
+            "videoSrc":"https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "kind":2,
+            "actor":" 真人秀节目",
+            "content":"《这！就是街舞 第二季队长Show Time》为大型街舞竞技节目《这！就是街舞 第二季》的衍生节目，主要内容为《这！就是街舞 第二季》明星队长直拍。"
+        },
+        {
+            "img":"images/variety/13.jpg",
+            "vip": 1,
+            "definition": "04-05期",
+            "title": "新相亲大会",
+            "detail": "携手父母现场相亲",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":2,
+            "actor":" 主持人：孟非 / 张纯烨  ",
+            "content":"《新相亲大会》是一档大型代际相亲节目，由具有国民认可度的月老孟非坐镇主持，挑战自我，PK中国式父母，再创全民恋爱相亲新高潮。节目独创“双灭双爆灯”和“先盲后选”..."
+        },
+        {
+            "img":"images/variety/15.jpg",
+            "vip": 3,
+            "definition": "03-28期",
+            "title": "非常勿扰2020",
+            "detail": "单身男女公开相亲",
+            "videoSrc":"http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4",
+            "kind":2,
+            "actor":"孟非 真人秀节目",
+            "content":" 一档面向单身男女的婚恋交友节目，通过速配相亲的模式，呈现陌生男女从相见、相识到牵手的全过程。现场也会有心理专家给予情感解析，讨论情感话题。"
+        },
+        {
+            "img":"images/variety/14.jpg",
+            "vip": 1,
+            "definition": "04-05期",
+            "title": "爱情保卫战2020",
+            "detail": "情侣矛盾面对面",
+            "videoSrc":"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "kind":2,
+            "actor":" 赵川 / 涂磊 / 阎品红 / 瞿玮 / 柏燕谊 / 莎娜 ",
+            "content":"《爱情保卫战》将现实中青年男女在恋爱过程中遇到的各种困惑与矛盾搬上舞台，每期 3对在爱情道路上面临抉择的真实情侣，双方通过交流、沟通与争辩把各自内心的痛苦与困惑全盘托出，节目现场邀请资深情感专家用专业知识给到场的每对情侣提供客观理性的分析及双方契合程度的科学考量，并根据每对情侣的不同情况给予恋爱指导和情感忠告，再加上最了解他们的家人朋友站在旁观者角度的适时参与，共同帮助走在十字路口的年轻情侣为自己的爱情打一场轰轰烈烈的保卫战！"
+        }
+    ]
+}

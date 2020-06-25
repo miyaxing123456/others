@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体验组件</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <hello></hello>
+        <h1>这是app</h1>
+        <hello></hello>
+        <hello></hello>
+        <hello></hello>
+    </div>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {},
+            methods: {},
+            components: { //组件
+                hello: {
+                    template: "<div><h1>题目：嘻嘻嘻</h1><p>内容：嘿嘿</p></div>",
+                    methods:{},
+                    watch:{},
+                    computed:{},
+                    filters:{},
+                    mounted(){}
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

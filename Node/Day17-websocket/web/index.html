@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.0.0.js"></script>
+</head>
+
+<body>
+    <div><input id="txtname" type="text"></div>
+    <input id="txtmsg" type="text"><input id="btsub" type="button" value="发送">
+    <div id="txtlist">
+        <p>群聊</p>
+    </div>    
+    <script>
+        var ws = new WebSocket("ws://192.168.43.205:8080");
+        $("#btsub").click(() => {
+            //参数也是url，只不过呢不再是http协议。  ws
+            var msgObj={
+                name:$("#txtname").val(),
+                msg:$("#txtmsg").val(),
+                to:""
+            }
+            ws.send(JSON.stringify(msgObj));
+        })
+        ws.onopen = function () {
+            //接受消息的事件
+            ws.onmessage = function (event) {
+                console.log(`接收到了消息：${event.data}`)
+                $("#txtlist").append(`<p>${event.data}</p>`)
+            }
+        }
+    </script>
+</body>
+
+</html>

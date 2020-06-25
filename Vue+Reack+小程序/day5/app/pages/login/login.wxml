@@ -1,0 +1,15 @@
+<view>  
+      <!-- 未登录显示的效果 -->
+      <view wx:if="{{ !onOff }}">
+          <image src="{{ photo }}" class="photo"></image>
+          <button  type="warn" size="mini" bindgetuserinfo="getuserinfo" open-type="getUserInfo">未登录</button>
+      </view>
+      <!-- 登录之后显示的效果 -->
+      <view wx:if="{{ onOff }}">
+          <image src="{{ userInfo.avatarUrl }}" class="photo"></image>
+          <button  type="primary" size="mini">{{ userInfo.nickName }}</button>
+      </view>
+
+
+      <button bindtap="login">登录</button>
+</view>

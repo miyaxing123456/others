@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<meta name="HandhelFriendly" content="true">
+	<meta name="keywords" content="...">
+	<meta name="description" content="...">
+	<link rel="stylesheet" type="text/css" href="./css/install.css">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<title>install</title>
+	<!-- 新 Bootstrap4 核心文件 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+		<a href="###" class="logo">
+			<img src="img/nav_logo.svg">
+		</a>
+		<div class="list">
+			<ul>
+				<li><a href="###">Install</a></li>
+				<li><a href="###">About Us</a></li>
+				<li><a href="###">Community</a></li>
+				<li><a href="###">Documentation</a></li>
+				<li><a href="###">NBViewer</a></li>
+				<li><a href="###">JupyterHub</a></li>
+				<li><a href="###">Widgets</a></li>
+				<li><a href="###">Blog</a></li>
+			</ul>
+		</div>
+		<div class="button">
+           	<span></span>
+            <span></span>
+            <span></span>
+        </div>
+	</nav>
+	<header class="header">
+		<h2>Installing the Jupyter Software</h2>
+		<p>Get up and running with the JupyterLab or the classic Jupyter Notebook on your computer within minutes!</p>
+	</header>
+	<div class="section-white top-section-border">
+      	<div class="page_content container">
+        	<h2 id="getting-started-with-jupyterlab">Getting started with JupyterLab</h2>
+			<h3 id="installation">Installation</h3>
+			<p>JupyterLab can be installed using <code class="language-plaintext highlighter-rouge">conda</code> or <code class="language-plaintext highlighter-rouge">pip</code>. For more detailed instructions, consult the <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">installation guide</a>.</p>
+			<h3 id="conda">conda</h3>
+			<p>If you use <code class="language-plaintext highlighter-rouge">conda</code>, you can install it with:</p>
+			<div class="language-shell highlighter-rouge">
+				<div class="highlight"><pre><code>conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge jupyterlab</code></pre>
+				</div>
+			</div>
+			<h3 id="pip">pip</h3>
+			<p>If you use <code class="language-plaintext highlighter-rouge">pip</code>, you can install it with:</p>
+			<div class="language-shell highlighter-rouge">
+				<div class="highlight"><pre><code>pip <span class="nb">install </span>jupyterlab</code></pre>
+				</div>
+			</div>
+			<p>If installing using <code class="language-plaintext highlighter-rouge">pip install --user</code>, you must add the user-level <code class="language-plaintext highlighter-rouge">bin</code> directory to your <code class="language-plaintext highlighter-rouge">PATH</code> environment variable in order to launch <code class="language-plaintext highlighter-rouge">jupyter lab</code>.</p>
+			<h2 id="getting-started-with-the-classic-jupyter-notebook">Getting started with the classic Jupyter Notebook</h2>
+			<h3 id="prerequisite-python">Prerequisite: Python</h3>
+			<p>While Jupyter runs code in many programming languages, Python is a requirement(Python 3.3 or greater, or Python 2.7) for installing the JupyterLab or the classic Jupyter Notebook.</p>
+			<h3 id="installing-jupyter-notebook-using-conda">Installing Jupyter Notebook using Conda</h3>
+			<h3 id="conda-1">conda</h3>
+			<p>We recommend installing Python and Jupyter using the conda package manager. The <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> distribution includes a minimal Python and conda installation.</p>
+			<p>Then you can install the notebook with:</p>
+			<div class="language-shell highlighter-rouge">
+				<div class="highlight"><pre><code>conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge notebook</code></pre></div>
+			</div>
+			<h3 id="pip-1">pip</h3>
+			<p>If you use <code class="language-plaintext highlighter-rouge">pip</code>, you can install it with:</p>
+			<div class="language-shell highlighter-rouge">
+				<div class="highlight"><pre><code>pip <span class="nb">install </span>notebook</code></pre>
+				</div>
+			</div>
+			<p>Congratulations, you have installed Jupyter Notebook! To run the notebook, run the following command at the Terminal (Mac/Linux) or Command Prompt (Windows):</p>
+			<div class="language-bash highlighter-rouge">
+				<div class="highlight"><pre><code>jupyter notebook</code></pre>
+				</div>
+			</div>
+			<p>See <a href="https://jupyter.readthedocs.io/en/latest/running.html#running">Running the Notebook</a> for more details.</p>
+			<h2 id="getting-started-with-voilà">Getting started with Voilà</h2>
+			<h3 id="installation-1">Installation</h3>
+			<p>Voilà can be installed using <code class="language-plaintext highlighter-rouge">conda</code> or <code class="language-plaintext highlighter-rouge">pip</code>. For more detailed instructions, consult the <a href="https://voila.readthedocs.io/en/stable/install.html">installation guide</a>.</p>
+			<h3 id="conda-2">conda</h3>
+			<p>If you use <code class="language-plaintext highlighter-rouge">conda</code>, you can install it with:</p>
+			<div class="language-shell highlighter-rouge">
+				<div class="highlight"><pre><code>conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge voila</code></pre>
+				</div>
+			</div>
+			<h3 id="pip-2">pip</h3>
+			<p>If you use <code class="language-plaintext highlighter-rouge">pip</code>, you can install it with:</p>
+			<div class="language-shell highlighter-rouge">
+				<div class="highlight"><pre><code>pip <span class="nb">install </span>voila</code></pre>
+				</div>
+			</div>
+      	</div>
+    </div>
+    <div class="footer clearfix">
+        <div class="navbar-text">
+            <ul class="footer-text">
+               	<li><a href="/index.html">Home</a></li>
+                <li><a href="/install" target="_blank">Install</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/community" target="_blank">Community</a></li>
+                <li><a href="/documentation">Documentation</a></li>
+                <li><a href="https://nbviewer.jupyter.org" target="_blank">NBViewer</a></li>
+                <li><a href="/hub">JupyterHub</a></li>
+                <li><a href="/widgets">Widgets</a></li>
+                <li><a href="https://blog.jupyter.org" target="_blank">Blog</a></li>
+                    <!--2020-01-28 19:02:26 +0000-->
+            </ul>
+            <p>Copyright © 2020  Project Jupyter –
+                Last updated Tue, Jan 28, 2020</p>
+            <p>The Jupyter Trademark is registered with the U.S. Patent &amp; Trademark Office.</p>
+        </div>
+        <div class="follow">
+         	<a href="https://github.com/jupyter" class="button github-button" aria-label="Follow @jupyter on GitHub"><svg version="1.1" width="14" height="14" viewBox="0 0 16 16" class="octicon octicon-mark-github" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> <span>Follow @jupyter</span></a>
+        	<br>
+        	<a href="https://twitter.com/ProjectJupyter" class="twitter-follow-button" data-show-count="false">Follow @ProjectJupyter</a>
+        </div>
+    </div>
+</body>
+</html>

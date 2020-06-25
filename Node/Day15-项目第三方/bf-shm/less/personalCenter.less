@@ -1,0 +1,392 @@
+body{background-color: white;
+position: relative;}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+.head-layer{
+    ul li{
+        a{
+            text-decoration: none;
+        }
+    }
+    #myUl{
+        position: absolute;
+        width: 118px;
+        height:100px;
+        right:276px;
+        top:22px;
+    }
+}
+
+.main{
+    width: 1100px;
+    height: 520px;
+    margin: 0 auto;
+    border: 1px solid #bebebe;
+    margin-top: 20px;
+    .main-left{
+        width: 20%;
+        height: 518px;
+        float: left;
+        background: #f3f3f3;
+        ul{
+            list-style: none;
+            text-align: center;
+            padding-top: 22px;
+            li {
+                line-height: 30px;
+               
+                a{
+                    font-size: 14px;
+                    color: #666;
+                    margin-left: 15px;
+                    text-decoration: none;
+              }a:hover{
+                  color:blue;
+              }
+            }
+            
+        }
+    }
+    .main-right{
+        width:75%;
+        float: left;
+        padding:25px 25px 10px 25px;
+        background-color: white;
+        .right-head{
+          ul{
+              list-style: none;
+              border-bottom: 2px solid #bebebe;
+              li{
+                  float: left;
+                  height: 29.81px;
+                  a{
+                      color: #666;
+                      font-size: 16px;
+                      padding:10px 20px;
+                      text-decoration: none;
+                  }
+              }
+              .active{
+                border-bottom: 2px solid blue;
+                color: blue;
+              }
+          }
+        }
+        .right-main{
+           padding-top: 25px;
+            .right-main-left{
+                float: left;
+                width: 100px;
+                height: 110px;
+                .img{
+                    width: 100px;
+                    height: 100px; 
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    } 
+                }
+                .chang-img{
+                    width: 100px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    a{
+                        text-decoration: none;
+                        color: blue; 
+                    }
+                }
+                label{
+                    margin-left: 20px;
+                    position: relative;
+                    #fileinp{
+                        position: absolute;
+                        left:0;
+                        top:0;
+                        opacity: 0;
+                    }
+                    #btn{
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .right-main-right{
+                float: left;
+                margin-left: 50px;
+                width: 75%;
+                p{
+                    font-size: 14px;
+                    padding-bottom: 12px;
+                    span{
+                        margin-left: 20px;
+                        a{ 
+                            text-decoration: none;
+                            color: blue;
+                        }
+                    }
+                }
+                .p11{
+                    display: none;
+                }
+               
+            }
+        }
+        .right-foot{
+            .panel-heading{
+                .head{
+                    float: left;
+                }
+                .body{
+                    float: left;
+                    margin-left: 93px;
+                }
+                .footer,footer2{
+                    float: right;
+                    a{
+                        text-decoration: none;
+                        color:blue ;
+                    }
+                }
+                .footer2{
+                    display: none;
+                }
+            }
+            .panel-body{
+                .head{
+                    float: left;
+                }
+                .body{
+                    float: left;
+                    margin-left: 93px;
+                }
+                .footer{
+                    float: right;
+                    a{
+                        text-decoration: none;
+                        color:blue ;
+                    }
+                }
+                .footer2{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.cover{
+    width: 1100px;
+    height:540px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top:64px;
+    left:63px;
+    display: none;
+}
+.login-tips{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid blue;
+    position: absolute;
+    top:161px;
+    left:498px;
+    display: none;
+    .no-login{
+        font-size: 24px;
+        color:#333;
+        margin-top: 30px;
+        text-align: center;
+    }
+    div{
+        text-align: center;
+        width: 67px;
+        margin: 30px auto;
+        height: 31px;
+        line-height: 31px;
+        border: 1px solid blue;
+        background-color: gainsboro;
+        a{
+            text-decoration: none;
+            color:#333;
+        }
+    }
+}
+.pay{
+    display: none;
+    position: absolute;
+    background-color: white;
+    .content{
+        width: 716px;
+        height: 545px;
+        margin: 0 auto;
+        .head{
+            height: 38px;
+            background-color: #444;
+            color:#f3f3f3;
+            line-height: 38px;
+            h5{
+                float: left;
+            }
+           a{
+                float: right;
+                margin-right: 8px;
+                color:#f3f3f3;
+                text-decoration: none;
+            }
+           a:hover{
+                color:red;
+                text-decoration: none;
+            }
+        }
+        .banner{
+                height: 100px;
+                background-color: #333;
+                border: 1px #333 solid;
+                border-bottom: 2px solid gold;
+                .right{
+                    float: left;
+                    margin-left: 15px;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background-color: white;
+                    margin-top: 20px;
+                  img{
+                    width: 100%;
+                    height: 100%; 
+                    border-radius: 50%;
+                  }
+                }
+                .left{
+                    float: left;
+                    color:gold;
+                    margin: 27px 0 0 20px;
+                    .p2{
+                        color: #bebebe;
+                    }
+                }
+        }
+        .choose{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 18px;
+            .ch{
+                width: 200px;
+                height: 100px;
+                border: 1px solid #bebebe;
+                .time{
+                    margin:10px 0 2px 0;
+                    text-align: center;
+                    font-size: 15px;
+                }
+                .money{
+                    text-align: center;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 20px;
+                    span{
+                        font-size: 13px;
+                        text-decoration: line-through;
+                        color: grey;
+                    }
+                   
+                }
+                .next-pay{
+                    width: 120px;
+                    border: 1px solid burlywood;
+                    text-align: center;
+                    margin:0 auto;
+                    border-radius: 17px;
+                }
+            }
+            .active{
+                width: 200px;
+                height: 100px;
+                background-color: wheat;
+                border: 1px solid goldenrod;
+            }
+        }
+        .tips{
+            margin-left: 27px;
+            line-height: 59px;
+            font-size: 12px;
+        }
+        .pay-money{
+            width: 662px;
+            height: 218px;
+            border: 1px solid #bebebe;
+            margin:0 auto;
+            .left{
+                float: left;
+                width: 138px;
+                background-color:#f3f3f3;
+                height: 216px;
+                padding: 1px;
+                .saoma{
+                    width: 128px;
+                    height: 40px;
+                    background-color: wheat;
+                    text-align: center;
+                    line-height: 40px;
+                    margin:40px auto;
+                    border-radius: 0 20px 20px 0;
+                }
+            }
+            .right{
+                float: left;
+                .r-top{
+                    position: relative;
+                    width: 522px;
+                    height: 43px;
+                    border-bottom:1px solid #bebebe;
+                    .ff{
+                        float: left;
+                        line-height:43px ;
+                        margin-left: 8px;
+                        color:#bebebe;
+                        .gold{
+                            color: gold;
+                        }
+                    }
+                    button{
+                        position: absolute;
+                        top:8px;
+                        right:8px;
+                    }
+                }
+                .r-main{
+                    position: relative;
+                    .erweima{
+                        position: absolute;
+                        top:30px;
+                        left:94px;
+                    }
+                    .last{
+                        position: absolute;
+                        top:37px;
+                        left:217px;
+                        .total{
+                            font-size: 26px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            color:brown;
+                            span{
+                                color: coral;
+                                font-size: 13px;
+                                margin-left: 6px;
+                            }
+                        }
+                        .p2{
+                            line-height: 29px;
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

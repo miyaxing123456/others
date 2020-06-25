@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //forEach map filter some every find findIndex
+
+        
+        var arr=[
+            {
+                num:10
+            },
+            {
+                num:20
+            },
+            {
+                num:28
+            },
+            {
+                num:25
+            },
+        ]
+       
+       //forEach遍历数组，没有返回值
+       /* var aa=arr.forEach((item,index,arr)=>{
+            item.num+=10;
+        })
+        console.log(aa);//undefined
+        console.log(arr);//[{num:20},{num:30},{num:38},{num:35}]
+        */
+
+        //map会返回一个新数组，新数组的每一项是回调函数的返回值
+        //新数组的长度和原数组是一样的。
+        /*var aa=arr.map((item,index,arr)=>{
+            item.num+=10;
+            return item.num/5;
+        })
+        console.log(aa);//[4, 6, 7.6, 7]
+
+        console.log(arr);//[{"num":20},{"num":30},{"num":38},{"num":35}]
+        */
+
+        // filter 是从元素组中挑去满足条件的选项，拼接成一个新数组
+        /*
+        var aa=arr.filter((item,index,arr)=>{
+            return item.num%10==0
+        })
+        console.log(aa);//[{"num":10},{"num":20}]
+        console.log(arr);
+        */
+        
+
+        //some 返回值是boolean 有个为真，返回就是真；全都是假，才是假
+        /*var aa=arr.some((item,index,arr)=>{
+            return item.num%10==0
+        })
+        console.log(aa);//true*/
+       
+        
+        //every 返回值是boolean 每一个都返回真，结果才是真。有一个是假，就是假
+        var aa=arr.every((item,index,arr)=>{
+            return item.num%10==0
+        })
+        console.log(aa);//false
+        
+
+        
+        
+        
+        
+    </script>
+</body>
+
+</html>

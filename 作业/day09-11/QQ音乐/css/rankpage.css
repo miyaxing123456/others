@@ -1,0 +1,688 @@
+body{
+	width: 100%;
+	background-color: #fff;
+
+}
+h2{
+	font-size: 30px;
+	letter-spacing: 10px;
+	margin: 50px 0 35px 0;
+	text-align: center;
+}
+.rankpage{
+	width: 1200px;
+	margin: 0 auto;
+}
+.rankpage .header{
+	width: 1200px;
+	height: 90px;
+	margin: 0 auto;
+	border-bottom: 1px solid #f2f2f2;
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.rankpage .header .logo{
+	width: 167px;
+	height: 90px;
+	line-height: 90px;
+}
+.rankpage .header .logo a{
+	display: inline-block;
+	width: 167px;
+	height: 90px;
+}
+.rankpage .header .logo a img{
+	width: 167px;
+	height: 45px;
+	vertical-align: middle;
+}
+.rankpage .header .nav{
+	height: 90px;
+}
+.rankpage .header .nav ul li{
+	width: 94px;
+	height: 90px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 90px;
+	float: left;
+}
+.rankpage .header .nav ul li a{
+	color: #000;
+}
+.rankpage .header .nav ul li:hover a{
+	color: #31c27c;
+}
+.rankpage .header .search{
+	width: 220px;
+	height: 90px;
+	line-height: 90px;
+	position: relative;
+}
+.rankpage .header .search div input{
+	width: 174px;
+	height: 36px;
+	border:1px solid #c9c9c9;
+	padding:0 33px 0 11px;
+}
+.rankpage .header .search div button{
+	width: 34px;
+	height: 34px;
+	border:0;
+	outline: none;
+	background-color: #fff;
+	position: absolute;
+	top: 27px;
+	right: 2px;
+}
+.rankpage .header .search div button:hover{
+	color: #31c27c;
+}
+.rankpage .header .login{
+	width:260px ;
+	height: 90px;
+	line-height: 90px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.rankpage .header .login a{
+	font-size: 16px;
+}
+.rankpage .header .login a:hover{
+	color: #31c27c
+}
+.rankpage .header .login button{
+	width: 111px;
+	height: 38px;
+	border:0;
+	outline: none;
+	background-color: #33c47c;
+}
+.rankpage .header .login button:hover{
+	background-color: #2caf6f;
+}
+.rankpage .header .login button:last-child{
+	width: 85px;
+	height: 38px;
+	outline: none;
+	color: #000;
+	border: 1px solid #c9c9c9;
+	background-color: #fff;
+}
+.rankpage .header .login button:last-child:hover{
+	background-color: #ededed;
+}
+.rankpage .subnav{
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.rankpage .subnav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.rankpage .subnav ul li{
+	height: 50px;
+	padding:0 25px;
+	line-height: 50px;
+}
+.rankpage .subnav ul li a{
+	font-size: 15px;
+	color: #000;
+}
+.rankpage .subnav ul li a:hover{
+	color: #31c37b;
+}
+
+
+
+.rankpage .content{
+	padding-top: 60px;
+	background-image: linear-gradient(#f3f3f3, #fff);
+}
+
+
+
+.rankpage .list{
+	width: 178px;
+	border: 1px solid rgba(153,153,153,.2);
+	float: left;
+	font-size: 15px;
+}
+.rankpage .list dl{
+	margin-bottom: 20px;
+}
+.rankpage .list dl dt{
+	height: 61px;
+	line-height: 61px;
+	margin: 0px 20px 10px;
+	font-size: 20px;
+	font-weight: 400;
+	border-bottom: 1px solid #ebebeb;
+}
+.rankpage .list dl dd{
+	height: 22px;
+	line-height: 22px;
+	padding:8px 20px;
+}
+.rankpage .list dl dd a:hover{
+	color: #31c27c;
+}
+.rankpage .list .active{
+	background-color: #31c27c;
+}
+.rankpage .list .active a{
+	color: #fff;
+}
+.rankpage .list .active a:hover{
+	color: #fff;
+}
+
+
+
+
+.rankpage .main{
+	width: 990px;
+	margin-left: 210px;	
+}
+.rankpage .main .title{
+	line-height: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+.rankpage .main .title h1{
+	float: left;
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 15px;
+}
+.rankpage .main .title .time{
+	font-size: 14px;
+	margin-right: 15px;
+}
+.rankpage .main .title a{
+	font-size: 14px;
+}
+
+
+.rankpage .main .toolbar{
+	margin-bottom: 20px;
+}
+.rankpage .main .toolbar a{
+	border-radius: 2px;
+	border: 1px solid #c9c9c9;
+    color: #000;
+    font-size: 16px;
+    margin-right: 6px;
+    padding: 0 23px;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.rankpage .main .toolbar a:first-child{
+	background-color: #31c27c;
+    color: #fff;
+}
+.rankpage .main .toolbar a i{
+    margin-right: 6px;
+    width: 16px;
+    height: 16px;
+}
+
+.rankpage .main .songlist .songlist_title{
+	padding-left: 122px;
+	height: 50px;
+    line-height: 50px;
+    background-color: rgba(0,0,0,.01);
+    color: #999;
+}
+.rankpage .main .songlist .songlist_title span{
+	font-size: 14px;
+	display: inline-block;
+}
+.rankpage .main .songlist .songlist_title span:first-child{
+	width: 67%;
+}
+.rankpage .main .songlist .songlist_title span:nth-child(2){
+	width: 22%;
+}
+.rankpage .main .songlist .songlist_title span:last-child{
+	width: 10%;
+}
+
+.rankpage .main .songlist .songlist_list li{
+	line-height: 80px;
+    height: 80px;
+}
+.rankpage .main .songlist .songlist_list li:nth-child(2n){
+	background-color: rgba(0,0,0,.01);
+}
+.rankpage .main .songlist .songlist_list div{
+	display: inline-block;
+	line-height: 80px;
+    height: 80px;
+    vertical-align: middle;
+}
+.rankpage .main .songlist .songlist_list .number{
+	width: 40px;
+    text-align: right;
+    font-size: 24px;
+    color: #333;
+}
+.rankpage .main .songlist .songlist_list .rank{
+	width: 72px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #999;
+}
+.rankpage .main .songlist .songlist_list .rank i{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 16px;
+    height: 16px;
+    margin-top: 27px;
+}
+.rankpage .main .songlist .songlist_list .name{
+	width: 59%;
+}
+.rankpage .main .songlist .songlist_list .name a:first-child{
+	display: inline-block;
+	width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.rankpage .main .songlist .songlist_list .name a:nth-child(2){
+	font-size: 14px;
+	margin-right: 5px;
+}
+.rankpage .main .songlist .songlist_list .name i{
+	font-size: 34px;
+    color: #31c27c;
+    vertical-align: middle;
+}
+.rankpage .main .songlist .songlist_list .artist{
+	width: 19.5%;
+}
+.rankpage .main .songlist .songlist_list .time{
+	color: #999;
+}
+
+
+
+.rankpage .main .songlist .more{
+	margin-bottom: 82px
+}
+.rankpage .main .songlist .more p{
+	font-size: 18px;
+    color: #000;
+    text-align: center
+}
+.rankpage .main .songlist .more a{
+	display: block;
+    margin: 20px auto 0;
+    width: 175px;
+    height: 41px;
+    line-height: 41px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 41px;
+    background-color: #31c27c;
+}
+
+
+
+.rankpage .main .songlist .comment{
+
+}
+.rankpage .main .songlist .comment .title{
+	height: 60px;
+	overflow: hidden;
+}
+.rankpage .main .songlist .comment .title h2{
+	margin: 0;
+	letter-spacing:0;
+	float: left;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 58px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+}
+.rankpage .main .songlist .comment .title h2 span{
+	font-size: 14px;
+    margin-left: 12px;
+    color: #999;
+}
+
+
+.rankpage .main .songlist .comment .comment_input{
+	color: #999;
+	position: relative;
+}
+.rankpage .main .songlist .comment .comment_input .comment_input_area{
+	height: 102px;
+    border: solid 1px #ececec;
+    background-color: #f5f5f5;
+}
+.rankpage .main .songlist .comment .comment_input .comment_input_area textarea{
+	margin: 10px 14px 0 14px;
+	width: 962px;
+	color: #999;
+    border: none;
+    height: 66px;
+    resize: none;
+    overflow: auto;
+    outline: 0;
+    background: 0 0;
+}
+.rankpage .main .songlist .comment .comment_input .comment_input_area div{
+	text-align: right;
+	padding-right: 14px;
+}
+.rankpage .main .songlist .comment .comment_input .comment_input_area div span{
+	color:#31c27c;
+}
+.rankpage .main .songlist .comment .comment_input i{
+	position: absolute;
+    right: 90px;
+    bottom: -36px;
+    font-size: 20px;
+    color: #31c27c;
+}
+.rankpage .main .songlist .comment .comment_input .comment_input_tool{
+	position: absolute;
+    bottom: -37px;
+    right: -5px;
+    margin-right: 5px;
+    width: 80px;
+    line-height: 29px;
+    height: 27px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid #31c27c;
+    background-color: #31c27c;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+
+.rankpage .main .songlist .comment .comment_all .comment_all_title{
+	height: 34px;
+    line-height: 34px;
+    padding-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #ededed;
+}
+.rankpage .main .songlist .comment .comment_all .comment_all_title h2{
+	font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+}
+
+
+
+.rankpage .main .songlist .comment .comment_all .comment_all_list li{
+	border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #ededed;
+    padding: 15px 0 15px 56px;
+    position: relative;
+}
+.comment_all_list li .avatar{
+	position: absolute;
+    left: 0;
+    top: 17px;
+    width: 38px;
+    height: 38px;
+}
+.comment_all_list li .avatar img{
+	display: block;
+	width: 100%;
+    height: 100%;
+    border-radius: 999px;
+}
+.comment_all_list li h4{
+	position: relative;
+	font-weight: 400;
+    margin-bottom: 6px;
+    overflow: hidden;
+    height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.comment_all_list li h4 a{
+	float: left;
+	color: #999;
+}
+.comment_all_list li p{
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: 24px;
+    text-align: justify;
+    color: #333;
+}
+.comment_all_list li .list_tools{
+	line-height: 24px;
+    text-align: right;
+    overflow: hidden;
+}
+.comment_all_list li .list_tools .time{
+	float: left;
+    line-height: 28px;
+    color: #999;
+}
+.comment_all_list li .list_tools a,
+.comment_all_list li .list_tools span{
+	margin-right: 22px;
+}
+.comment_all .comment_all_nav{
+	margin-top: 14px;
+	margin-bottom: 40px;
+	clear: both;
+    text-align: center;
+    font-size: 0;
+    color: #000;
+}
+.comment_all_nav strong,.comment_all_nav a{
+	font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+    padding: 0 21px;
+    box-sizing: border-box;
+    min-width: 24px;
+    color: #a2a2a2;
+}
+.comment_all .comment_all_nav strong:first-child,
+.comment_all_nav strong:hover,
+.comment_all_nav a:hover
+{
+	background-color: #31c27c;
+	color: #fff;
+}
+.comment_all .rule{
+	margin: 14px 0 24px;
+    text-align: center;
+    font-size: 12px;
+}
+.comment_all .rule a:hover{
+	color: #31c27c;
+}
+
+.footer{
+	width: 100%;
+	min-width: 1200px;
+	color: #999;
+    background-color: #333;
+    clear: both;
+}
+.footer .section{
+	width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer .section .info{
+	overflow: hidden;
+    border-bottom: 1px solid #353535;
+    position: relative;
+    padding-bottom: 45px;
+}
+.footer .section .info .download{
+	position: absolute;
+    top: 0;
+    left: 10px;
+}
+.footer a{
+	color: #999;
+}
+.footer a:hover{
+	color: #31c27c;
+}
+.footer h3{
+	font-size: 15px;
+    font-weight: 400;
+    padding: 80px 0 46px;
+}
+.footer ul{
+	margin-left: -29px;
+}
+.footer ul li{
+	float: left;
+    text-align: center;
+    position: relative;
+}
+.download ul li a i,
+.info ul li a i{
+	display: block;
+    margin: 0 29px 12px;
+    height: 48px;
+    background-image: url(../images/footer.png);
+}
+.pc{
+	width: 37px;
+    background-position: -2px 0;
+}
+.footer a:hover .pc{
+	background-position: -2px -49px;
+}
+.mac{
+	width: 46px;
+    background-position: -92px 0;
+}
+.footer a:hover .mac{
+	background-position: -92px -49px;
+}
+.android{
+	width: 37px;
+    background-position: -190px 0;
+}
+.footer a:hover .android{
+	background-position: -190px -49px;
+}
+.iphone{
+	width: 34px;
+    background-position: -279px 0;
+}
+.footer a:hover .iphone{
+	background-position: -279px -49px;
+}
+.product{
+	position: absolute;
+    top: 0;
+    left: 476px;
+    width: 304px;
+}
+.product ul{
+	position: relative;
+    z-index: 1;
+    margin-left: -25px;
+}
+.product ul li{
+	float: left;
+	margin-bottom: 18px;
+    text-indent: 28px;
+    margin-right: 5px;
+}
+.kg{
+	width: 41px;
+    background-position: -370px 0;
+}
+.footer a:hover .kg{
+	background-position: -370px -49px;
+}
+.ss{
+	width: 37px;
+    background-position: -463px 0;
+}
+.footer a:hover .ss{
+	background-position: -463px -49px;
+}
+.qp{
+	margin-right: 23px !important;
+    width: 40px;
+    background-position: -563px 0;
+}
+.footer a:hover .qp{
+	background-position: -563px -49px;
+}
+.info .group{
+	position: absolute;
+    top: 230px;
+    left: 476px;
+    width: 304px;
+}
+.info .group ul{
+	margin-left: -25px;
+}
+.info .group ul li{
+	float: left;
+    margin: 0 5px 12px 0;
+    text-indent: 25px;
+}
+.link{
+	float: right;
+    width: 300px;
+    padding-bottom: 57px;
+}
+.info .link ul li{
+	float: left;
+    min-width: 100px;
+    margin-bottom: 12px;
+    text-align: left;
+    text-indent: 28px;
+}
+.info .platform{
+	margin: 230px 0 0 10px;
+}
+.info .platform ul{
+	margin-left: -25px;
+}
+.info .platform ul li{
+	float: left;
+    min-width: 100px;
+    margin: 0 5px 12px 0;
+    text-indent: 25px;
+}
+.section .copyright{
+	text-align: center;
+    line-height: 28px;
+    padding: 24px 0;
+}

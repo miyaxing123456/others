@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ajax分页</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <style>
+        *{
+            -webkit-user-select: none;
+        }
+        ul,ol,li{
+            list-style: none;
+        }
+
+        #comment {
+            width: 380px;
+            margin: 50px auto;
+        }
+
+        /*标题*/
+        #comment h4 {
+            width: 100%;
+            height: 35px;
+            border-bottom: #e8e8e8 1px solid
+        }
+
+        #comment h4 a {
+            display: block;
+            float: left;
+            width: 78px;
+            height: 35px;
+            line-height: 35px;
+            color: #191919;
+            text-align: center;
+            font-size: 16px;
+            border-bottom: 1px solid transparent;
+        }
+
+        #comment h4 .active {
+            color: #1a9eff;
+            border-bottom: 1px solid #1a9eff;
+        }
+
+        #comment_list img {
+            width: 35px;
+            height: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="comment">
+        <h4><a href="javascript:;" class="active">按热度</a><a href="javascript:;">按最新</a></h4>
+        <ul id="comment_list">
+            <!-- <li class="cliearfix">
+            <div class="comment_user cliearfix">
+                <img  class="fl" src="http://img.baofeng.net/head/5192/2227/9201/135601920122275192/100_60_60.jpg" alt="">
+                <div class="fl">
+                    <p class="name">1733_9267_1</p>
+                    <p class="time">2018-9-1 11:40</p>
+                </div>
+            </div>
+            <p class="comment_content">
+                你们怎么能看的?我的宽带是50M的,却卡的根本看不了!是不是暴风故意整我呢?我是会员不应该看不了啊
+            </p>
+            <p class="dian fr">
+                <a href="#" class="dian_j">举报</a>
+                <a href="#" class="dian_icon"></a>
+                <span class="dian_count">0</span>
+            </p>
+        </li>-->
+        </ul>
+        <div class="comment_page cliearfix" id="comment_page">
+            <p class="fl">
+                <input type="text" value="1" id="count">/<em id="totalPage">1</em>
+                <span class="active">确定</span>
+            </p>
+            <p class="fr">
+                <span class="default">上一页</span>
+                <span class="default">下一页</span>
+            </p>
+        </div>
+    </div>
+    <script src="utils/Ajax.js"></script>
+    <script src="js/comment.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.main-layer {
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+.main-layer .vip-content {
+  background: #fff;
+  border-bottom: 0.01rem solid #dedede;
+  margin-bottom: -0.01rem;
+}
+.main-layer .vip-content .vip-film-filter {
+  width: 10rem;
+  height: 0.28rem;
+  padding: 0.2rem 0 0.3rem;
+}
+.main-layer .vip-content .vip-film-filter li {
+  display: inline;
+}
+.main-layer .vip-content .vip-film-filter li a {
+  display: block;
+  float: left;
+  width: auto;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  margin-right: 0.1rem;
+  padding: 0 0.21rem;
+  text-align: center;
+  color: #000;
+  font-size: 0.12rem;
+  text-decoration: none;
+}
+.main-layer .vip-content .vip-film-filter li.current a {
+  background: #0b68c8;
+  color: #fff !important;
+  cursor: default !important;
+}
+.main-layer .vip-content .vip-film-classify {
+  height: 0.4rem;
+  border: 0.01rem solid #dedede;
+  background: #f8f8f8;
+  margin-bottom: 0.3rem;
+  overflow: visible;
+}
+.main-layer .vip-content .vip-film-classify li.current {
+  position: relative;
+  border-bottom: 0.01rem solid #fff;
+}
+.main-layer .vip-content .vip-film-classify li.current a {
+  position: relative;
+  background: #fff;
+  border-left: 0.01rem solid #dedede;
+  border-right: 0.01rem solid #dedede;
+  border-top: 0.04rem solid #0b68c8;
+  margin-top: 0;
+  height: 0.37rem;
+  line-height: 0.37rem;
+  color: #000;
+  cursor: default !important;
+}
+.main-layer .vip-content .vip-film-classify li {
+  display: inline;
+}
+.main-layer .vip-content .vip-film-classify li a {
+  display: block;
+  float: left;
+  width: auto;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.14rem;
+  font-family: "微软雅黑";
+  text-align: center;
+  color: #0b68c8;
+  padding: 0 0.36rem;
+  text-decoration: none;
+  margin-left: -1px
+}
+.main-layer .vip-content .vip-films .film-pictures li {
+  margin-right: 0;
+  margin-left: 0.125rem;
+  background-color: #dedede;
+}
+.main-layer .vip-content .vip-films .film-pictures li img {
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.main-layer .vip-content .vip-filmss {
+  display: none;
+}
+.main-layer .vip-content .vip-filmss .film-pictures li {
+  margin-right: 0;
+  margin-left: 0.125rem;
+  padding-left: -0.1rem;
+  background-color: #dedede;
+}
+.main-layer .vip-content .vip-filmss .film-pictures li img {
+  width: 2.05rem;
+  height: 2.87rem;
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}

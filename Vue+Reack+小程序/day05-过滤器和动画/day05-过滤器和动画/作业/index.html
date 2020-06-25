@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业</title>
+    <script src="./vue.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .item {
+            width: 1200px;
+            height: 400px;
+            background: #cccccc;
+            margin: 20px auto;
+            display: flex;
+        }
+
+        .left {
+            width: 200px;
+            color: #ffffff;
+        }
+
+        .left h3 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .left ul {
+            overflow: hidden;
+            padding-left: 20px;
+            
+        }
+
+        .left ul li {
+            width: 50%;
+            float: left;
+            
+            line-height: 40px;
+        }
+
+        .left p {
+            text-align: center;
+        }
+
+        .center {
+            width: 350px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card .img-wrapper {
+            width: 100%;
+            height: 80%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card .img-wrapper .img {
+            width: 100%;
+            height: 100%;
+           
+        }
+        .card .img-wrapper:hover .img{
+            transform: scale(1.2,1.2);
+            transition: all 0.3s;
+        }
+
+        .card .img-wrapper .img-info {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.7);
+            line-height: 40px;
+            font-size: 12px;
+            overflow: hidden;
+        }
+
+        .card .title {
+            font-size: 16px;
+            color: #333333;
+            line-height: 30px;
+            height: 30px;
+            overflow: hidden;
+        }
+        .card .title:hover{
+            color: limegreen;
+            transition: all 0.3s;
+        }
+
+        .card .note {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .right {
+            flex: 1;
+            overflow: hidden;
+        }
+        .right-item{
+            width: 33.33%;
+            float: left;
+            height: 50%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="item" v-for="item in data" :key="item.color">
+            <div class="left" :style="{background:item.color}">
+                <h3>{{item.left_tit}}</h3>
+                <ul>
+                    <li v-for="i in item.left_con" :key="i">{{i}}</li>  
+                </ul>
+                <p>{{item.left_num}}</p>
+            </div>
+            <div class="center">
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img class="img"
+                            :src="item.cen_img"
+                            alt="">
+                        <p class="img-info">{{item.cen_info}}</p>
+                    </div>
+                    <div class="title">{{item.cen_tit}}</div>
+                    <p class="note">{{item.cen_num}}</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-item" v-for="i in item.right" :key="i.item_tit">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img class="img"
+                                :src="i.img"
+                                alt="">
+                            <p class="img-info">{{i.item_info}}</p>
+                        </div>
+                        <div class="title">{{i.item_tit}}</div>
+                        <p class="note">{{i.item_num}}</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                data: [{
+                    "color": "#970700",
+                    "left_tit": "TED",
+                    "left_con": ["首播", "合集", "艺术", "心理", "技能", "医学", "经济", "环境", "计算机"],
+                    "left_num": "共1976门课程",
+                    "cen_img": "https://oimagec2.ydstatic.com/image?url=http://img5.cache.netease.com/news/2017/5/8/2017050816050059c20.jpg&w=380&h=268&cw=380&ch=268&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                    "cen_tit": "设计师，你是做什么的？",
+                    "cen_info": "轻松幽默的方式分析问题",
+                    "cen_num": "81.0万",
+                    "right": [{
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2017/5/8/20170508160852acb23.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "一款体验悲痛的游戏",
+                        "item_info": "一个跟癌症斗争的床边故事",
+                        "item_num": "105.1万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img3.cache.netease.com/news/2017/5/8/20170508160723ff068.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "快乐是一种选择",
+                        "item_info": "让自己学习回到开心生活中",
+                        "item_num": "184.9万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img4.cache.netease.com/news/2017/3/7/20170307164243970a8.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "提升自信的技巧",
+                        "item_info": "你欠缺的也许并不是能力",
+                        "item_num": "1581.8万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2017/3/7/2017030716402682a66.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "口音并不是影响沟通",
+                        "item_info": "被嘲笑时仍要继续说话",
+                        "item_num": "114.6万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2017/3/7/201703071638379afdd.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "书籍如何成为心灵解药",
+                        "item_info": "梦想无法成真该怎么办呢？",
+                        "item_num": "366.1万"
+                    }, {
+                        "img": "https://imgsize.ph.126.net/?enlarge=true&imgurl=http://img5.cache.netease.com/news/2016/10/26/20161026172958c88bf.jpg_180x100x1x95.jpg",
+                        "item_tit": "我们为什么会笑？",
+                        "item_info": "了解自己发笑的机率",
+                        "item_num": "93.8万"
+                    }]
+                }, {
+                    "color": "#257397",
+                    "left_tit": "国际名校公开课",
+                    "left_con": ["演讲", "心理", "政治", "经济", "艺术", "宗教", "历史", "哲学", "语言", "文学"],
+                    "left_num": "共468门课程",
+                    "cen_img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2017/2/7/201702071259074395b.jpg&w=380&h=268&cw=380&ch=268&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                    "cen_tit": "经济学",
+                    "cen_info": "斯坦福商学院的“小企业精神”",
+                    "cen_num": "",
+                    "right": [{
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img3.cache.netease.com/news/2017/3/7/20170307165325822ec.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "儿童发展心理学",
+                        "item_info": "全23集 翻译完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img4.cache.netease.com/news/2017/3/7/201703071651262ca3a.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "饮食与营养",
+                        "item_info": "全30集 翻译完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img2.cache.netease.com/news/2017/2/7/20170207130839aa051.png&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "华尔街训练营",
+                        "item_info": "全6集 翻译完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img5.cache.netease.com/news/2017/2/7/20170207130730db594.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "直观的智慧",
+                        "item_info": "全11集 翻译完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2017/2/7/201702071306411a354.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "资本主义的成功危机和改革",
+                        "item_info": "全23集 翻译完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img3.cache.netease.com/news/2017/2/7/201702071305080850e.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "健康图书馆",
+                        "item_info": "全98集 翻译完",
+                        "item_num": ""
+                    }]
+                }, {
+                    "color": "#4aa4fc",
+                    "left_tit": "赏课",
+                    "left_con": ["探索未知", "动植物", "舌尖美食", "视听盛宴", "两性情感", "冷知识"],
+                    "left_num": "共1703门课程",
+                    "cen_img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2017/7/1/2017070102371753fdb.jpg&w=380&h=268&cw=380&ch=268&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                    "cen_tit": "照亮你的职场人生",
+                    "cen_info": "职场必修课",
+                    "cen_num": "146.1万",
+                    "right": [{
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2017/3/7/201703071713001ab7c.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "提升英语听力的秘诀",
+                        "item_info": "让你轻松应对英语",
+                        "item_num": "899.3万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2017/3/7/201703071709299aa0b.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "奥巴马的白宫岁月",
+                        "item_info": "为改变美国他究竟做了什么",
+                        "item_num": "114.2万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img3.cache.netease.com/news/2017/3/7/20170307170746a9924.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "模特修炼手册",
+                        "item_info": "知道成为模特有多艰难吗？",
+                        "item_num": "142.4万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img2.cache.netease.com/news/2017/1/10/2017011018162850995.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "黑手党风云",
+                        "item_info": "肆虐美国的黑暗力量",
+                        "item_num": "124.5万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2017/1/10/201701101811574c645.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "世界末日",
+                        "item_info": "四种毁灭世界的方式",
+                        "item_num": "174.1万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2017/1/10/20170110180911bba3d.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "关于减肥的十件事",
+                        "item_info": "科学家教你科学瘦身",
+                        "item_num": "1028.6万"
+                    }]
+                }, {
+                    "color": "#20673f",
+                    "left_tit": "演讲",
+                    "left_con": ["马云", "比尔.盖茨", "毕业演讲", "罗永浩", "特蕾莎修女", "扎克伯格", "乔布斯", "奥巴马"],
+                    "left_num": "共414门课程",
+                    "cen_img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2017/6/2/201706021755432d1d0.jpg&w=380&h=268&cw=380&ch=268&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                    "cen_tit": "扎克伯格哈佛毕业演讲",
+                    "cen_info": "平实恳切却燃到泪目",
+                    "cen_num": "425.6万",
+                    "right": [{
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img2.cache.netease.com/news/2016/4/13/201604131135394337c.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "艾玛·沃特森呼吁男女平等",
+                        "item_info": "联合国谈性别歧视",
+                        "item_num": "613.6万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img3.cache.netease.com/cnews/2016/3/31/201603311801101c9a8.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "冯唐哥大激情演讲",
+                        "item_info": "文学和文学以外的事情",
+                        "item_num": "187.9万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2016/6/17/20160617155057efdd5.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "斯皮尔伯格哈佛演讲",
+                        "item_info": "讲述自己对大学和学习的看法",
+                        "item_num": "293.8万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2016/6/17/20160617154837bca58.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "川普反恐安全重要演讲",
+                        "item_info": "我富,我富,我真富",
+                        "item_num": "220.3万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2016/6/4/20160604181640f9418.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "马云斯坦福大学演讲",
+                        "item_info": "想法与技术可以改变世界",
+                        "item_num": "1896.1万"
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img4.cache.netease.com/news/2016/4/13/20160413111522f9802.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "娜塔丽波特曼哈佛演讲",
+                        "item_info": "年少轻狂的勇气",
+                        "item_num": "413.7万"
+                    }]
+                }, {
+                    "color": "#62320e",
+                    "left_tit": "中国大学\n视频公开课",
+                    "left_con": ["农林医药", "工程技术", "基础科学", "经管法学", "哲学历史", "文学艺术"],
+                    "left_num": "共1039门课程",
+                    "cen_img": "https://oimagec2.ydstatic.com/image?url=http://img5.cache.netease.com/news/2016/10/18/201610181542507bc2b.jpg&w=380&h=268&cw=380&ch=268&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                    "cen_tit": "视觉文化批评",
+                    "cen_info": "如何解读建筑的意义",
+                    "cen_num": "",
+                    "right": [{
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img5.cache.netease.com/news/2017/3/7/20170307174536b6a2a.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "室内花卉与装饰",
+                        "item_info": "全5集 更新完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img5.cache.netease.com/news/2017/3/7/20170307173202a7301.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "法医学导论",
+                        "item_info": "全10集 更新完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2017/3/7/20170307172940ec51c.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "纳米新纪元",
+                        "item_info": "全6集 更新完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img4.cache.netease.com/news/2017/1/10/20170110184130d32bc.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "幸福与经济学",
+                        "item_info": "更新至第5集",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img2.cache.netease.com/news/2017/1/10/2017011018384228e72.gif&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "中国西部电影精品读解",
+                        "item_info": "更新至第6集",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2017/1/10/201701101837152df05.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "中国诗歌艺术",
+                        "item_info": "更新至第5集",
+                        "item_num": ""
+                    }]
+                }, {
+                    "color": "#657b19",
+                    "left_tit": "可汗学院",
+                    "left_con": ["世界历史", "数学逻辑", "科学知识", "金融经济", "考试准备", "人文艺术"],
+                    "left_num": "共73门课程",
+                    "cen_img": "https://oimagec2.ydstatic.com/image?url=http://img4.cache.netease.com/news/2016/9/29/2016092917400990e71.jpg&w=380&h=268&cw=380&ch=268&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                    "cen_tit": "摩天轮的应用题 三角形的提高课",
+                    "cen_info": "翻译至49集",
+                    "cen_num": "",
+                    "right": [{
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img5.cache.netease.com/news/2016/9/29/20160929180336041f0.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "理解比例",
+                        "item_info": "全43集 翻译完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2016/9/29/20160929175950574a1.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "保健与医学：肾系统",
+                        "item_info": "全8集 翻译完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2016/9/29/20160929175659436b4.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "脑筋急转弯",
+                        "item_info": "全9集 翻译完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img5.cache.netease.com/news/2016/9/29/201609291753115926a.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "画坐标平面图",
+                        "item_info": "翻译至12集",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2016/9/29/2016092917500766e33.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "艺术史简介",
+                        "item_info": "全13集 翻译完",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2016/9/29/20160929174714dab7c.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "统计学",
+                        "item_info": "全85集 翻译完",
+                        "item_num": ""
+                    }]
+                }, {
+                    "color": "#10ae58",
+                    "left_tit": "云课堂",
+                    "left_con": ["编程开发", "办公效率", "产品设计", "生活方式", "职业发展", "市场营销", "微专业"],
+                    "left_num": "查看全部",
+                    "cen_img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2017/3/13/2017031311090937d2a.jpg&w=380&h=268&cw=380&ch=268&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                    "cen_tit": "日语课程：阴阳师对战台词详解",
+                    "cen_info": "",
+                    "cen_num": "",
+                    "right": [{
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img2.cache.netease.com/news/2017/3/13/20170313111925c64d8.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "你必须了解的性知识",
+                        "item_info": "",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img4.cache.netease.com/news/2017/3/13/2017031311135113e50.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "学唱热门韩语歌曲",
+                        "item_info": "",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img5.cache.netease.com/news/2016/12/13/2016121311421478054.png&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "设计师必学手绘基础",
+                        "item_info": "",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img3.cache.netease.com/news/2016/11/1/2016110115241434b5c.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "儿童编程启蒙第一步",
+                        "item_info": "",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img1.cache.netease.com/news/2016/6/20/201606201057107ffdb.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "四大软件玩转影视制作",
+                        "item_info": "",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img3.cache.netease.com/news/2016/8/9/20160809112753438c7.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "你不得不知道的职场“潜规则”",
+                        "item_info": "",
+                        "item_num": ""
+                    }]
+                }, {
+                    "color": "#0064b7",
+                    "left_tit": "中国大学MOOC",
+                    "left_con": ["中M考研", "北京大学", "浙江大学", "哈工大", "湖南大学", "同济大学", "武汉大学", "山东大学", "四川大学",
+                        "台湾清华"
+                    ],
+                    "left_num": "查看全部",
+                    "cen_img": "https://oimagec2.ydstatic.com/image?url=http://nos.netease.com/edu-image/8499d5dd-37f4-4f59-a58c-4949479e6c4b.png?imageView&quality=100&w=380&h=268&cw=380&ch=268&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                    "cen_tit": "中国大学MOOC考研上线啦！",
+                    "cen_info": "",
+                    "cen_num": "",
+                    "right": [{
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2017/8/28/20170828130804c26be.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "【直播】七夕夜邀你看星星",
+                        "item_info": "",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img5.cache.netease.com/news/2016/8/29/20160829143921bdd0e.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "大学专业怎么选？",
+                        "item_info": "",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img2.cache.netease.com/news/2016/10/12/2016101215065890017.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "网易大牛解读互联网校招",
+                        "item_info": "",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img4.cache.netease.com/news/2016/7/28/20160728115249a74a3.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "人人爱设计 山东大学",
+                        "item_info": "",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img6.cache.netease.com/news/2016/6/17/2016061717000530b06.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "微观经济学 武汉大学",
+                        "item_info": "",
+                        "item_num": ""
+                    }, {
+                        "img": "https://oimagec2.ydstatic.com/image?url=http://img5.cache.netease.com/news/2016/10/12/2016101215080378144.jpg&w=180&h=100&cw=180&ch=100&fill=0&sbc=0&quality=95&cgra=TOP_CENTER&product=open",
+                        "item_tit": "中国诗歌艺术 四川大学",
+                        "item_info": "",
+                        "item_num": ""
+                    }]
+                }]
+            }
+        })
+        console.log(vm.data);
+    </script>
+</body>
+
+</html>

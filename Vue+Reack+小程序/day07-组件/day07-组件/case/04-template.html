@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <v-first></v-first>
+        <v-second></v-second>
+        <v-second></v-second>
+        <v-third></v-third>
+
+    </div>
+    <template id="second">
+        <div>
+            <h3>this is second</h3>
+            <p>123</p>
+        </div>
+    </template>
+
+    <template id="third">
+        <div>
+            <h3>third title</h3>
+            <p>third con</p>
+        </div>
+    </template>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {},
+            methods: {},
+            components: {
+                // 1.template只能有一个根节点
+                vFirst: {
+                    template: "<div><h1>这是first组件题目</h1><p>内容</p></div>"
+                },
+                // 2.借助template标签来书写模板
+                vSecond: {
+                    template: "#second"
+                },
+                vThird: {
+                    template: "#third"
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

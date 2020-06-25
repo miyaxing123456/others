@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{name}}</h1>
+        <input type="text" v-model="name">
+        <button @click="changeName('大乔')">大乔</button>
+        <button @click="changeName('王昭君')">王昭君</button>
+
+        <h3>请提问一个使用YES或者NO回答的问题：</h3>
+        <input type="text" v-model="question">
+        <div>答案：{{answer}}</div>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: "#app", //挂载点
+            data: { //属性-数据
+                name: "妲己",
+                age: 20,
+                sex: "1",
+
+                question: "", //问题
+                answer: "", //答案
+            },
+            methods: { //方法-函数
+                changeName(name) {
+                    this.name = name;
+                }
+            },
+            watch: { //监听
+                name(newValue, oldValue) {
+                    //newValue是改变后的值，oldValue是改变前的值
+                    console.log("name 变了");
+                    console.log(newValue, oldValue);
+                },
+                question() {
+                    if (this.question.indexOf("?") != -1 || this.question.includes("？")) {
+                        this.answer = Math.random() < 0.7? 'YES' : 'NO';
+
+                        /*var num = Math.random()
+                        //3-60% 2-30% 1-10%
+                        if (num < 0.6) {
+                            this.answer = "三等奖"
+                            return;
+                        }
+                        if (num < 0.9) {
+                            this.answer = "二等奖"
+                            return;
+                        }
+                        this.answer = "一等奖"
+                        */
+
+
+                    } else {
+                        this.answer = ""
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

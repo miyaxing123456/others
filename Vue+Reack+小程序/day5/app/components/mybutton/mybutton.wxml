@@ -1,0 +1,9 @@
+<!--components/mybutton/mybutton.wxml-->
+<view>
+    <!-- <view>自定义组件--button</view> -->
+
+    <view  class="{{ size }}" style="background-color:{{ color }}">
+        {{ title }}
+    </view>
+
+</view>

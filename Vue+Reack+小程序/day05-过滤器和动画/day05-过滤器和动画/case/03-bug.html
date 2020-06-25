@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{json}}</h1>
+        <button @click="changeX">json.x 改为30</button>
+        <button @click="addName">给json添加一个属性 name 值是妲己</button>
+    </div>
+    <script>
+        // Object.defineProperty()
+        var vm = new Vue({
+            el: "#app", //挂载点,
+            data: { //属性
+                json: {
+                    x: 10,
+                    y: 20
+                },
+                arr:[]
+            },
+            methods: { //方法
+                changeX() {
+                    this.json.x = 30;
+                },
+                addName(){
+                    
+                    //splice vm.$set() Vue.set()
+                    // this.$set(this.json,"name","妲己")
+                    Vue.set(this.json,"name","妲己")
+                },
+                /*ajax(){
+                    $.ajax({
+                        url:"",
+                        success(d){
+                            this.arr=d;//会触发页面的渲染 chekced
+                            //后端返回回来的数据没有checked选项，我们需要给每一项添加一个checked属性
+                            this.arr.forEach((item,index)=>{
+                                // item.checked=false;//不会引起页面渲染
+                                var json=item;
+                                json.checked=false
+                                Vue.set(this.arr,index,json)
+                            })
+                        }
+                    })
+                }*/
+            },
+            watch: { //监听
+
+            },
+            computed: { //计算属性
+
+            }
+        })
+    </script>
+</body>
+
+</html>
